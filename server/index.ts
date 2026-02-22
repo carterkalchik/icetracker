@@ -20,12 +20,12 @@ if (process.env.NODE_ENV === 'production') {
       contentSecurityPolicy: {
         directives: {
           defaultSrc: ["'self'"],
-          scriptSrc: ["'self'"],
+          scriptSrc: ["'self'", "https://plausible.io"],
           styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
           fontSrc: ["'self'", "https://fonts.gstatic.com"],
           imgSrc: ["'self'", "data:", "https:"],
           frameSrc: ["'self'", "https://www.youtube.com", "https://youtube.com"],
-          connectSrc: ["'self'"],
+          connectSrc: ["'self'", "https://plausible.io"],
         },
       },
     })
