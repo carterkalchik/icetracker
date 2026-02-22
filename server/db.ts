@@ -150,6 +150,23 @@ db.exec(`
     score REAL NOT NULL,
     description TEXT
   );
+
+  CREATE TABLE IF NOT EXISTS news_articles (
+    id TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    url TEXT NOT NULL,
+    source TEXT NOT NULL,
+    published_at TEXT NOT NULL,
+    summary TEXT NOT NULL,
+    image_url TEXT
+  );
+
+  CREATE TABLE IF NOT EXISTS article_entities (
+    article_id TEXT NOT NULL REFERENCES news_articles(id),
+    entity_type TEXT NOT NULL,
+    entity_id TEXT NOT NULL,
+    PRIMARY KEY (article_id, entity_type, entity_id)
+  );
 `)
 
 export default db

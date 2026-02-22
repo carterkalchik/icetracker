@@ -7,6 +7,7 @@ import skatersRouter from './routes/skaters.js'
 import competitionsRouter, { seasonsRouter } from './routes/competitions.js'
 import scoringRouter from './routes/scoring.js'
 import searchRouter from './routes/search.js'
+import newsRouter from './routes/news.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const app = express()
@@ -24,6 +25,7 @@ app.use('/api/competitions', competitionsRouter)
 app.use('/api/seasons', seasonsRouter)
 app.use('/api/scoring', scoringRouter)
 app.use('/api/search', searchRouter)
+app.use('/api/news', newsRouter)
 
 // Production: serve built frontend
 if (process.env.NODE_ENV === 'production') {
