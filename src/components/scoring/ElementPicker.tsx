@@ -22,7 +22,7 @@ const categoryLabels: Record<string, string> = {
 export function ElementPicker({ open, onClose, onSelect }: ElementPickerProps) {
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState<string>('all')
-  const { data: elements } = useAsync(() => getAllElements())
+  const { data: elements, loading } = useAsync(() => getAllElements())
 
   const allPickerElements = useMemo(() => {
     if (!elements) return []
@@ -95,7 +95,10 @@ export function ElementPicker({ open, onClose, onSelect }: ElementPickerProps) {
 
         {/* Elements List */}
         <div className="max-h-[50vh] overflow-y-auto px-2 py-2">
-          {filtered.map((el) => (
+          {loading && (
+            <p className="py-8 text-center text-sm text-gray-500">Loading elements...</p>
+          )}
+          {!loading && filtered.map((el) => (
             <button
               key={el.id}
               onClick={() => {
@@ -121,7 +124,7 @@ export function ElementPicker({ open, onClose, onSelect }: ElementPickerProps) {
               </div>
             </button>
           ))}
-          {filtered.length === 0 && (
+          {!loading && filtered.length === 0 && (
             <p className="py-8 text-center text-sm text-gray-500">No elements found.</p>
           )}
         </div>

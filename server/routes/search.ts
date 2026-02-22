@@ -76,11 +76,13 @@ router.get('/tags', (_req, res) => {
   res.json(rows.map(r => r.tag))
 })
 
+const VALID_ELEMENT_TYPES = new Set(['jump', 'spin', 'step', 'pair', 'dance'])
+
 // GET /api/search/elements?q=...&types=...&edge=...&tags=...&minBV=...&maxBV=...
 router.get('/elements', (req, res) => {
   const q = (req.query.q as string || '').toLowerCase()
   const typesParam = req.query.types as string | undefined
-  const types = typesParam ? typesParam.split(',') : []
+  const types = typesParam ? typesParam.split(',').filter(t => VALID_ELEMENT_TYPES.has(t)) : []
   const edge = (req.query.edge as string) || 'all'
   const tagsParam = req.query.tags as string | undefined
   const filterTags = tagsParam ? tagsParam.split(',') : []

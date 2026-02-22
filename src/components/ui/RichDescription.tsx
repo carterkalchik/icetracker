@@ -28,19 +28,25 @@ export function RichDescription({ text, className }: RichDescriptionProps) {
 
       if (cancelled || matches.length === 0) return
 
+      // Resolve all matches concurrently
+      const entities = await Promise.all(
+        matches.map((match) => resolveSkaterByName(match[0]))
+      )
+      if (cancelled) return
+
       const resolved: ReactNode[] = []
       let lastIndex = 0
 
-      for (const match of matches) {
+      for (let i = 0; i < matches.length; i++) {
+        const match = matches[i]
         const matchIndex = match.index!
         const matchedName = match[0]
+        const entity: EntityRef | null = entities[i]
 
         if (matchIndex > lastIndex) {
           resolved.push(text.slice(lastIndex, matchIndex))
         }
 
-        const entity: EntityRef | null = await resolveSkaterByName(matchedName)
-        if (cancelled) return
         if (entity) {
           resolved.push(<ObjectLink key={`${matchIndex}`} entity={entity} />)
         } else {
@@ -54,7 +60,7 @@ export function RichDescription({ text, className }: RichDescriptionProps) {
         resolved.push(text.slice(lastIndex))
       }
 
-      if (!cancelled) setParts(resolved)
+      setParts(resolved)
     }
 
     resolve()

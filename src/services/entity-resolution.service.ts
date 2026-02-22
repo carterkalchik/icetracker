@@ -35,6 +35,9 @@ async function ensureElements() {
         byNameLower.set(el.name.toLowerCase(), el)
       }
       elementsLoaded = true
+    }).catch((err) => {
+      elementsPromise = null
+      throw err
     })
   }
   return elementsPromise
@@ -49,6 +52,9 @@ async function ensureSkaters() {
       }
       skaterNamesList = skaters.map((s) => s.name).sort((a, b) => b.length - a.length)
       skatersLoaded = true
+    }).catch((err) => {
+      skatersPromise = null
+      throw err
     })
   }
   return skatersPromise

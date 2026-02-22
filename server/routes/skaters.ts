@@ -51,10 +51,40 @@ interface ResultRow {
   start_date: string
 }
 
-function formatSkater(row: SkaterRow, full = false) {
+function formatSkater(row: SkaterRow) {
   const photo = db.prepare('SELECT url, author, license, license_url, source FROM skater_photos WHERE skater_id = ?').get(row.id) as PhotoRow | undefined
 
-  const base: Record<string, unknown> = {
+  const pbs = (db.prepare('SELECT segment, score, event, date, source_url FROM personal_bests WHERE skater_id = ?').all(row.id) as PBRow[]).map(pb => ({
+    segment: pb.segment,
+    score: pb.score,
+    event: pb.event,
+    date: pb.date,
+    sourceUrl: pb.source_url,
+  }))
+
+  const sigs = (db.prepare('SELECT display_name FROM signature_elements WHERE skater_id = ?').all(row.id) as SigRow[]).map(s => s.display_name)
+
+  const results = (db.prepare(`
+    SELECT cr.competition_id, cr.discipline, cr.rank, cr.total_score, cr.short_score, cr.free_score, cr.medal, cr.source_url,
+           c.name as competition_name, c.season, c.start_date
+    FROM competition_results cr
+    JOIN competitions c ON cr.competition_id = c.id
+    WHERE cr.skater_id = ?
+    ORDER BY c.start_date DESC
+  `).all(row.id) as ResultRow[]).map(r => ({
+    competitionId: r.competition_id,
+    competitionName: r.competition_name,
+    season: r.season,
+    placement: r.rank,
+    medal: r.medal ?? undefined,
+    totalScore: r.total_score,
+    shortScore: r.short_score ?? undefined,
+    freeScore: r.free_score ?? undefined,
+    date: r.start_date,
+    sourceUrl: r.source_url ?? undefined,
+  }))
+
+  return {
     id: row.id,
     name: row.name,
     country: row.country,
@@ -72,77 +102,10 @@ function formatSkater(row: SkaterRow, full = false) {
       licenseUrl: photo.license_url,
       source: photo.source,
     } : undefined,
+    personalBests: pbs,
+    signatureElements: sigs,
+    competitionResults: results,
   }
-
-  if (full) {
-    const pbs = (db.prepare('SELECT segment, score, event, date, source_url FROM personal_bests WHERE skater_id = ?').all(row.id) as PBRow[]).map(pb => ({
-      segment: pb.segment,
-      score: pb.score,
-      event: pb.event,
-      date: pb.date,
-      sourceUrl: pb.source_url,
-    }))
-
-    const sigs = (db.prepare('SELECT display_name, element_id FROM signature_elements WHERE skater_id = ?').all(row.id) as SigRow[]).map(s => s.display_name)
-
-    const results = (db.prepare(`
-      SELECT cr.competition_id, cr.discipline, cr.rank, cr.total_score, cr.short_score, cr.free_score, cr.medal, cr.source_url,
-             c.name as competition_name, c.season, c.start_date
-      FROM competition_results cr
-      JOIN competitions c ON cr.competition_id = c.id
-      WHERE cr.skater_id = ?
-      ORDER BY c.start_date DESC
-    `).all(row.id) as ResultRow[]).map(r => ({
-      competitionId: r.competition_id,
-      competitionName: r.competition_name,
-      season: r.season,
-      placement: r.rank,
-      medal: r.medal ?? undefined,
-      totalScore: r.total_score,
-      shortScore: r.short_score ?? undefined,
-      freeScore: r.free_score ?? undefined,
-      date: r.start_date,
-      sourceUrl: r.source_url ?? undefined,
-    }))
-
-    base.personalBests = pbs
-    base.signatureElements = sigs
-    base.competitionResults = results
-  } else {
-    // List view: still include PBs and signature elements for card display
-    const pbs = (db.prepare('SELECT segment, score, event, date, source_url FROM personal_bests WHERE skater_id = ?').all(row.id) as PBRow[]).map(pb => ({
-      segment: pb.segment,
-      score: pb.score,
-      event: pb.event,
-      date: pb.date,
-      sourceUrl: pb.source_url,
-    }))
-    const sigs = (db.prepare('SELECT display_name FROM signature_elements WHERE skater_id = ?').all(row.id) as SigRow[]).map(s => s.display_name)
-    const results = (db.prepare(`
-      SELECT cr.competition_id, cr.discipline, cr.rank, cr.total_score, cr.short_score, cr.free_score, cr.medal, cr.source_url,
-             c.name as competition_name, c.season, c.start_date
-      FROM competition_results cr
-      JOIN competitions c ON cr.competition_id = c.id
-      WHERE cr.skater_id = ?
-      ORDER BY c.start_date DESC
-    `).all(row.id) as ResultRow[]).map(r => ({
-      competitionId: r.competition_id,
-      competitionName: r.competition_name,
-      season: r.season,
-      placement: r.rank,
-      medal: r.medal ?? undefined,
-      totalScore: r.total_score,
-      shortScore: r.short_score ?? undefined,
-      freeScore: r.free_score ?? undefined,
-      date: r.start_date,
-      sourceUrl: r.source_url ?? undefined,
-    }))
-    base.personalBests = pbs
-    base.signatureElements = sigs
-    base.competitionResults = results
-  }
-
-  return base
 }
 
 // GET /api/skaters/batch?ids=a,b,c
@@ -152,7 +115,12 @@ router.get('/batch', (req, res) => {
     res.json([])
     return
   }
-  const ids = idsParam.split(',')
+  // Sanitize: only allow alphanumeric + hyphens in IDs
+  const ids = idsParam.split(',').filter(id => /^[a-zA-Z0-9-]+$/.test(id))
+  if (ids.length === 0) {
+    res.json([])
+    return
+  }
   const placeholders = ids.map(() => '?').join(',')
   const rows = db.prepare(`SELECT * FROM skaters WHERE id IN (${placeholders})`).all(...ids) as SkaterRow[]
   res.json(rows.map(r => formatSkater(r)))
@@ -177,7 +145,7 @@ router.get('/:id', (req, res) => {
     res.status(404).json({ error: 'Skater not found' })
     return
   }
-  res.json(formatSkater(row, true))
+  res.json(formatSkater(row))
 })
 
 export default router

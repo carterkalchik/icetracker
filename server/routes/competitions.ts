@@ -94,8 +94,8 @@ router.get('/:id/results', (req, res) => {
     skaterName: string
     country: string
     totalScore: number
-    shortScore: number
-    freeScore: number
+    shortScore: number | null
+    freeScore: number | null
     medal?: string
   }>>()
 
@@ -113,8 +113,8 @@ router.get('/:id/results', (req, res) => {
       skaterName: r.skater_name ?? r.skater_id,
       country: r.country ?? '',
       totalScore: r.total_score,
-      shortScore: r.short_score ?? 0,
-      freeScore: r.free_score ?? 0,
+      shortScore: r.short_score,
+      freeScore: r.free_score,
       medal: r.medal ?? undefined,
     })
   }
