@@ -54,12 +54,22 @@ function SignatureElement({ displayName }: { displayName: string }) {
 
 export function SkaterDetailPage() {
   const { skaterId } = useParams<{ skaterId: string }>()
-  const { data: skater, loading } = useAsync(() => getSkaterById(skaterId!))
+  const { data: skater, loading, error } = useAsync(() => getSkaterById(skaterId!))
   const { data: skaterNews } = useAsync(() => getNewsBySkater(skaterId!), [skaterId])
   const { isWatching, toggle } = useWatchlist()
 
   if (loading) {
     return <SkeletonDetailPage />
+  }
+
+  if (error) {
+    return (
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-red-200 bg-red-50 p-6 text-center">
+          <p className="text-sm font-medium text-red-800">Failed to load skater. Please try again later.</p>
+        </div>
+      </div>
+    )
   }
 
   if (!skater) {

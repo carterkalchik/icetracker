@@ -35,10 +35,20 @@ function isDanceElement(el: unknown): el is DanceElement {
 
 export function ElementDetailPage() {
   const { elementId } = useParams<{ elementId: string }>()
-  const { data: element, loading } = useAsync(() => getElementById(elementId!), [elementId])
+  const { data: element, loading, error } = useAsync(() => getElementById(elementId!), [elementId])
 
   if (loading) {
     return <SkeletonDetailPage />
+  }
+
+  if (error) {
+    return (
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-red-200 bg-red-50 p-6 text-center">
+          <p className="text-sm font-medium text-red-800">Failed to load element. Please try again later.</p>
+        </div>
+      </div>
+    )
   }
 
   if (!element) {

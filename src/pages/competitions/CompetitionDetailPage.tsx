@@ -11,11 +11,21 @@ import { competitionTypes } from '../../data/competitions/competition-types'
 
 export function CompetitionDetailPage() {
   const { competitionId } = useParams<{ competitionId: string }>()
-  const { data: competition, loading } = useAsync(() => getCompetitionById(competitionId!))
+  const { data: competition, loading, error } = useAsync(() => getCompetitionById(competitionId!))
   const { data: results } = useAsync(() => getResultsByCompetitionId(competitionId!), [competitionId])
 
   if (loading) {
     return <SkeletonDetailPage />
+  }
+
+  if (error) {
+    return (
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-red-200 bg-red-50 p-6 text-center">
+          <p className="text-sm font-medium text-red-800">Failed to load competition. Please try again later.</p>
+        </div>
+      </div>
+    )
   }
 
   if (!competition) {

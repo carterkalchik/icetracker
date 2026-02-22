@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f7ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e0effe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b9dffe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Accent bar at top -->
+  <rect width="1200" height="6" fill="#006fc9" />
+
+  <!-- Skating emoji -->
+  <text x="600" y="220" text-anchor="middle" font-size="100">⛸</text>
+
+  <!-- Title -->
+  <text x="600" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#07284a">BladeTracker</text>
+
+  <!-- Tagline -->
+  <text x="600" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="30" fill="#064b86">Your Guide to Figure Skating</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="460" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" fill="#0159a3">Elements · Scoring · Skaters · Competitions</text>
+
+  <!-- Bottom accent bar -->
+  <rect y="624" width="1200" height="6" fill="#006fc9" />
+</svg>
