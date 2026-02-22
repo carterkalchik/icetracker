@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl">⛸</span>
-            <span className="font-serif text-lg font-bold text-ice-900">IceTracker</span>
+            <span className="font-serif text-lg font-bold text-ice-900">BladeTracker</span>
           </div>
 
           <nav className="flex gap-6">

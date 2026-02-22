@@ -8,7 +8,7 @@ export function Header({ onMenuToggle }: { onMenuToggle: () => void }) {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-2xl">⛸</span>
-          <span className="font-serif text-xl font-bold text-ice-900">IceTracker</span>
+          <span className="font-serif text-xl font-bold text-ice-900">BladeTracker</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
