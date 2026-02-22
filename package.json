@@ -11,14 +11,20 @@
     "build": "tsc -b && vite build",
     "start": "NODE_ENV=production tsx server/index.ts",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "crawl:news": "tsx crawler/news.ts",
+    "crawl:results": "tsx crawler/results.ts",
+    "crawl:skaters": "tsx crawler/detect-skaters.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
     "better-sqlite3": "^12.6.2",
     "clsx": "^2.1.1",
     "cors": "^2.8.6",
     "express": "^5.2.1",
+    "fast-xml-parser": "^5.3.7",
     "helmet": "^8.1.0",
+    "linkedom": "^0.18.12",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.0",
