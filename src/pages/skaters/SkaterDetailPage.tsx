@@ -12,7 +12,9 @@ import { ObjectLink } from '../../components/ui/ObjectLink'
 import { useAsync } from '../../hooks/useAsync'
 import { useWatchlist } from '../../hooks/useWatchlist'
 import { getSkaterById } from '../../services/skaters.service'
+import { getNewsBySkater } from '../../services/news.service'
 import { resolveSignatureElement } from '../../services/entity-resolution.service'
+import { NewsCard } from '../../components/news/NewsCard'
 import { countryFlag, formatCountry } from '../../lib/format'
 import type { EntityRef } from '../../types/object-link'
 
@@ -53,6 +55,7 @@ function SignatureElement({ displayName }: { displayName: string }) {
 export function SkaterDetailPage() {
   const { skaterId } = useParams<{ skaterId: string }>()
   const { data: skater, loading } = useAsync(() => getSkaterById(skaterId!))
+  const { data: skaterNews } = useAsync(() => getNewsBySkater(skaterId!), [skaterId])
   const { isWatching, toggle } = useWatchlist()
 
   if (loading) {
@@ -173,6 +176,18 @@ export function SkaterDetailPage() {
               <CompetitionHistory results={skater.competitionResults} />
             </CardContent>
           </Card>
+        </section>
+      )}
+
+      {/* Recent News */}
+      {skaterNews && skaterNews.length > 0 && (
+        <section className="mt-10">
+          <h2 className="font-serif text-2xl font-semibold text-gray-900">Recent News</h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {skaterNews.slice(0, 3).map((article) => (
+              <NewsCard key={article.id} article={article} />
+            ))}
+          </div>
         </section>
       )}
     </div>

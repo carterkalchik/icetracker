@@ -22,6 +22,7 @@ import { goeTable } from '../src/data/scoring/goe-table.js'
 import { pcsComponents } from '../src/data/scoring/pcs-components.js'
 import { deductions } from '../src/data/scoring/deductions.js'
 import { scoreBenchmarks } from '../src/data/scoring/score-benchmarks.js'
+import { newsArticles } from '../src/data/news/articles.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const dbPath = path.join(__dirname, '..', 'icetracker.db')
@@ -175,6 +176,23 @@ db.exec(`
     segment TEXT NOT NULL,
     score REAL NOT NULL,
     description TEXT
+  );
+
+  CREATE TABLE news_articles (
+    id TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    url TEXT NOT NULL,
+    source TEXT NOT NULL,
+    published_at TEXT NOT NULL,
+    summary TEXT NOT NULL,
+    image_url TEXT
+  );
+
+  CREATE TABLE article_entities (
+    article_id TEXT NOT NULL REFERENCES news_articles(id),
+    entity_type TEXT NOT NULL,
+    entity_id TEXT NOT NULL,
+    PRIMARY KEY (article_id, entity_type, entity_id)
   );
 `)
 
@@ -490,6 +508,32 @@ function seedScoring() {
   console.log(`  Score benchmarks: ${(db.prepare('SELECT COUNT(*) as c FROM score_benchmarks').get() as { c: number }).c}`)
 }
 
+function seedNews() {
+  const insertArticle = db.prepare(`
+    INSERT INTO news_articles (id, title, url, source, published_at, summary, image_url)
+    VALUES (?, ?, ?, ?, ?, ?, ?)
+  `)
+  const insertEntity = db.prepare(`
+    INSERT INTO article_entities (article_id, entity_type, entity_id)
+    VALUES (?, ?, ?)
+  `)
+
+  const seed = db.transaction(() => {
+    for (const a of newsArticles) {
+      insertArticle.run(a.id, a.title, a.url, a.source, a.publishedAt, a.summary, a.imageUrl ?? null)
+      for (const e of a.entities) {
+        insertEntity.run(a.id, e.type, e.id)
+      }
+    }
+  })
+
+  seed()
+  const count = (db.prepare('SELECT COUNT(*) as c FROM news_articles').get() as { c: number }).c
+  console.log(`  News articles: ${count}`)
+  const entityCount = (db.prepare('SELECT COUNT(*) as c FROM article_entities').get() as { c: number }).c
+  console.log(`  Article entities: ${entityCount}`)
+}
+
 // --- Run seed ---
 console.log('Seeding IceTracker database...\n')
 
@@ -501,6 +545,7 @@ seedCompetitions()
 seedSkaters()
 seedCompetitionResults()
 seedScoring()
+seedNews()
 
 console.log('\nDone!')
 db.close()

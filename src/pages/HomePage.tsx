@@ -6,6 +6,8 @@ import { Skeleton, SkeletonSkaterCard } from '../components/ui/Skeleton'
 import { useAsync } from '../hooks/useAsync'
 import { getAllSkaters } from '../services/skaters.service'
 import { getUpcomingCompetitions, getAllCompetitions } from '../services/competitions.service'
+import { getLatestNews } from '../services/news.service'
+import { NewsCard } from '../components/news/NewsCard'
 import { countryFlag, formatDateRange, formatScore } from '../lib/format'
 import { competitionTypes } from '../data/competitions/competition-types'
 import type { Skater } from '../types/skaters'
@@ -78,6 +80,7 @@ export function HomePage() {
   const { data: skaters } = useAsync(getAllSkaters)
   const { data: upcoming } = useAsync(getUpcomingCompetitions)
   const { data: allCompetitions } = useAsync(getAllCompetitions)
+  const { data: latestNews } = useAsync(() => getLatestNews(3))
 
   const featured = skaters ? getFeaturedSkaters(skaters) : []
   const recentComps = allCompetitions ? getRecentResults(allCompetitions) : []
@@ -196,6 +199,45 @@ export function HomePage() {
                   </Link>
                 )
               })}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Latest News */}
+      <section className="border-t border-gray-100 py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between">
+            <div>
+              <h2 className="font-serif text-2xl font-bold text-gray-900">Latest News</h2>
+              <p className="mt-1 text-sm text-gray-600">Figure skating news and updates</p>
+              <p className="mt-1 text-xs text-gray-400">Summaries are AI-generated and may contain inaccuracies.</p>
+            </div>
+            <Link
+              to="/news"
+              className="text-sm font-medium text-ice-600 hover:text-ice-800"
+            >
+              View all &rarr;
+            </Link>
+          </div>
+
+          {!latestNews ? (
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {Array.from({ length: 3 }).map((_, i) => (
+                <div key={i} className="animate-pulse rounded-xl border border-gray-100 bg-white p-6 shadow-sm">
+                  <Skeleton className="h-4 w-20" />
+                  <Skeleton className="mt-3 h-5 w-full" />
+                  <Skeleton className="mt-2 h-5 w-3/4" />
+                  <Skeleton className="mt-3 h-3 w-full" />
+                  <Skeleton className="mt-2 h-3 w-5/6" />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {latestNews.map((article) => (
+                <NewsCard key={article.id} article={article} />
+              ))}
             </div>
           )}
         </div>

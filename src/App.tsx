@@ -24,6 +24,7 @@ const CompetitionsIndexPage = lazy(() => import('./pages/competitions/Competitio
 const CompetitionDetailPage = lazy(() => import('./pages/competitions/CompetitionDetailPage').then(m => ({ default: m.CompetitionDetailPage })))
 const SeasonGuidePage = lazy(() => import('./pages/competitions/SeasonGuidePage').then(m => ({ default: m.SeasonGuidePage })))
 const SourcesPage = lazy(() => import('./pages/SourcesPage').then(m => ({ default: m.SourcesPage })))
+const NewsPage = lazy(() => import('./pages/news/NewsPage').then(m => ({ default: m.NewsPage })))
 
 function LazyPage({ children }: { children: React.ReactNode }) {
   return (
@@ -63,6 +64,7 @@ const router = createBrowserRouter([
       { path: '/competitions', element: <LazyPage><CompetitionsIndexPage /></LazyPage> },
       { path: '/competitions/season-guide', element: <LazyPage><SeasonGuidePage /></LazyPage> },
       { path: '/competitions/:competitionId', element: <LazyPage><CompetitionDetailPage /></LazyPage> },
+      { path: '/news', element: <LazyPage><NewsPage /></LazyPage> },
       { path: '/sources', element: <LazyPage><SourcesPage /></LazyPage> },
     ],
   },

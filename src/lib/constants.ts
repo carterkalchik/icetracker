@@ -6,6 +6,7 @@ export const NAV_LINKS = [
   { label: 'Scoring', path: '/scoring' },
   { label: 'Skaters', path: '/skaters' },
   { label: 'Competitions', path: '/competitions' },
+  { label: 'News', path: '/news' },
 ] as const
 
 export const CURRENT_SEASON = '2025-26'

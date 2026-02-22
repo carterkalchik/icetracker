@@ -23,36 +23,33 @@ export function ObjectCard({ entity, anchorRef, onClose }: ObjectCardProps) {
   const navigate = useNavigate()
   const cardRef = useRef<HTMLDivElement>(null)
   const { data, loading } = useObjectCardData(entity.type, entity.id, true)
-  const [position, setPosition] = useState<{ top: number; left: number }>({ top: 0, left: 0 })
+  const [position, setPosition] = useState<{ top: number; left: number } | null>(null)
 
-  // Position the card below the anchor
+  // Position the card below the anchor using fixed (viewport-relative) coordinates
+  // Runs on mount and again after data loads (card height may change)
   useEffect(() => {
     if (!anchorRef.current) return
     const rect = anchorRef.current.getBoundingClientRect()
     let left = rect.left + rect.width / 2 - CARD_WIDTH / 2
-    // Clamp to viewport
     left = Math.max(8, Math.min(left, window.innerWidth - CARD_WIDTH - 8))
-    setPosition({
-      top: rect.bottom + window.scrollY + 6,
-      left: left + window.scrollX,
-    })
-  }, [anchorRef])
 
-  // Focus management: move focus to card on mount, restore on unmount
-  useEffect(() => {
-    const previouslyFocused = document.activeElement as HTMLElement | null
-    cardRef.current?.focus()
-
-    return () => {
-      if (anchorRef.current) {
-        anchorRef.current.focus()
-      } else {
-        previouslyFocused?.focus()
-      }
+    let top = rect.bottom + 6
+    const cardHeight = cardRef.current?.offsetHeight ?? 0
+    if (top + cardHeight > window.innerHeight) {
+      top = rect.top - cardHeight - 6
     }
-  }, [anchorRef])
 
-  // Dismiss on click outside, Escape, or scroll
+    setPosition({ top, left })
+  }, [anchorRef, data, loading])
+
+  // Focus the card only after it has been positioned
+  useEffect(() => {
+    if (position && cardRef.current) {
+      cardRef.current.focus({ preventScroll: true })
+    }
+  }, [position])
+
+  // Dismiss on click outside or Escape
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (
@@ -65,17 +62,12 @@ export function ObjectCard({ entity, anchorRef, onClose }: ObjectCardProps) {
     function handleKey(e: KeyboardEvent) {
       if (e.key === 'Escape') onClose()
     }
-    function handleScroll() {
-      onClose()
-    }
 
     document.addEventListener('mousedown', handleClick)
     document.addEventListener('keydown', handleKey)
-    window.addEventListener('scroll', handleScroll, true)
     return () => {
       document.removeEventListener('mousedown', handleClick)
       document.removeEventListener('keydown', handleKey)
-      window.removeEventListener('scroll', handleScroll, true)
     }
   }, [onClose, anchorRef])
 
@@ -98,6 +90,9 @@ export function ObjectCard({ entity, anchorRef, onClose }: ObjectCardProps) {
     ? 'View Details'
     : 'View Results'
 
+  // Don't render until positioned to avoid flash at top-left
+  if (!position) return null
+
   return createPortal(
     <div
       ref={cardRef}
@@ -105,7 +100,7 @@ export function ObjectCard({ entity, anchorRef, onClose }: ObjectCardProps) {
       aria-label={`${entity.label} preview`}
       tabIndex={-1}
       className="object-card-enter fixed z-50 w-80 rounded-lg border border-gray-200 bg-white shadow-lg outline-none"
-      style={{ top: position.top, left: position.left, position: 'absolute' }}
+      style={{ top: position.top, left: position.left }}
     >
       {loading ? (
         <div className="p-4">
