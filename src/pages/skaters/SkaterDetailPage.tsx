@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { Breadcrumb } from '../../components/ui/Breadcrumb'
 import { Badge } from '../../components/ui/Badge'
@@ -13,6 +14,41 @@ import { useWatchlist } from '../../hooks/useWatchlist'
 import { getSkaterById } from '../../services/skaters.service'
 import { resolveSignatureElement } from '../../services/entity-resolution.service'
 import { countryFlag, formatCountry } from '../../lib/format'
+import type { EntityRef } from '../../types/object-link'
+
+function SignatureElement({ displayName }: { displayName: string }) {
+  const [resolved, setResolved] = useState<EntityRef | null>(null)
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    let cancelled = false
+    resolveSignatureElement(displayName).then((ref) => {
+      if (!cancelled) {
+        setResolved(ref)
+        setLoaded(true)
+      }
+    })
+    return () => { cancelled = true }
+  }, [displayName])
+
+  if (!loaded) {
+    return (
+      <Badge variant="ice" className="px-3 py-1 text-sm">
+        {displayName}
+      </Badge>
+    )
+  }
+
+  if (resolved) {
+    return <ObjectLink entity={resolved} className="px-3 py-1 text-sm" />
+  }
+
+  return (
+    <Badge variant="ice" className="px-3 py-1 text-sm">
+      {displayName}
+    </Badge>
+  )
+}
 
 export function SkaterDetailPage() {
   const { skaterId } = useParams<{ skaterId: string }>()
@@ -119,17 +155,9 @@ export function SkaterDetailPage() {
       <section className="mt-10">
         <h2 className="font-serif text-2xl font-semibold text-gray-900">Signature Elements</h2>
         <div className="mt-4 flex flex-wrap gap-2">
-          {skater.signatureElements.map((el) => {
-            const resolved = resolveSignatureElement(el)
-            if (resolved) {
-              return <ObjectLink key={el} entity={resolved} className="px-3 py-1 text-sm" />
-            }
-            return (
-              <Badge key={el} variant="ice" className="px-3 py-1 text-sm">
-                {el}
-              </Badge>
-            )
-          })}
+          {skater.signatureElements.map((el) => (
+            <SignatureElement key={el} displayName={el} />
+          ))}
         </div>
       </section>
 

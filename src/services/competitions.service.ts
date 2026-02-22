@@ -1,31 +1,42 @@
-import { competitions } from '../data/competitions/competitions'
-import { seasons } from '../data/competitions/seasons'
-import type { Competition, Season } from '../types/competitions'
-
-function delay<T>(data: T): Promise<T> {
-  return new Promise((resolve) => setTimeout(() => resolve(data), 50))
-}
+import { api } from './api'
+import type { Competition, Season, CompetitionFullResults } from '../types/competitions'
 
 export async function getAllCompetitions(): Promise<Competition[]> {
-  return delay(competitions)
+  return api('/competitions')
 }
 
 export async function getCompetitionById(id: string): Promise<Competition | undefined> {
-  return delay(competitions.find((c) => c.id === id))
+  try {
+    return await api(`/competitions/${id}`)
+  } catch {
+    return undefined
+  }
 }
 
 export async function getCompetitionsBySeason(seasonId: string): Promise<Competition[]> {
-  return delay(competitions.filter((c) => c.season === seasonId))
+  return api(`/competitions?season=${encodeURIComponent(seasonId)}`)
 }
 
 export async function getUpcomingCompetitions(): Promise<Competition[]> {
-  return delay(competitions.filter((c) => c.isUpcoming))
+  return api('/competitions/upcoming')
 }
 
 export async function getSeasons(): Promise<Season[]> {
-  return delay(seasons)
+  return api('/seasons')
 }
 
 export async function getSeasonById(id: string): Promise<Season | undefined> {
-  return delay(seasons.find((s) => s.id === id))
+  try {
+    return await api(`/seasons/${id}`)
+  } catch {
+    return undefined
+  }
+}
+
+export async function getResultsByCompetitionId(competitionId: string): Promise<CompetitionFullResults | undefined> {
+  try {
+    return await api(`/competitions/${competitionId}/results`)
+  } catch {
+    return undefined
+  }
 }

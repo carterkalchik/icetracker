@@ -1,9 +1,7 @@
 import { useState, useMemo } from 'react'
-import { jumps } from '../../data/elements/jumps'
-import { spins } from '../../data/elements/spins'
-import { steps } from '../../data/elements/steps'
-import { pairElements } from '../../data/elements/pair-elements'
-import { danceElements } from '../../data/elements/dance-elements'
+import { useAsync } from '../../hooks/useAsync'
+import { getAllElements } from '../../services/elements.service'
+import { getElementCategory } from '../../services/elements.service'
 import { Badge } from '../ui/Badge'
 import { formatScore } from '../../lib/format'
 
@@ -13,17 +11,26 @@ interface ElementPickerProps {
   onSelect: (element: { elementId: string; name: string; abbreviation: string; baseValue: number }) => void
 }
 
-const allPickerElements = [
-  ...jumps.map((j) => ({ ...j, category: 'Jump' })),
-  ...spins.map((s) => ({ ...s, category: 'Spin' })),
-  ...steps.map((s) => ({ ...s, category: 'Step' })),
-  ...pairElements.map((p) => ({ ...p, category: 'Pair' })),
-  ...danceElements.map((d) => ({ ...d, category: 'Dance' })),
-]
+const categoryLabels: Record<string, string> = {
+  jumps: 'Jump',
+  spins: 'Spin',
+  steps: 'Step',
+  pairs: 'Pair',
+  dance: 'Dance',
+}
 
 export function ElementPicker({ open, onClose, onSelect }: ElementPickerProps) {
   const [query, setQuery] = useState('')
   const [category, setCategory] = useState<string>('all')
+  const { data: elements } = useAsync(() => getAllElements())
+
+  const allPickerElements = useMemo(() => {
+    if (!elements) return []
+    return elements.map((el) => ({
+      ...el,
+      category: categoryLabels[getElementCategory(el).key] ?? 'Other',
+    }))
+  }, [elements])
 
   const filtered = useMemo(() => {
     return allPickerElements.filter((el) => {
@@ -37,7 +44,7 @@ export function ElementPicker({ open, onClose, onSelect }: ElementPickerProps) {
       }
       return true
     })
-  }, [query, category])
+  }, [query, category, allPickerElements])
 
   if (!open) return null
 

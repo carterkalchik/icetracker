@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import {
   searchElements,
   type SearchFilters,
@@ -12,18 +12,23 @@ export function useElementSearch() {
   const [types, setTypes] = useState<ElementType[]>([])
   const [edge, setEdge] = useState<EdgeFilter>('all')
   const [tags, setTags] = useState<string[]>([])
-
-  const filters: SearchFilters = useMemo(
-    () => ({ query, types, edge, tags }),
-    [query, types, edge, tags]
-  )
+  const [results, setResults] = useState<SearchResult[]>([])
 
   const isActive = query.length > 0 || types.length > 0 || edge !== 'all' || tags.length > 0
 
-  const results: SearchResult[] = useMemo(() => {
-    if (!isActive) return []
-    return searchElements(filters)
-  }, [filters, isActive])
+  useEffect(() => {
+    if (!isActive) {
+      setResults([])
+      return
+    }
+
+    let cancelled = false
+    const filters: SearchFilters = { query, types, edge, tags }
+    searchElements(filters).then((res) => {
+      if (!cancelled) setResults(res)
+    })
+    return () => { cancelled = true }
+  }, [query, types, edge, tags, isActive])
 
   const toggleType = useCallback((type: ElementType) => {
     setTypes((prev) =>

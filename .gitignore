@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+icetracker.db
+icetracker.db-shm
+icetracker.db-wal
 
 # Editor directories and files
 .vscode/*

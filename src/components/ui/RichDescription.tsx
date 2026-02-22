@@ -1,59 +1,68 @@
-import type { ReactNode } from 'react'
+import { useState, useEffect, type ReactNode } from 'react'
 import { ObjectLink } from './ObjectLink'
 import { getAllSkaterNames, resolveSkaterByName } from '../../services/entity-resolution.service'
+import type { EntityRef } from '../../types/object-link'
 
 interface RichDescriptionProps {
   text: string
   className?: string
 }
 
-// Build pattern once at module init — longest names first to prevent partial matches
-const skaterNames = getAllSkaterNames().filter((n) => n.length > 0)
-const namePattern = skaterNames.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')
-
 /**
  * Renders a text string, replacing recognized skater names with ObjectLink pills.
- * Uses matchAll with a fresh regex per render to avoid global regex state issues.
+ * Loads skater names from the API on first render, then resolves inline.
  */
 export function RichDescription({ text, className }: RichDescriptionProps) {
-  if (!namePattern) {
-    return <p className={className}>{text}</p>
-  }
+  const [parts, setParts] = useState<ReactNode[] | null>(null)
 
-  const regex = new RegExp(`(${namePattern})`, 'gi')
-  const matches = [...text.matchAll(regex)]
+  useEffect(() => {
+    let cancelled = false
 
-  if (matches.length === 0) {
-    return <p className={className}>{text}</p>
-  }
+    async function resolve() {
+      const skaterNames = (await getAllSkaterNames()).filter((n) => n.length > 0)
+      if (cancelled || skaterNames.length === 0) return
 
-  const parts: ReactNode[] = []
-  let lastIndex = 0
+      const namePattern = skaterNames.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')
+      const regex = new RegExp(`(${namePattern})`, 'gi')
+      const matches = [...text.matchAll(regex)]
 
-  for (const match of matches) {
-    const matchIndex = match.index!
-    const matchedName = match[0]
+      if (cancelled || matches.length === 0) return
 
-    // Add text before the match
-    if (matchIndex > lastIndex) {
-      parts.push(text.slice(lastIndex, matchIndex))
+      const resolved: ReactNode[] = []
+      let lastIndex = 0
+
+      for (const match of matches) {
+        const matchIndex = match.index!
+        const matchedName = match[0]
+
+        if (matchIndex > lastIndex) {
+          resolved.push(text.slice(lastIndex, matchIndex))
+        }
+
+        const entity: EntityRef | null = await resolveSkaterByName(matchedName)
+        if (cancelled) return
+        if (entity) {
+          resolved.push(<ObjectLink key={`${matchIndex}`} entity={entity} />)
+        } else {
+          resolved.push(matchedName)
+        }
+
+        lastIndex = matchIndex + matchedName.length
+      }
+
+      if (lastIndex < text.length) {
+        resolved.push(text.slice(lastIndex))
+      }
+
+      if (!cancelled) setParts(resolved)
     }
 
-    const entity = resolveSkaterByName(matchedName)
-    if (entity) {
-      parts.push(
-        <ObjectLink key={`${matchIndex}`} entity={entity} />
-      )
-    } else {
-      parts.push(matchedName)
-    }
+    resolve()
+    return () => { cancelled = true }
+  }, [text])
 
-    lastIndex = matchIndex + matchedName.length
-  }
-
-  // Add remaining text
-  if (lastIndex < text.length) {
-    parts.push(text.slice(lastIndex))
+  if (!parts) {
+    return <p className={className}>{text}</p>
   }
 
   return <p className={className}>{parts}</p>
