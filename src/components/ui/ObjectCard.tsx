@@ -26,21 +26,21 @@ export function ObjectCard({ entity, anchorRef, onClose }: ObjectCardProps) {
   const [position, setPosition] = useState<{ top: number; left: number } | null>(null)
 
   // Position the card below the anchor using fixed (viewport-relative) coordinates
+  // Runs on mount and again after data loads (card height may change)
   useEffect(() => {
     if (!anchorRef.current) return
     const rect = anchorRef.current.getBoundingClientRect()
     let left = rect.left + rect.width / 2 - CARD_WIDTH / 2
-    // Clamp to viewport
     left = Math.max(8, Math.min(left, window.innerWidth - CARD_WIDTH - 8))
 
     let top = rect.bottom + 6
-    // If it would overflow the bottom of the viewport, show above
-    if (top + 200 > window.innerHeight) {
-      top = rect.top - 6
+    const cardHeight = cardRef.current?.offsetHeight ?? 0
+    if (top + cardHeight > window.innerHeight) {
+      top = rect.top - cardHeight - 6
     }
 
     setPosition({ top, left })
-  }, [anchorRef])
+  }, [anchorRef, data, loading])
 
   // Focus the card only after it has been positioned
   useEffect(() => {

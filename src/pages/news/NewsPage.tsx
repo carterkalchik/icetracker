@@ -59,7 +59,7 @@ export function NewsPage() {
           return false
         }
       }
-      // Entity filters — article must have ALL selected entity IDs
+      // Entity filters — within a category, match ANY selected (OR); across categories, match ALL (AND)
       const entityIds = new Set(a.entities.map((e) => e.id))
       if (skaters.size > 0 && ![...skaters].some((id) => entityIds.has(id))) return false
       if (competitions.size > 0 && ![...competitions].some((id) => entityIds.has(id))) return false

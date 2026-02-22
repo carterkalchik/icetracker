@@ -32,7 +32,7 @@ export const newsArticles: NewsArticleSeed[] = [
     url: 'https://www.olympics.com/en/news/sakamoto-kaori-exclusive-japanese-skater-world-medal-ultimate-learning-experience',
     source: 'Olympics.com',
     publishedAt: '2025-03-29',
-    summary: 'Kaori Sakamoto cemented her legacy as one of the greatest women\'s skaters of her generation by winning her third consecutive World Championships title in Boston. The Japanese star delivered two flawless programs, relying on her exceptional skating skills and artistry.',
+    summary: 'Three-time world champion Kaori Sakamoto reflects on taking silver at the 2025 World Championships, describing the result as a learning experience that has renewed her motivation. The Japanese star says the outcome has made her feel like a challenger again heading into the Olympic season.',
     entities: [
       { type: 'skater', id: 'kaori-sakamoto' },
       { type: 'competition', id: '2025-worlds' },
@@ -85,8 +85,8 @@ export const newsArticles: NewsArticleSeed[] = [
     title: 'Kagiyama Yuma explodes into NHK Trophy men\'s short program lead',
     url: 'https://www.olympics.com/en/news/nhk-trophy-2024-men-short-program',
     source: 'Olympics.com',
-    publishedAt: '2025-11-28',
-    summary: 'Yuma Kagiyama showed he remains a major force in men\'s figure skating with a dominant victory at the 2025 NHK Trophy. The Olympic silver medalist landed four clean quadruple jumps in his free skate, sending a message to rivals ahead of the Grand Prix Final and the 2026 Olympics.',
+    publishedAt: '2024-11-08',
+    summary: 'Yuma Kagiyama took command of the NHK Trophy men\'s competition with a dominant short program performance. The Olympic silver medalist landed clean quadruple jumps to take a commanding lead, signaling his intent to contend for major titles in the run-up to the 2026 Olympics.',
     entities: [
       { type: 'skater', id: 'yuma-kagiyama' },
       { type: 'competition', id: '2025-gp-nhk' },
@@ -112,10 +112,10 @@ export const newsArticles: NewsArticleSeed[] = [
     url: 'https://www.olympics.com/en/milano-cortina-2026/news/figure-skating-isu-grand-prix-final-2025-riku-kihara-free-program-results',
     source: 'Olympics.com',
     publishedAt: '2026-02-08',
-    summary: 'Riku Miura and Ryuichi Kihara continued their impressive run of results with a gold medal at the 2026 Four Continents Championships. The Japanese pair showcased their signature throw triple axel and side-by-side triple jumps, building momentum heading into the Milan Olympics.',
+    summary: 'Riku Miura and Ryuichi Kihara held off strong challenges from German and Italian pairs to reclaim the Grand Prix Final title. The Japanese pair showcased their signature throw triple axel and side-by-side triple jumps, sending a statement ahead of the Milan Olympics.',
     entities: [
       { type: 'skater', id: 'miura-kihara' },
-      { type: 'competition', id: '2026-four-continents' },
+      { type: 'competition', id: '2025-gp-final' },
       { type: 'competition', id: '2026-olympics' },
     ],
   },
@@ -152,7 +152,7 @@ export const newsArticles: NewsArticleSeed[] = [
     url: 'https://www.nbcolympics.com/news/mikhail-shaidorov-becomes-kazakhstans-first-olympic-champion-stunning-free-skate-shock-upset',
     source: 'NBC Olympics',
     publishedAt: '2025-10-19',
-    summary: 'Kazakhstan\'s Mikhail Shaidorov received the highest-ever GOE for a quad Lutz at Skate America, earning +5 from multiple judges for a textbook jump with exceptional height and flow. The young skater is emerging as a serious medal contender for Milan 2026.',
+    summary: 'Mikhail Shaidorov delivered a stunning free skate at the 2026 Olympics to become Kazakhstan\'s first-ever Olympic figure skating champion. The young skater landed a remarkable quad Lutz among his technical arsenal, capping an incredible rise through the ranks of men\'s figure skating.',
     entities: [
       { type: 'skater', id: 'mikhail-shaidorov' },
       { type: 'competition', id: '2025-gp-skate-america' },
