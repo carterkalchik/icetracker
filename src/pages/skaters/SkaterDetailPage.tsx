@@ -15,6 +15,7 @@ import { getSkaterById } from '../../services/skaters.service'
 import { getNewsBySkater } from '../../services/news.service'
 import { resolveSignatureElement } from '../../services/entity-resolution.service'
 import { NewsCard } from '../../components/news/NewsCard'
+import { ErrorMessage } from '../../components/ui/ErrorMessage'
 import { countryFlag, formatCountry } from '../../lib/format'
 import type { EntityRef } from '../../types/object-link'
 
@@ -63,13 +64,7 @@ export function SkaterDetailPage() {
   }
 
   if (error) {
-    return (
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="rounded-lg border border-red-200 bg-red-50 p-6 text-center">
-          <p className="text-sm font-medium text-red-800">Failed to load skater. Please try again later.</p>
-        </div>
-      </div>
-    )
+    return <ErrorMessage message="Failed to load skater. Please try again later." />
   }
 
   if (!skater) {

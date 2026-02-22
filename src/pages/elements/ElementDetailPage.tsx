@@ -8,6 +8,7 @@ import { ElementMediaSection } from '../../components/elements/ElementMediaSecti
 import { SkeletonDetailPage } from '../../components/ui/Skeleton'
 import { useAsync } from '../../hooks/useAsync'
 import { getElementById, getElementCategory } from '../../services/elements.service'
+import { ErrorMessage } from '../../components/ui/ErrorMessage'
 import { formatScore } from '../../lib/format'
 import type { Jump, Spin, StepSequence, PairElement, DanceElement } from '../../types/elements'
 
@@ -42,13 +43,7 @@ export function ElementDetailPage() {
   }
 
   if (error) {
-    return (
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="rounded-lg border border-red-200 bg-red-50 p-6 text-center">
-          <p className="text-sm font-medium text-red-800">Failed to load element. Please try again later.</p>
-        </div>
-      </div>
-    )
+    return <ErrorMessage message="Failed to load element. Please try again later." />
   }
 
   if (!element) {

@@ -7,6 +7,7 @@ import { SkeletonDetailPage } from '../../components/ui/Skeleton'
 import { useAsync } from '../../hooks/useAsync'
 import { getCompetitionById, getResultsByCompetitionId } from '../../services/competitions.service'
 import { formatDateRange } from '../../lib/format'
+import { ErrorMessage } from '../../components/ui/ErrorMessage'
 import { competitionTypes } from '../../data/competitions/competition-types'
 
 export function CompetitionDetailPage() {
@@ -19,13 +20,7 @@ export function CompetitionDetailPage() {
   }
 
   if (error) {
-    return (
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="rounded-lg border border-red-200 bg-red-50 p-6 text-center">
-          <p className="text-sm font-medium text-red-800">Failed to load competition. Please try again later.</p>
-        </div>
-      </div>
-    )
+    return <ErrorMessage message="Failed to load competition. Please try again later." />
   }
 
   if (!competition) {
