@@ -1,12 +1,4 @@
-import { jumps } from '../data/elements/jumps'
-import { spins } from '../data/elements/spins'
-import { steps } from '../data/elements/steps'
-import { pairElements } from '../data/elements/pair-elements'
-import { danceElements } from '../data/elements/dance-elements'
-import { menSkaters } from '../data/skaters/men'
-import { womenSkaters } from '../data/skaters/women'
-import { pairsSkaters } from '../data/skaters/pairs'
-import { iceDanceSkaters } from '../data/skaters/ice-dance'
+import { api } from './api'
 import type { EntityRef } from '../types/object-link'
 
 interface ElementEntry {
@@ -15,44 +7,66 @@ interface ElementEntry {
   abbreviation: string
 }
 
-// Build lookup maps at module init
-const allElements: ElementEntry[] = [
-  ...jumps,
-  ...spins,
-  ...steps,
-  ...pairElements,
-  ...danceElements,
-]
+interface SkaterEntry {
+  id: string
+  name: string
+}
+
+// Cached data — loaded on first call
+let elementsLoaded = false
+let skatersLoaded = false
+let elementsPromise: Promise<void> | null = null
+let skatersPromise: Promise<void> | null = null
 
 const byAbbreviation = new Map<string, ElementEntry>()
 const byNameLower = new Map<string, ElementEntry>()
+const skaterByName = new Map<string, SkaterEntry>()
+let skaterNamesList: string[] = []
 
-for (const el of allElements) {
-  // Normalize to uppercase for case-insensitive abbreviation lookup
-  const abbrKey = el.abbreviation.toUpperCase()
-  if (!byAbbreviation.has(abbrKey)) {
-    byAbbreviation.set(abbrKey, el)
+async function ensureElements() {
+  if (elementsLoaded) return
+  if (!elementsPromise) {
+    elementsPromise = api<ElementEntry[]>('/elements').then((elements) => {
+      for (const el of elements) {
+        const abbrKey = el.abbreviation.toUpperCase()
+        if (!byAbbreviation.has(abbrKey)) {
+          byAbbreviation.set(abbrKey, el)
+        }
+        byNameLower.set(el.name.toLowerCase(), el)
+      }
+      elementsLoaded = true
+    }).catch((err) => {
+      elementsPromise = null
+      throw err
+    })
   }
-  byNameLower.set(el.name.toLowerCase(), el)
+  return elementsPromise
 }
 
-/**
- * Resolve a signature element display name to an EntityRef.
- *
- * Handles formats like:
- *  - "Quad Axel (4A)"           → abbreviation lookup
- *  - "4T+3T" style parens       → first abbreviation in combo
- *  - "Triple Lutz-Triple Toe"   → resolve first part by name
- *  - "Step Sequence Level 4"    → direct name lookup
- *  - "Combination Spin Level 4" → direct name lookup
- */
-export function resolveSignatureElement(displayName: string): EntityRef | null {
+async function ensureSkaters() {
+  if (skatersLoaded) return
+  if (!skatersPromise) {
+    skatersPromise = api<SkaterEntry[]>('/skaters').then((skaters) => {
+      for (const s of skaters) {
+        skaterByName.set(s.name.toLowerCase(), { id: s.id, name: s.name })
+      }
+      skaterNamesList = skaters.map((s) => s.name).sort((a, b) => b.length - a.length)
+      skatersLoaded = true
+    }).catch((err) => {
+      skatersPromise = null
+      throw err
+    })
+  }
+  return skatersPromise
+}
+
+export async function resolveSignatureElement(displayName: string): Promise<EntityRef | null> {
+  await ensureElements()
+
   // Strategy 1: Extract abbreviation from parentheses
   const parenMatch = displayName.match(/\(([^)]+)\)/)
   if (parenMatch) {
     const inside = parenMatch[1]
-
-    // Handle combo abbreviations like "4T+3T" — use first element
     const abbr = inside.includes('+') ? inside.split('+')[0] : inside
     const el = byAbbreviation.get(abbr.toUpperCase())
     if (el) {
@@ -60,17 +74,15 @@ export function resolveSignatureElement(displayName: string): EntityRef | null {
     }
   }
 
-  // Strategy 2: Direct name match (e.g. "Step Sequence Level 4")
+  // Strategy 2: Direct name match
   const el = byNameLower.get(displayName.toLowerCase())
   if (el) {
     return { type: 'element', id: el.id, label: displayName }
   }
 
-  // Strategy 3: Combination without abbreviation (e.g. "Triple Lutz-Triple Toe")
-  // Split on dash surrounded by word boundaries, resolve first part
+  // Strategy 3: Combination — resolve first part
   if (displayName.includes('-')) {
     const parts = displayName.split('-')
-    // Try the first part as a name match — e.g. "Triple Lutz"
     const firstPart = parts[0].trim()
     const firstMatch = byNameLower.get(firstPart.toLowerCase())
     if (firstMatch) {
@@ -81,19 +93,8 @@ export function resolveSignatureElement(displayName: string): EntityRef | null {
   return null
 }
 
-// --- Skater name resolution ---
-
-const allSkaters = [...menSkaters, ...womenSkaters, ...pairsSkaters, ...iceDanceSkaters]
-const skaterByName = new Map<string, { id: string; name: string }>()
-
-for (const s of allSkaters) {
-  skaterByName.set(s.name.toLowerCase(), { id: s.id, name: s.name })
-}
-
-/**
- * Resolve a skater name to an EntityRef.
- */
-export function resolveSkaterByName(name: string): EntityRef | null {
+export async function resolveSkaterByName(name: string): Promise<EntityRef | null> {
+  await ensureSkaters()
   const match = skaterByName.get(name.toLowerCase())
   if (match) {
     return { type: 'skater', id: match.id, label: match.name }
@@ -101,9 +102,7 @@ export function resolveSkaterByName(name: string): EntityRef | null {
   return null
 }
 
-/**
- * Returns all known skater names sorted longest-first (for greedy regex matching).
- */
-export function getAllSkaterNames(): string[] {
-  return allSkaters.map((s) => s.name).sort((a, b) => b.length - a.length)
+export async function getAllSkaterNames(): Promise<string[]> {
+  await ensureSkaters()
+  return skaterNamesList
 }

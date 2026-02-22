@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import type { ElementVideo } from '../../types/elements'
 import { cn } from '../../lib/cn'
 import { ObjectLink } from '../ui/ObjectLink'
 import { resolveSkaterByName } from '../../services/entity-resolution.service'
+import type { EntityRef } from '../../types/object-link'
 
 interface YouTubeEmbedProps {
   video: ElementVideo
@@ -11,13 +12,21 @@ interface YouTubeEmbedProps {
 
 export function YouTubeEmbed({ video, className }: YouTubeEmbedProps) {
   const [loaded, setLoaded] = useState(false)
+  const [skaterEntity, setSkaterEntity] = useState<EntityRef | null>(null)
+
+  useEffect(() => {
+    if (!video.skaterName) return
+    let cancelled = false
+    resolveSkaterByName(video.skaterName).then((entity) => {
+      if (!cancelled) setSkaterEntity(entity)
+    })
+    return () => { cancelled = true }
+  }, [video.skaterName])
 
   const thumbnailUrl = `https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg`
   const embedUrl = `https://www.youtube-nocookie.com/embed/${video.youtubeId}${
     video.timestamp ? `?start=${video.timestamp}` : ''
   }`
-
-  const skaterEntity = video.skaterName ? resolveSkaterByName(video.skaterName) : null
 
   return (
     <div className={className}>

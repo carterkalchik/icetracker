@@ -5,14 +5,14 @@ import { Card, CardContent } from '../../components/ui/Card'
 import { CompetitionResultsView } from '../../components/competitions/CompetitionResultsView'
 import { SkeletonDetailPage } from '../../components/ui/Skeleton'
 import { useAsync } from '../../hooks/useAsync'
-import { getCompetitionById } from '../../services/competitions.service'
-import { getResultsByCompetitionId } from '../../data/results'
+import { getCompetitionById, getResultsByCompetitionId } from '../../services/competitions.service'
 import { formatDateRange } from '../../lib/format'
 import { competitionTypes } from '../../data/competitions/competition-types'
 
 export function CompetitionDetailPage() {
   const { competitionId } = useParams<{ competitionId: string }>()
   const { data: competition, loading } = useAsync(() => getCompetitionById(competitionId!))
+  const { data: results } = useAsync(() => getResultsByCompetitionId(competitionId!), [competitionId])
 
   if (loading) {
     return <SkeletonDetailPage />
@@ -27,7 +27,6 @@ export function CompetitionDetailPage() {
   }
 
   const typeInfo = competitionTypes[competition.type]
-  const results = getResultsByCompetitionId(competition.id)
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">

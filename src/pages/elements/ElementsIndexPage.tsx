@@ -7,6 +7,7 @@ import { ElementSearchBar } from '../../components/elements/ElementSearchBar'
 import { ElementFilterPanel } from '../../components/elements/ElementFilterPanel'
 import { SearchResultCard } from '../../components/elements/SearchResultCard'
 import { useElementSearch } from '../../hooks/useElementSearch'
+import { useAsync } from '../../hooks/useAsync'
 import { getAllTags } from '../../services/search.service'
 
 const sections = [
@@ -36,12 +37,12 @@ const sections = [
 ]
 
 const tabs = sections.map((s) => ({ id: s.id, label: s.label }))
-const allTags = getAllTags()
 
 export function ElementsIndexPage() {
   const [activeTab, setActiveTab] = useState('singles')
   const [showFilters, setShowFilters] = useState(false)
   const activeSection = sections.find((s) => s.id === activeTab)!
+  const { data: allTags } = useAsync(() => getAllTags())
 
   const search = useElementSearch()
 
@@ -92,7 +93,7 @@ export function ElementsIndexPage() {
             onToggleType={search.toggleType}
             edge={search.edge}
             onSetEdge={search.setEdge}
-            tags={allTags}
+            tags={allTags ?? []}
             selectedTags={search.tags}
             onToggleTag={search.toggleTag}
             onClearAll={search.clearAll}
