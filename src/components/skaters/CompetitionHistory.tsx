@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import type { CompetitionResult } from '../../types/skaters'
 import { Badge } from '../ui/Badge'
+import { ObjectLink } from '../ui/ObjectLink'
 import { formatScore, formatDate } from '../../lib/format'
 
 export function CompetitionHistory({ results }: { results: CompetitionResult[] }) {
@@ -23,12 +23,26 @@ export function CompetitionHistory({ results }: { results: CompetitionResult[] }
           {sorted.map((result, i) => (
             <tr key={i} className="border-b border-gray-50">
               <td className="py-3 pr-4">
-                <Link
-                  to={`/competitions/${result.competitionId}`}
-                  className="font-medium text-gray-900 hover:text-ice-600"
-                >
-                  {result.competitionName}
-                </Link>
+                <ObjectLink
+                  entity={{
+                    type: 'competition',
+                    id: result.competitionId,
+                    label: result.competitionName,
+                  }}
+                />
+                {result.sourceUrl && (
+                  <a
+                    href={result.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-1.5 inline-block text-gray-400 hover:text-ice-600"
+                    title="View source"
+                  >
+                    <svg className="inline h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </a>
+                )}
                 <span className="ml-2 text-xs text-gray-400">{formatDate(result.date)}</span>
               </td>
               <td className="py-3 pr-4 text-gray-500">{result.season}</td>

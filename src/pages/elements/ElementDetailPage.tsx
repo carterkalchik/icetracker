@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import { Breadcrumb } from '../../components/ui/Breadcrumb'
 import { Badge } from '../../components/ui/Badge'
 import { Card, CardContent } from '../../components/ui/Card'
+import { RichDescription } from '../../components/ui/RichDescription'
 import { GOEScaleVisual } from '../../components/elements/GOEScaleVisual'
 import { ElementMediaSection } from '../../components/elements/ElementMediaSection'
 import { SkeletonDetailPage } from '../../components/ui/Skeleton'
@@ -83,9 +84,10 @@ export function ElementDetailPage() {
         <h1 className="mt-3 font-serif text-3xl font-bold text-gray-900 sm:text-4xl">
           {element.name}
         </h1>
-        <p className="mt-3 max-w-3xl text-gray-600 leading-relaxed">
-          {element.description}
-        </p>
+        <RichDescription
+          text={element.description}
+          className="mt-3 max-w-3xl text-gray-600 leading-relaxed"
+        />
       </div>
 
       {/* Key stats */}

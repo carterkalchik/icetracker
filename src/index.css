@@ -50,3 +50,18 @@ body {
   font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
+
+@keyframes object-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.object-card-enter {
+  animation: object-card-enter 0.15s ease-out;
+}

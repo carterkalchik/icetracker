@@ -8,6 +8,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1992-11-24',
     bio: 'Guillaume Cizeron, five-time World champion and Olympic gold medalist (2022) with former partner Papadakis, now competes with Laurence Fournier Beaudry. This new partnership combines Cizeron\'s legendary artistry with Fournier Beaudry\'s versatility.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Laurence_Fournier_Beaudry_and_Guillaume_Cizeron',
     photoPlaceholder: 'FB/C',
     personalBests: [
       { segment: 'Rhythm Dance', score: 86.50, event: '2025 Worlds', date: '2025-03-25' },
@@ -15,8 +16,7 @@ export const iceDanceSkaters: Skater[] = [
       { segment: 'Total', score: 219.30, event: '2025 Worlds', date: '2025-03-27' },
     ],
     competitionResults: [
-      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 1, medal: 'gold', totalScore: 222.40, shortScore: 88.10, freeScore: 134.30, date: '2026-02-17' },
-      { competitionId: '2025-worlds', competitionName: '2025 Worlds', season: '2024-25', placement: 1, medal: 'gold', totalScore: 219.30, shortScore: 86.50, freeScore: 132.80, date: '2025-03-27' },
+      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 1, medal: 'gold', totalScore: 225.82, shortScore: 90.18, freeScore: 135.64, date: '2026-02-17', sourceUrl: 'https://results.isu.org/results/season2526/owg2026/' },
     ],
     signatureElements: ['Sequential Twizzles Level 4', 'Rotational Lift Level 4', 'Diagonal Step Sequence Level 4'],
     isTeam: true,
@@ -29,6 +29,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1992-07-02',
     bio: 'Madison Chock and Evan Bates are two-time World champions and Olympic bronze medalists. Known for their innovative choreography and deep connection on the ice.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Madison_Chock_and_Evan_Bates',
     photoPlaceholder: 'C/B',
     personalBests: [
       { segment: 'Rhythm Dance', score: 90.18, event: '2024 Worlds', date: '2024-03-22' },
@@ -36,8 +37,11 @@ export const iceDanceSkaters: Skater[] = [
       { segment: 'Total', score: 226.61, event: '2024 Worlds', date: '2024-03-24' },
     ],
     competitionResults: [
-      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 2, medal: 'silver', totalScore: 218.90, shortScore: 86.70, freeScore: 132.20, date: '2026-02-17' },
-      { competitionId: '2025-worlds', competitionName: '2025 Worlds', season: '2024-25', placement: 2, medal: 'silver', totalScore: 216.80, shortScore: 85.40, freeScore: 131.40, date: '2025-03-27' },
+      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 2, medal: 'silver', totalScore: 224.39, shortScore: 89.72, freeScore: 134.67, date: '2026-02-17', sourceUrl: 'https://results.isu.org/results/season2526/owg2026/' },
+      { competitionId: '2025-worlds', competitionName: '2025 Worlds', season: '2024-25', placement: 1, medal: 'gold', totalScore: 222.06, shortScore: 90.18, freeScore: 131.88, date: '2025-03-29', sourceUrl: 'https://results.isu.org/results/season2425/wc2025/' },
+      { competitionId: '2024-worlds', competitionName: '2024 Worlds', season: '2023-24', placement: 1, medal: 'gold', totalScore: 222.20, shortScore: 90.08, freeScore: 132.12, date: '2024-03-24', sourceUrl: 'https://www.isuresults.com/results/season2324/wc2024/' },
+      { competitionId: '2023-worlds', competitionName: '2023 Worlds', season: '2022-23', placement: 1, medal: 'gold', totalScore: 226.01, shortScore: 91.94, freeScore: 134.07, date: '2023-03-25', sourceUrl: 'https://www.isuresults.com/results/season2223/wc2023/' },
+      { competitionId: '2022-olympics', competitionName: '2022 Olympics', season: '2021-22', placement: 4, totalScore: 214.77, shortScore: 84.14, freeScore: 130.63, date: '2022-02-14' },
     ],
     signatureElements: ['Sequential Twizzles Level 4', 'Straight Line Lift Level 4', 'Combination Spin Level 4'],
     isTeam: true,
@@ -50,6 +54,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1992-01-01',
     bio: 'Piper Gilles and Paul Poirier are Canada\'s top ice dance team, known for their emotional performances and creative programs. Multiple World medalists and consistently among the top teams.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Piper_Gilles_and_Paul_Poirier',
     photoPlaceholder: 'G/P',
     personalBests: [
       { segment: 'Rhythm Dance', score: 85.60, event: '2024 Worlds', date: '2024-03-22' },
@@ -57,8 +62,12 @@ export const iceDanceSkaters: Skater[] = [
       { segment: 'Total', score: 215.40, event: '2024 Worlds', date: '2024-03-24' },
     ],
     competitionResults: [
-      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 4, totalScore: 210.30, shortScore: 83.50, freeScore: 126.80, date: '2026-02-17' },
-      { competitionId: '2025-worlds', competitionName: '2025 Worlds', season: '2024-25', placement: 3, medal: 'bronze', totalScore: 213.50, shortScore: 84.20, freeScore: 129.30, date: '2025-03-27' },
+      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 3, medal: 'bronze', totalScore: 217.74, shortScore: 86.18, freeScore: 131.56, date: '2026-02-17', sourceUrl: 'https://results.isu.org/results/season2526/owg2026/' },
+      { competitionId: '2025-worlds', competitionName: '2025 Worlds', season: '2024-25', placement: 2, medal: 'silver', totalScore: 216.54, shortScore: 86.44, freeScore: 130.10, date: '2025-03-29', sourceUrl: 'https://results.isu.org/results/season2425/wc2025/' },
+      { competitionId: '2024-worlds', competitionName: '2024 Worlds', season: '2023-24', placement: 2, medal: 'silver', totalScore: 219.68, shortScore: 86.51, freeScore: 133.17, date: '2024-03-24', sourceUrl: 'https://www.isuresults.com/results/season2324/wc2024/' },
+      { competitionId: '2023-worlds', competitionName: '2023 Worlds', season: '2022-23', placement: 3, medal: 'bronze', totalScore: 217.88, shortScore: 87.34, freeScore: 130.54, date: '2023-03-25', sourceUrl: 'https://www.isuresults.com/results/season2223/wc2023/' },
+      { competitionId: '2022-olympics', competitionName: '2022 Olympics', season: '2021-22', placement: 5, totalScore: 210.40, shortScore: 83.60, freeScore: 126.80, date: '2022-02-14' },
+      { competitionId: '2022-worlds', competitionName: '2022 Worlds', season: '2021-22', placement: 5, totalScore: 210.78, shortScore: 84.09, freeScore: 126.69, date: '2022-03-26' },
     ],
     signatureElements: ['Rotational Lift Level 4', 'Sequential Twizzles Level 4', 'Choreographic Sliding Movement'],
     isTeam: true,
@@ -71,6 +80,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1989-03-12',
     bio: 'Charlene Guignard and Marco Fabbri are Italy\'s premier ice dance team and multiple European medalists. They bring Italian elegance and passion to the ice and are crowd favorites at home events.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Charlene_Guignard_and_Marco_Fabbri',
     photoPlaceholder: 'G/F',
     personalBests: [
       { segment: 'Rhythm Dance', score: 84.90, event: '2025 Europeans', date: '2025-01-30' },
@@ -78,7 +88,9 @@ export const iceDanceSkaters: Skater[] = [
       { segment: 'Total', score: 213.40, event: '2025 Europeans', date: '2025-02-01' },
     ],
     competitionResults: [
-      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 3, medal: 'bronze', totalScore: 212.80, shortScore: 84.30, freeScore: 128.50, date: '2026-02-17' },
+      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 4, totalScore: 209.58, shortScore: 84.28, freeScore: 125.30, date: '2026-02-17', sourceUrl: 'https://results.isu.org/results/season2526/owg2026/' },
+      { competitionId: '2024-worlds', competitionName: '2024 Worlds', season: '2023-24', placement: 3, medal: 'bronze', totalScore: 216.52, shortScore: 87.52, freeScore: 129.00, date: '2024-03-24', sourceUrl: 'https://www.isuresults.com/results/season2324/wc2024/' },
+      { competitionId: '2023-worlds', competitionName: '2023 Worlds', season: '2022-23', placement: 2, medal: 'silver', totalScore: 219.85, shortScore: 88.21, freeScore: 131.64, date: '2023-03-25', sourceUrl: 'https://www.isuresults.com/results/season2223/wc2023/' },
     ],
     signatureElements: ['Straight Line Lift Level 4', 'Sequential Twizzles Level 4', 'Diagonal Step Sequence Level 4'],
     isTeam: true,
@@ -91,6 +103,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1995-01-17',
     bio: 'Lilah Fear and Lewis Gibson are Great Britain\'s top ice dance team. Known for their charisma and innovative programs, they\'ve established themselves as consistent top-10 performers at Worlds.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Lilah_Fear_and_Lewis_Gibson',
     photoPlaceholder: 'F/G',
     personalBests: [
       { segment: 'Rhythm Dance', score: 82.30, event: '2025 Europeans', date: '2025-01-30' },
@@ -98,8 +111,10 @@ export const iceDanceSkaters: Skater[] = [
       { segment: 'Total', score: 207.70, event: '2025 Europeans', date: '2025-02-01' },
     ],
     competitionResults: [
-      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 5, totalScore: 205.50, shortScore: 81.20, freeScore: 124.30, date: '2026-02-17' },
-      { competitionId: '2025-worlds', competitionName: '2025 Worlds', season: '2024-25', placement: 5, totalScore: 206.90, shortScore: 82.10, freeScore: 124.80, date: '2025-03-27' },
+      { competitionId: '2026-olympics', competitionName: '2026 Olympics', season: '2025-26', placement: 7, totalScore: 204.32, shortScore: 85.47, freeScore: 118.85, date: '2026-02-17', sourceUrl: 'https://results.isu.org/results/season2526/owg2026/' },
+      { competitionId: '2025-worlds', competitionName: '2025 Worlds', season: '2024-25', placement: 3, medal: 'bronze', totalScore: 207.11, shortScore: 83.86, freeScore: 123.25, date: '2025-03-29', sourceUrl: 'https://results.isu.org/results/season2425/wc2025/' },
+      { competitionId: '2024-worlds', competitionName: '2024 Worlds', season: '2023-24', placement: 4, totalScore: 210.92, shortScore: 84.60, freeScore: 126.32, date: '2024-03-24', sourceUrl: 'https://www.isuresults.com/results/season2324/wc2024/' },
+      { competitionId: '2023-worlds', competitionName: '2023 Worlds', season: '2022-23', placement: 4, totalScore: 214.73, shortScore: 86.56, freeScore: 128.17, date: '2023-03-25', sourceUrl: 'https://www.isuresults.com/results/season2223/wc2023/' },
     ],
     signatureElements: ['Rotational Lift Level 4', 'Sequential Twizzles Level 4', 'Combination Spin Level 4'],
     isTeam: true,
@@ -113,6 +128,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1995-05-10',
     bio: 'Gabriella Papadakis and Guillaume Cizeron dominated ice dance in the late 2010s and early 2020s, winning five World titles and the 2022 Olympic gold medal. Their innovative, fluid style redefined the discipline. They retired after winning gold in Beijing.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Gabriella_Papadakis_and_Guillaume_Cizeron',
     photoPlaceholder: 'P/C',
     personalBests: [
       { segment: 'Rhythm Dance', score: 92.73, event: '2022 Olympics', date: '2022-02-12' },
@@ -134,6 +150,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1995-07-19',
     bio: 'Victoria Sinitsina and Nikita Katsalapov were the 2021 World champions and 2022 Olympic silver medalists. Trained by the legendary Alexandr Zhulin, they brought classical Russian ice dance artistry with dramatic programs and powerful unison skating.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Victoria_Sinitsina_and_Nikita_Katsalapov',
     photoPlaceholder: 'S/K',
     personalBests: [
       { segment: 'Rhythm Dance', score: 88.85, event: '2022 Olympics', date: '2022-02-12' },
@@ -154,17 +171,17 @@ export const iceDanceSkaters: Skater[] = [
     country: 'USA',
     discipline: 'Ice Dance',
     birthDate: '1991-08-14',
-    bio: 'Madison Hubbell and Zachary Donohue won the 2023 World title in the final competition of their career, a fairytale ending to a long and storied partnership. Multiple-time U.S. champions known for their emotional depth and innovative choreography.',
+    bio: 'Madison Hubbell and Zachary Donohue retired after the 2021-22 season, capping their career with an Olympic bronze medal and a World silver medal in Montpellier. Multiple-time U.S. champions known for their emotional depth and innovative choreography.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Madison_Hubbell_and_Zachary_Donohue',
     photoPlaceholder: 'H/D',
     personalBests: [
-      { segment: 'Rhythm Dance', score: 89.72, event: '2023 Worlds', date: '2023-03-24' },
-      { segment: 'Free Dance', score: 133.75, event: '2023 Worlds', date: '2023-03-25' },
-      { segment: 'Total', score: 223.47, event: '2023 Worlds', date: '2023-03-25' },
+      { segment: 'Rhythm Dance', score: 89.72, event: '2022 Worlds', date: '2022-03-25' },
+      { segment: 'Free Dance', score: 132.67, event: '2022 Worlds', date: '2022-03-26' },
+      { segment: 'Total', score: 222.39, event: '2022 Worlds', date: '2022-03-26' },
     ],
     competitionResults: [
-      { competitionId: '2023-worlds', competitionName: '2023 Worlds', season: '2022-23', placement: 1, medal: 'gold', totalScore: 223.47, shortScore: 89.72, freeScore: 133.75, date: '2023-03-25' },
-      { competitionId: '2022-olympics', competitionName: '2022 Olympics', season: '2021-22', placement: 4, totalScore: 214.71, shortScore: 85.14, freeScore: 129.57, date: '2022-02-14' },
-      { competitionId: '2022-worlds', competitionName: '2022 Worlds', season: '2021-22', placement: 2, medal: 'silver', totalScore: 218.02, shortScore: 87.13, freeScore: 130.89, date: '2022-03-26' },
+      { competitionId: '2022-olympics', competitionName: '2022 Olympics', season: '2021-22', placement: 3, medal: 'bronze', totalScore: 218.02, shortScore: 87.13, freeScore: 130.89, date: '2022-02-14' },
+      { competitionId: '2022-worlds', competitionName: '2022 Worlds', season: '2021-22', placement: 2, medal: 'silver', totalScore: 222.39, shortScore: 89.72, freeScore: 132.67, date: '2022-03-26' },
     ],
     signatureElements: ['Sequential Twizzles Level 4', 'Straight Line Lift Level 4', 'Diagonal Step Sequence Level 4'],
     isTeam: true,
@@ -177,6 +194,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1996-08-17',
     bio: 'Kaitlin Hawayek and Jean-Luc Baker were a beloved American ice dance team known for their inventive programs and strong connection on the ice. They were consistent competitors at Worlds and Grand Prix events throughout the early 2020s.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Kaitlin_Hawayek_and_Jean-Luc_Baker',
     photoPlaceholder: 'H/B',
     personalBests: [
       { segment: 'Rhythm Dance', score: 81.56, event: '2023 Worlds', date: '2023-03-24' },
@@ -199,6 +217,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1996-01-01',
     bio: 'Olivia Smart and Adria Diaz represented Spain in ice dance, bringing Latin passion and creative choreography to the international stage. They were trailblazers for Spanish ice dance and competed at multiple European Championships and Worlds.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Olivia_Smart_and_Adri%C3%A1_D%C3%ADaz',
     photoPlaceholder: 'S/D',
     personalBests: [
       { segment: 'Rhythm Dance', score: 76.44, event: '2023 Europeans', date: '2023-01-27' },
@@ -220,6 +239,7 @@ export const iceDanceSkaters: Skater[] = [
     discipline: 'Ice Dance',
     birthDate: '1995-03-28',
     bio: 'Marjorie Lajoie and Zachary Lagha represented Canada at the international level and showed steady improvement throughout the early 2020s. They brought youthful energy and strong technical elements to every competition.',
+    bioSourceUrl: 'https://en.wikipedia.org/wiki/Marjorie_Lajoie_and_Zachary_Lagha',
     photoPlaceholder: 'L/L',
     personalBests: [
       { segment: 'Rhythm Dance', score: 82.08, event: '2024 Worlds', date: '2024-03-22' },
@@ -227,9 +247,7 @@ export const iceDanceSkaters: Skater[] = [
       { segment: 'Total', score: 206.87, event: '2024 Worlds', date: '2024-03-24' },
     ],
     competitionResults: [
-      { competitionId: '2022-olympics', competitionName: '2022 Olympics', season: '2021-22', placement: 12, totalScore: 186.96, shortScore: 73.98, freeScore: 112.98, date: '2022-02-14' },
-      { competitionId: '2023-worlds', competitionName: '2023 Worlds', season: '2022-23', placement: 6, totalScore: 204.57, shortScore: 81.33, freeScore: 123.24, date: '2023-03-25' },
-      { competitionId: '2024-worlds', competitionName: '2024 Worlds', season: '2023-24', placement: 4, totalScore: 206.87, shortScore: 82.08, freeScore: 124.79, date: '2024-03-24' },
+      { competitionId: '2024-worlds', competitionName: '2024 Worlds', season: '2023-24', placement: 5, totalScore: 208.01, shortScore: 82.30, freeScore: 125.71, date: '2024-03-24', sourceUrl: 'https://www.isuresults.com/results/season2324/wc2024/' },
     ],
     signatureElements: ['Sequential Twizzles Level 4', 'Straight Line Lift Level 4', 'Combination Spin Level 4'],
     isTeam: true,

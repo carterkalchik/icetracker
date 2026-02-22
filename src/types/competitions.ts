@@ -47,4 +47,5 @@ export interface DisciplineResults {
 export interface CompetitionFullResults {
   competitionId: string
   results: DisciplineResults[]
+  sourceUrl?: string
 }

@@ -345,7 +345,7 @@ export function HomePage() {
                 learn the ISU judging system.
               </p>
             </div>
-            <span className="hidden text-4xl sm:block">\uD83E\uDDEE</span>
+            <span className="hidden text-4xl sm:block">🧮</span>
           </Link>
         </div>
       </section>
