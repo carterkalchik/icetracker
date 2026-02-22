@@ -8,6 +8,7 @@ import { ElementMediaSection } from '../../components/elements/ElementMediaSecti
 import { SkeletonDetailPage } from '../../components/ui/Skeleton'
 import { useAsync } from '../../hooks/useAsync'
 import { getElementById, getElementCategory } from '../../services/elements.service'
+import { ErrorMessage } from '../../components/ui/ErrorMessage'
 import { formatScore } from '../../lib/format'
 import type { Jump, Spin, StepSequence, PairElement, DanceElement } from '../../types/elements'
 
@@ -35,10 +36,14 @@ function isDanceElement(el: unknown): el is DanceElement {
 
 export function ElementDetailPage() {
   const { elementId } = useParams<{ elementId: string }>()
-  const { data: element, loading } = useAsync(() => getElementById(elementId!), [elementId])
+  const { data: element, loading, error } = useAsync(() => getElementById(elementId!), [elementId])
 
   if (loading) {
     return <SkeletonDetailPage />
+  }
+
+  if (error) {
+    return <ErrorMessage message="Failed to load element. Please try again later." />
   }
 
   if (!element) {

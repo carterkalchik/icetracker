@@ -7,15 +7,20 @@ import { SkeletonDetailPage } from '../../components/ui/Skeleton'
 import { useAsync } from '../../hooks/useAsync'
 import { getCompetitionById, getResultsByCompetitionId } from '../../services/competitions.service'
 import { formatDateRange } from '../../lib/format'
+import { ErrorMessage } from '../../components/ui/ErrorMessage'
 import { competitionTypes } from '../../data/competitions/competition-types'
 
 export function CompetitionDetailPage() {
   const { competitionId } = useParams<{ competitionId: string }>()
-  const { data: competition, loading } = useAsync(() => getCompetitionById(competitionId!))
+  const { data: competition, loading, error } = useAsync(() => getCompetitionById(competitionId!))
   const { data: results } = useAsync(() => getResultsByCompetitionId(competitionId!), [competitionId])
 
   if (loading) {
     return <SkeletonDetailPage />
+  }
+
+  if (error) {
+    return <ErrorMessage message="Failed to load competition. Please try again later." />
   }
 
   if (!competition) {

@@ -1,5 +1,6 @@
 import express from 'express'
 import cors from 'cors'
+import helmet from 'helmet'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import elementsRouter from './routes/elements.js'
@@ -13,7 +14,23 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const app = express()
 const PORT = process.env.PORT ?? 3001
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV === 'production') {
+  app.use(
+    helmet({
+      contentSecurityPolicy: {
+        directives: {
+          defaultSrc: ["'self'"],
+          scriptSrc: ["'self'"],
+          styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+          fontSrc: ["'self'", "https://fonts.gstatic.com"],
+          imgSrc: ["'self'", "data:", "https:"],
+          frameSrc: ["'self'", "https://www.youtube.com", "https://youtube.com"],
+          connectSrc: ["'self'"],
+        },
+      },
+    })
+  )
+} else {
   app.use(cors())
 }
 app.use(express.json())
@@ -37,5 +54,5 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.listen(PORT, () => {
-  console.log(`IceTracker API running on http://localhost:${PORT}`)
+  console.log(`BladeTracker API running on http://localhost:${PORT}`)
 })

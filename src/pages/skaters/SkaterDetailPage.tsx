@@ -15,6 +15,7 @@ import { getSkaterById } from '../../services/skaters.service'
 import { getNewsBySkater } from '../../services/news.service'
 import { resolveSignatureElement } from '../../services/entity-resolution.service'
 import { NewsCard } from '../../components/news/NewsCard'
+import { ErrorMessage } from '../../components/ui/ErrorMessage'
 import { countryFlag, formatCountry } from '../../lib/format'
 import type { EntityRef } from '../../types/object-link'
 
@@ -54,12 +55,16 @@ function SignatureElement({ displayName }: { displayName: string }) {
 
 export function SkaterDetailPage() {
   const { skaterId } = useParams<{ skaterId: string }>()
-  const { data: skater, loading } = useAsync(() => getSkaterById(skaterId!))
+  const { data: skater, loading, error } = useAsync(() => getSkaterById(skaterId!))
   const { data: skaterNews } = useAsync(() => getNewsBySkater(skaterId!), [skaterId])
   const { isWatching, toggle } = useWatchlist()
 
   if (loading) {
     return <SkeletonDetailPage />
+  }
+
+  if (error) {
+    return <ErrorMessage message="Failed to load skater. Please try again later." />
   }
 
   if (!skater) {
