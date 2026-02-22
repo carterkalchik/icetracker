@@ -28,9 +28,10 @@ const byAbbreviation = new Map<string, ElementEntry>()
 const byNameLower = new Map<string, ElementEntry>()
 
 for (const el of allElements) {
-  // Some elements share abbreviations (e.g. CCoSp4) — first wins
-  if (!byAbbreviation.has(el.abbreviation)) {
-    byAbbreviation.set(el.abbreviation, el)
+  // Normalize to uppercase for case-insensitive abbreviation lookup
+  const abbrKey = el.abbreviation.toUpperCase()
+  if (!byAbbreviation.has(abbrKey)) {
+    byAbbreviation.set(abbrKey, el)
   }
   byNameLower.set(el.name.toLowerCase(), el)
 }
@@ -53,7 +54,7 @@ export function resolveSignatureElement(displayName: string): EntityRef | null {
 
     // Handle combo abbreviations like "4T+3T" — use first element
     const abbr = inside.includes('+') ? inside.split('+')[0] : inside
-    const el = byAbbreviation.get(abbr)
+    const el = byAbbreviation.get(abbr.toUpperCase())
     if (el) {
       return { type: 'element', id: el.id, label: displayName }
     }

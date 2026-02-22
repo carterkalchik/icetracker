@@ -24,6 +24,8 @@ export function ObjectLink({ entity, className }: ObjectLinkProps) {
         ref={buttonRef}
         type="button"
         onClick={() => setOpen((prev) => !prev)}
+        aria-label={`View ${entity.type} ${entity.label}`}
+        aria-expanded={open}
         className={cn(
           'inline-flex items-center gap-1 rounded-full border border-ice-200 bg-ice-50/50',
           'px-2 py-0.5 text-xs font-medium text-ice-700',
@@ -32,7 +34,7 @@ export function ObjectLink({ entity, className }: ObjectLinkProps) {
           className,
         )}
       >
-        <span className="text-[10px] leading-none">{typeIcons[entity.type]}</span>
+        <span className="text-[10px] leading-none" aria-hidden="true">{typeIcons[entity.type]}</span>
         {entity.label}
       </button>
 

@@ -16,6 +16,9 @@ interface ObjectCardProps {
   onClose: () => void
 }
 
+// Matches Tailwind w-80 (80 * 4px = 320px)
+const CARD_WIDTH = 320
+
 export function ObjectCard({ entity, anchorRef, onClose }: ObjectCardProps) {
   const navigate = useNavigate()
   const cardRef = useRef<HTMLDivElement>(null)
@@ -26,14 +29,27 @@ export function ObjectCard({ entity, anchorRef, onClose }: ObjectCardProps) {
   useEffect(() => {
     if (!anchorRef.current) return
     const rect = anchorRef.current.getBoundingClientRect()
-    const cardWidth = 320
-    let left = rect.left + rect.width / 2 - cardWidth / 2
+    let left = rect.left + rect.width / 2 - CARD_WIDTH / 2
     // Clamp to viewport
-    left = Math.max(8, Math.min(left, window.innerWidth - cardWidth - 8))
+    left = Math.max(8, Math.min(left, window.innerWidth - CARD_WIDTH - 8))
     setPosition({
       top: rect.bottom + window.scrollY + 6,
       left: left + window.scrollX,
     })
+  }, [anchorRef])
+
+  // Focus management: move focus to card on mount, restore on unmount
+  useEffect(() => {
+    const previouslyFocused = document.activeElement as HTMLElement | null
+    cardRef.current?.focus()
+
+    return () => {
+      if (anchorRef.current) {
+        anchorRef.current.focus()
+      } else {
+        previouslyFocused?.focus()
+      }
+    }
   }, [anchorRef])
 
   // Dismiss on click outside, Escape, or scroll
@@ -85,7 +101,10 @@ export function ObjectCard({ entity, anchorRef, onClose }: ObjectCardProps) {
   return createPortal(
     <div
       ref={cardRef}
-      className="object-card-enter fixed z-50 w-80 rounded-lg border border-gray-200 bg-white shadow-lg"
+      role="dialog"
+      aria-label={`${entity.label} preview`}
+      tabIndex={-1}
+      className="object-card-enter fixed z-50 w-80 rounded-lg border border-gray-200 bg-white shadow-lg outline-none"
       style={{ top: position.top, left: position.left, position: 'absolute' }}
     >
       {loading ? (

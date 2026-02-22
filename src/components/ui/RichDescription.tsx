@@ -7,44 +7,48 @@ interface RichDescriptionProps {
   className?: string
 }
 
-// Build regex once at module init — matches longest names first
-const skaterNames = getAllSkaterNames()
+// Build pattern once at module init — longest names first to prevent partial matches
+const skaterNames = getAllSkaterNames().filter((n) => n.length > 0)
 const namePattern = skaterNames.map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')
-const nameRegex = namePattern ? new RegExp(`(${namePattern})`, 'gi') : null
 
 /**
  * Renders a text string, replacing recognized skater names with ObjectLink pills.
+ * Uses matchAll with a fresh regex per render to avoid global regex state issues.
  */
 export function RichDescription({ text, className }: RichDescriptionProps) {
-  if (!nameRegex) {
+  if (!namePattern) {
+    return <p className={className}>{text}</p>
+  }
+
+  const regex = new RegExp(`(${namePattern})`, 'gi')
+  const matches = [...text.matchAll(regex)]
+
+  if (matches.length === 0) {
     return <p className={className}>{text}</p>
   }
 
   const parts: ReactNode[] = []
   let lastIndex = 0
-  let match: RegExpExecArray | null
 
-  // Reset regex state
-  nameRegex.lastIndex = 0
+  for (const match of matches) {
+    const matchIndex = match.index!
+    const matchedName = match[0]
 
-  while ((match = nameRegex.exec(text)) !== null) {
     // Add text before the match
-    if (match.index > lastIndex) {
-      parts.push(text.slice(lastIndex, match.index))
+    if (matchIndex > lastIndex) {
+      parts.push(text.slice(lastIndex, matchIndex))
     }
 
-    const matchedName = match[0]
     const entity = resolveSkaterByName(matchedName)
-
     if (entity) {
       parts.push(
-        <ObjectLink key={`${match.index}-${entity.id}`} entity={entity} />
+        <ObjectLink key={`${matchIndex}`} entity={entity} />
       )
     } else {
       parts.push(matchedName)
     }
 
-    lastIndex = match.index + matchedName.length
+    lastIndex = matchIndex + matchedName.length
   }
 
   // Add remaining text

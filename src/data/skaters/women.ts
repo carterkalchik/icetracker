@@ -128,7 +128,9 @@ export const womenSkaters: Skater[] = [
       { segment: 'Free Skate', score: 148.30, event: '2025 Worlds', date: '2025-03-28' },
       { segment: 'Total', score: 223.10, event: '2025 Worlds', date: '2025-03-28' },
     ],
-    competitionResults: [],
+    competitionResults: [
+      { competitionId: '2025-worlds', competitionName: '2025 Worlds', season: '2024-25', placement: 2, medal: 'silver', totalScore: 223.10, shortScore: 74.80, freeScore: 148.30, date: '2025-03-28', sourceUrl: 'https://results.isu.org/results/season2425/wc2025/' },
+    ],
     signatureElements: ['Triple Axel (3A)', 'Triple Lutz-Triple Loop', 'Step Sequence Level 4'],
     isTeam: false,
   },
