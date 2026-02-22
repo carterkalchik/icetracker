@@ -1,0 +1,43 @@
+name: Crawl Results
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Weekly on Mondays at 6 AM UTC
+  workflow_dispatch:
+    inputs:
+      competition_id:
+        description: 'Specific competition ID to crawl (optional)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  crawl-results:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Configure git
+        run: |
+          git config user.name "BladeTracker Crawler"
+          git config user.email "crawler@bladetracker.app"
+
+      - name: Run results crawler
+        env:
+          COMPETITION_ID: ${{ inputs.competition_id || '' }}
+        run: npx tsx crawler/results.ts
+
+      - name: Run skater detection
+        run: npx tsx crawler/detect-skaters.ts

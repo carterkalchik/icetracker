@@ -246,4 +246,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2026-olympics' },
     ],
   },
+  {
+    id: '202602-ilia-malinin-performs-to-fear-as-he-completes-cathartic-olym',
+    title: 'Ilia Malinin performs to Fear as he completes cathartic Olympic gala routine',
+    url: 'https://www.theguardian.com/sport/2026/feb/21/ilia-malinin-performs-to-fear-as-he-completes-cathartic-olympic-gala-routine',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-21',
+    summary: 'Ilia Malinin performed a cathartic exhibition gala routine to \'Fear\' by NF at the Olympic gala, addressing his mental health struggles after failing to medal in the men\'s competition despite being the heavy favorite. The American skater\'s emotional performance included his trademark backflip and depicted the pressure of social media and expectations. Alysa Liu, who won both team and individual gold medals, closed the gala with an upbeat routine, while Kazakhstan\'s Mikhail Shaidorov performed as Kung-Fu Panda.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-alysa-liu-released-the-pressure-reclaimed-her-joy-and-turned',
+    title: 'Alysa Liu released the pressure, reclaimed her joy and turned it into Olympic gold | Bryan Armen Graham',
+    url: 'https://www.theguardian.com/sport/2026/feb/20/alysa-liu-olympic-figure-skating-gold',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-20',
+    summary: 'Alysa Liu became the first American woman to win Olympic figure skating gold in 24 years, overcoming a third-place position after the short program to defeat Japanese rivals with seven clean triple jumps. Her victory came after she had stepped away from the sport following the 2022 Beijing Olympics due to mental fatigue, only to return with a renewed focus on joy rather than results. Kaori Sakamoto of Japan took silver despite being a three-time world champion, with small mistakes costing her the gold medal.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'kaori-sakamoto' }, { type: 'element', id: 'flip' }, { type: 'element', id: 'toe-loop' }, { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-alysa-liu-wins-winter-olympics-gold-to-end-us-womens-24-year',
+    title: 'Alysa Liu wins Winter Olympics gold to end US women’s 24-year figure skating drought',
+    url: 'https://www.theguardian.com/sport/2026/feb/19/alysa-liu-figure-skating-winter-olympics-2026',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-19',
+    summary: 'Alysa Liu won the Olympic women\'s figure skating gold medal, ending a 24-year drought for the United States in the event. The 20-year-old delivered a career-best free skate program, cleanly landing all seven triple jumps to score 226.79 points overall. Kaori Sakamoto of Japan took silver with 224.90 points, while Ami Nakai earned bronze with 219.16 points.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'kaori-sakamoto' }, { type: 'skater', id: 'ami-nakai' }, { type: 'skater', id: 'amber-glenn' }, { type: 'skater', id: 'mone-chiba' }, { type: 'element', id: 'layback-spin-l4' }, { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-japanese-teenager-ami-nakai-overshadows-usas-blade-angels-in',
+    title: 'Japanese teenager Ami Nakai overshadows USA’s Blade Angels in women’s figure skating opener',
+    url: 'https://www.theguardian.com/sport/2026/feb/17/winter-olympics-womens-figure-skating-short-program',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-18',
+    summary: 'Japanese teenager Ami Nakai took the lead after the short program at the Olympic women\'s figure skating competition with a personal-best score of 78.71, highlighted by a clean triple axel. She edged out three-time world champion Kaori Sakamoto (77.23) and Alysa Liu of the United States (76.59), positioning Japan for a potential podium sweep heading into Thursday\'s free skate.',
+    entities: [
+      { type: 'skater', id: 'ami-nakai' }, { type: 'skater', id: 'kaori-sakamoto' }, { type: 'skater', id: 'alysa-liu' }, { type: 'element', id: 'triple-axel' }, { type: 'element', id: 'triple-lutz' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-ilia-malinin-writes-about-inevitable-crash-after-olympic-fig',
+    title: 'Ilia Malinin writes about ‘inevitable crash’ after Olympic figure skating shock',
+    url: 'https://www.theguardian.com/sport/2026/feb/16/ilia-malinin-figure-skating-winter-olympics-pressure',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-16',
+    summary: 'Ilia Malinin, the overwhelming favorite for Olympic gold in men\'s figure skating, suffered a shocking defeat by finishing eighth overall after falling twice during his free skate routine on Friday. Kazakhstan\'s Mikhail Shaidorov won the gold medal while Malinin finished 15th in the free skate out of 24 competitors. Malinin later posted on Instagram about the pressure and \'invisible battles\' he faced, describing the result as an \'inevitable crash\' due to overwhelming nerves and negative thoughts.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-anatomy-of-an-upset-how-ilia-malinin-lost-olympic-figure-ska',
+    title: 'Anatomy of an upset: how Ilia Malinin lost Olympic figure skating gold',
+    url: 'https://www.theguardian.com/sport/2026/feb/14/ilia-malinin-analyis-figure-skating-upset-scoring',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-14',
+    summary: 'Ilia Malinin suffered a shocking Olympic defeat, finishing 8th overall despite entering the free skate with a five-point lead and being the heavy favorite. His performance was marked by a chain reaction of technical errors, including missed jumps and falls that exposed the brutal mathematics of modern figure skating scoring. Other contenders like Daniel Grassl and Adam Siao Him Fa also faltered, making Malinin\'s collapse even more unexpected.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'daniel-grassl' }, { type: 'skater', id: 'adam-siao-him-fa' }, { type: 'element', id: 'axel' }, { type: 'element', id: 'quad-lutz' }, { type: 'element', id: 'quad-loop' }, { type: 'element', id: 'triple-lutz' }, { type: 'element', id: 'flip' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-fall-of-the-quad-god-ilia-malinin-finds-he-is-all-too-human',
+    title: 'Fall of the Quad God: Ilia Malinin finds he is all too human under the Olympic spotlight',
+    url: 'https://www.theguardian.com/sport/2026/feb/14/ilia-malinin-winter-olympics-figure-skating-2026',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-14',
+    summary: 'Ilia Malinin, the previously unbeaten American figure skater known as the \'Quad God,\' suffered a shocking defeat at the Olympics in Milan, finishing eighth after multiple jumping errors in his free skate program. The 21-year-old\'s two-year winning streak came to an end as Japan\'s Yuma Kagiyama won Olympic silver despite his own mistakes, while Malinin\'s program disintegrated with popped jumps and falls.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'yuma-kagiyama' }, { type: 'element', id: 'axel' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-ilia-malinin-falls-twice-as-kazakhstans-shaidorov-stuns-fiel',
+    title: 'Ilia Malinin falls twice as Kazakhstan’s Shaidorov stuns field for Olympic gold',
+    url: 'https://www.theguardian.com/sport/2026/feb/13/ilia-malinin-olympics-figure-skating-mikhail-shaidorov',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-13',
+    summary: 'Ilia Malinin, the heavy favorite for Olympic figure skating gold, suffered a shocking defeat after falling twice in his free skate program and finishing eighth. Kazakhstan\'s Mikhail Shaidorov claimed the surprising Olympic title with a season-best score of 291.58, while Japan\'s Yuma Kagiyama and Shun Sato took silver and bronze respectively. The result ended Malinin\'s unbeaten streak of over two years spanning 14 competitions.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'skater', id: 'yuma-kagiyama' }, { type: 'skater', id: 'shun-sato' }, { type: 'element', id: 'quad-flip' }, { type: 'element', id: 'quad-lutz' }, { type: 'element', id: 'quad-axel' }, { type: 'element', id: 'quad-toe-loop' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-winter-olympics-ilia-malinin-misses-podium-in-figure-skating',
+    title: 'Winter Olympics: Ilia Malinin misses podium in figure skating shock; Shaidorov takes gold – as it happened',
+    url: 'https://www.theguardian.com/sport/live/2026/feb/13/winter-olympics-ilia-malinin-figure-skating-free-skate',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-13',
+    summary: 'In a major upset at the Winter Olympics figure skating competition, Kazakhstan\'s Mikhail Shaidorov won the gold medal while heavily favored American skater Ilia Malinin fell twice and missed the podium entirely. The result represents a stunning surprise in the men\'s figure skating event.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-skating-body-defends-olympic-judging-after-french-duos-ice-d',
+    title: 'Skating body defends Olympic judging after French duo’s ice dance gold',
+    url: 'https://www.theguardian.com/sport/2026/feb/13/olympic-ice-dance-french-judge-scoring-controversy',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-13',
+    summary: 'The International Skating Union (ISU) defended the Olympic ice dance judging system after France\'s Laurence Fournier Beaudry and Guillaume Cizeron narrowly defeated Americans Madison Chock and Evan Bates for gold in a controversial finish. The controversy centered on a French judge who scored the French pair nearly eight points higher than the American team, a margin that would have changed the medal outcome if excluded. An online petition calling for investigation has approached 15,000 signatures, but the ISU maintains confidence in its scoring system and trimmed mean calculation process.',
+    entities: [
+      { type: 'skater', id: 'fournier-beaudry-cizeron' }, { type: 'skater', id: 'chock-bates' }
+    ],
+  },
 ]

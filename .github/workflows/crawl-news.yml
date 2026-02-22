@@ -1,0 +1,41 @@
+name: Crawl News
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # Daily at 8 AM UTC
+  workflow_dispatch: {} # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  crawl-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run news crawler
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npx tsx crawler/news.ts
+
+      - name: Commit and push
+        run: |
+          git config user.name "BladeTracker Crawler"
+          git config user.email "crawler@bladetracker.app"
+          git add src/data/news/articles.ts
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "crawl: add new news articles [automated]"
+            git push
+          fi
