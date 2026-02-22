@@ -37,7 +37,10 @@ jobs:
       - name: Run results crawler
         env:
           COMPETITION_ID: ${{ inputs.competition_id || '' }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx crawler/results.ts
 
       - name: Run skater detection
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx tsx crawler/detect-skaters.ts
