@@ -1,0 +1,173 @@
+import type { Jump } from '../../types/elements'
+
+export const jumps: Jump[] = [
+  {
+    id: 'toe-loop',
+    name: 'Toe Loop',
+    abbreviation: 'T',
+    baseValue: 0.4,
+    description:
+      'The easiest toe-pick-assisted jump. The skater takes off from the back outside edge of one foot with a toe pick assist from the other foot.',
+    difficulty: 1,
+    takeoffEdge: 'toe',
+    rotations: 1,
+    tags: ['toe-pick', 'beginner'],
+  },
+  {
+    id: 'salchow',
+    name: 'Salchow',
+    abbreviation: 'S',
+    baseValue: 0.4,
+    description:
+      'Named after Ulrich Salchow. The skater takes off from the back inside edge. One of the two easiest jumps and the most common opening jump.',
+    difficulty: 1,
+    takeoffEdge: 'edge',
+    rotations: 1,
+    tags: ['edge', 'beginner'],
+  },
+  {
+    id: 'loop',
+    name: 'Loop',
+    abbreviation: 'Lo',
+    baseValue: 0.5,
+    description:
+      'An edge jump taking off from the back outside edge. The skater launches from a deep back outside edge without toe pick assistance.',
+    difficulty: 2,
+    takeoffEdge: 'edge',
+    rotations: 1,
+    tags: ['edge', 'intermediate'],
+  },
+  {
+    id: 'flip',
+    name: 'Flip',
+    abbreviation: 'F',
+    baseValue: 0.5,
+    description:
+      'A toe-pick-assisted jump from the back inside edge. Similar to the Lutz but from a different edge, making it somewhat easier.',
+    difficulty: 3,
+    takeoffEdge: 'toe',
+    rotations: 1,
+    tags: ['toe-pick', 'intermediate'],
+  },
+  {
+    id: 'lutz',
+    name: 'Lutz',
+    abbreviation: 'Lz',
+    baseValue: 0.6,
+    description:
+      'Named after Alois Lutz. A toe-pick-assisted jump from the back outside edge with counter-rotation. The approach curve goes one way while the rotation goes the other.',
+    difficulty: 4,
+    takeoffEdge: 'toe',
+    rotations: 1,
+    tags: ['toe-pick', 'counter-rotation', 'advanced'],
+  },
+  {
+    id: 'axel',
+    name: 'Axel',
+    abbreviation: 'A',
+    baseValue: 1.1,
+    description:
+      'The only forward-takeoff jump, named after Axel Paulsen. Because it launches from a forward outside edge, it requires an extra half rotation, making it the hardest jump at any rotation count.',
+    difficulty: 5,
+    takeoffEdge: 'edge',
+    rotations: 1.5,
+    tags: ['edge', 'forward-takeoff', 'signature'],
+  },
+  // Quad variants (the big ones fans care about)
+  {
+    id: 'quad-toe-loop',
+    name: 'Quadruple Toe Loop',
+    abbreviation: '4T',
+    baseValue: 9.5,
+    description:
+      'Four rotations of the toe loop. One of the most common quad jumps, often used in combinations.',
+    difficulty: 4,
+    takeoffEdge: 'toe',
+    rotations: 4,
+    tags: ['quad', 'toe-pick'],
+  },
+  {
+    id: 'quad-salchow',
+    name: 'Quadruple Salchow',
+    abbreviation: '4S',
+    baseValue: 9.7,
+    description:
+      'Four rotations of the Salchow. A common quad that many top men and some women can perform.',
+    difficulty: 4,
+    takeoffEdge: 'edge',
+    rotations: 4,
+    tags: ['quad', 'edge'],
+  },
+  {
+    id: 'quad-loop',
+    name: 'Quadruple Loop',
+    abbreviation: '4Lo',
+    baseValue: 10.5,
+    description:
+      'Four rotations of the loop jump. Less common than quad toe or Salchow due to the difficulty of the edge takeoff.',
+    difficulty: 5,
+    takeoffEdge: 'edge',
+    rotations: 4,
+    tags: ['quad', 'edge', 'rare'],
+  },
+  {
+    id: 'quad-flip',
+    name: 'Quadruple Flip',
+    abbreviation: '4F',
+    baseValue: 11.0,
+    description:
+      'Four rotations of the flip. A high-value quad that requires precise edge control on takeoff.',
+    difficulty: 5,
+    takeoffEdge: 'toe',
+    rotations: 4,
+    tags: ['quad', 'toe-pick'],
+  },
+  {
+    id: 'quad-lutz',
+    name: 'Quadruple Lutz',
+    abbreviation: '4Lz',
+    baseValue: 11.5,
+    description:
+      'Four rotations of the Lutz. One of the hardest common quads due to the counter-rotation required.',
+    difficulty: 6,
+    takeoffEdge: 'toe',
+    rotations: 4,
+    tags: ['quad', 'toe-pick', 'counter-rotation'],
+  },
+  {
+    id: 'quad-axel',
+    name: 'Quadruple Axel',
+    abbreviation: '4A',
+    baseValue: 12.5,
+    description:
+      'Four and a half rotations from a forward takeoff — the hardest jump in figure skating. Ilia Malinin became the first person to land it in competition in 2022.',
+    difficulty: 6,
+    takeoffEdge: 'edge',
+    rotations: 4.5,
+    tags: ['quad', 'edge', 'forward-takeoff', 'ultra-rare', 'historic'],
+  },
+  {
+    id: 'triple-axel',
+    name: 'Triple Axel',
+    abbreviation: '3A',
+    baseValue: 8.0,
+    description:
+      'Three and a half rotations from a forward takeoff. A benchmark jump for top men and an elite achievement for women.',
+    difficulty: 5,
+    takeoffEdge: 'edge',
+    rotations: 3.5,
+    tags: ['triple', 'edge', 'forward-takeoff', 'signature'],
+  },
+  {
+    id: 'triple-lutz',
+    name: 'Triple Lutz',
+    abbreviation: '3Lz',
+    baseValue: 5.9,
+    description:
+      'Three rotations of the Lutz. A staple of competitive programs, especially for women.',
+    difficulty: 4,
+    takeoffEdge: 'toe',
+    rotations: 3,
+    tags: ['triple', 'toe-pick', 'counter-rotation'],
+  },
+]

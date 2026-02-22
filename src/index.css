@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Ice-blue primary palette */
+  --color-ice-50: #f0f7ff;
+  --color-ice-100: #e0effe;
+  --color-ice-200: #b9dffe;
+  --color-ice-300: #7cc5fd;
+  --color-ice-400: #36a9fa;
+  --color-ice-500: #0c8eeb;
+  --color-ice-600: #006fc9;
+  --color-ice-700: #0159a3;
+  --color-ice-800: #064b86;
+  --color-ice-900: #0b3f6f;
+  --color-ice-950: #07284a;
+
+  /* Frost secondary palette */
+  --color-frost-50: #f4f9fb;
+  --color-frost-100: #e8f3f7;
+  --color-frost-200: #cce5ed;
+  --color-frost-300: #a1cfde;
+  --color-frost-400: #6fb3ca;
+  --color-frost-500: #4d97b2;
+  --color-frost-600: #3c7a96;
+  --color-frost-700: #33647b;
+  --color-frost-800: #2f5366;
+  --color-frost-900: #2b4656;
+  --color-frost-950: #1a2d39;
+
+  /* Medal colors */
+  --color-gold: #d4a843;
+  --color-silver: #a8a9ad;
+  --color-bronze: #cd7f32;
+
+  /* Fonts */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-gray-900);
+  background-color: var(--color-gray-50);
+}
+
+.score-display {
+  font-family: var(--font-serif);
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
