@@ -5,6 +5,7 @@ export interface PersonalBest {
   score: number
   event: string
   date: string
+  sourceUrl?: string
 }
 
 export interface CompetitionResult {
@@ -17,6 +18,7 @@ export interface CompetitionResult {
   shortScore?: number
   freeScore?: number
   date: string
+  sourceUrl?: string
 }
 
 export interface PhotoAttribution {
@@ -34,6 +36,7 @@ export interface Skater {
   discipline: Discipline
   birthDate: string
   bio: string
+  bioSourceUrl?: string
   photoPlaceholder: string // initials or emoji placeholder
   photo?: PhotoAttribution
   personalBests: PersonalBest[]

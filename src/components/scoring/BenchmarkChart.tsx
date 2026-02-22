@@ -1,6 +1,7 @@
 import type { ScoreBenchmark } from '../../types/scoring'
 import { cn } from '../../lib/cn'
 import { formatScore } from '../../lib/format'
+import { RichDescription } from '../ui/RichDescription'
 
 interface BenchmarkChartProps {
   benchmarks: ScoreBenchmark[]
@@ -26,7 +27,7 @@ export function BenchmarkChart({ benchmarks, className }: BenchmarkChartProps) {
                 style={{ width: `${widthPct}%` }}
               />
             </div>
-            <p className="mt-0.5 text-xs text-gray-400">{b.description}</p>
+            <RichDescription text={b.description} className="mt-0.5 text-xs text-gray-400" />
           </div>
         )
       })}

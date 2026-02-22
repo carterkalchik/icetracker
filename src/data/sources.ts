@@ -8,12 +8,12 @@ export const dataSources: DataSource[] = [
     url: 'https://results.isu.org/',
     category: 'results',
     description:
-      'Official competition results, scores, and protocol sheets from all ISU-sanctioned events.',
+      'Official competition results, scores, and protocol sheets from all ISU-sanctioned events. Primary source for all competition scores in IceTracker.',
   },
   {
     id: 'isu-bio',
     name: 'ISU Skater Biographies',
-    url: 'https://isu.org/figure-skating/entries-results',
+    url: 'https://www.isu.org/figure-skating/entries-results/biographies-statistics',
     category: 'results',
     description:
       'Official skater profiles, personal bests, and career records from the International Skating Union.',
@@ -78,12 +78,12 @@ export const dataSources: DataSource[] = [
     url: 'https://en.wikipedia.org/',
     category: 'reference',
     description:
-      'General reference for skater biographies, competition history, and figure skating terminology.',
+      'General reference for skater biographies, competition history, and figure skating terminology. Cross-referenced with ISU data for accuracy.',
   },
   {
     id: 'olympics',
     name: 'Olympics.com',
-    url: 'https://olympics.com/en/sports/figure-skating',
+    url: 'https://www.olympics.com/en/sports/figure-skating',
     category: 'reference',
     description:
       'Official Olympic figure skating records, medal tables, and historical competition data.',

@@ -3,7 +3,7 @@ import { spins } from '../data/elements/spins'
 import { steps } from '../data/elements/steps'
 import { pairElements } from '../data/elements/pair-elements'
 import { danceElements } from '../data/elements/dance-elements'
-import type { Element, Jump, Spin } from '../types/elements'
+import type { Element, Jump } from '../types/elements'
 
 export type ElementType = 'jump' | 'spin' | 'step' | 'pair' | 'dance'
 export type EdgeFilter = 'toe' | 'edge' | 'all'

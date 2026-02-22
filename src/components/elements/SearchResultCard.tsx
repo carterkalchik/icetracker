@@ -12,14 +12,6 @@ const typeLabels: Record<string, string> = {
   dance: 'Dance Element',
 }
 
-const typeLinks: Record<string, string> = {
-  jump: '/elements/jumps',
-  spin: '/elements/spins',
-  step: '/elements/steps',
-  pair: '/elements/pairs',
-  dance: '/elements/dance',
-}
-
 const typeVariants: Record<string, 'ice' | 'frost' | 'gold'> = {
   jump: 'ice',
   spin: 'frost',

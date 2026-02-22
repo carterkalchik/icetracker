@@ -7,9 +7,11 @@ import { SkaterPhoto } from '../../components/skaters/SkaterPhoto'
 import { CompetitionHistory } from '../../components/skaters/CompetitionHistory'
 import { ScoreDisplay } from '../../components/ui/ScoreDisplay'
 import { SkeletonDetailPage } from '../../components/ui/Skeleton'
+import { ObjectLink } from '../../components/ui/ObjectLink'
 import { useAsync } from '../../hooks/useAsync'
 import { useWatchlist } from '../../hooks/useWatchlist'
 import { getSkaterById } from '../../services/skaters.service'
+import { resolveSignatureElement } from '../../services/entity-resolution.service'
 import { countryFlag, formatCountry } from '../../lib/format'
 
 export function SkaterDetailPage() {
@@ -66,7 +68,22 @@ export function SkaterDetailPage() {
       </div>
 
       {/* Bio */}
-      <p className="mt-6 max-w-3xl text-gray-600 leading-relaxed">{skater.bio}</p>
+      <div className="mt-6 max-w-3xl">
+        <p className="text-gray-600 leading-relaxed">{skater.bio}</p>
+        {skater.bioSourceUrl && (
+          <a
+            href={skater.bioSourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 inline-flex items-center gap-1 text-xs text-gray-400 hover:text-ice-600"
+          >
+            Source
+            <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </a>
+        )}
+      </div>
 
       {/* Personal Bests */}
       <section className="mt-10">
@@ -78,6 +95,19 @@ export function SkaterDetailPage() {
                 <ScoreDisplay score={pb.score} label={pb.segment} size="lg" />
                 <p className="mt-2 text-xs text-gray-400">
                   {pb.event}
+                  {pb.sourceUrl && (
+                    <a
+                      href={pb.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-1 inline-block text-gray-400 hover:text-ice-600"
+                      title="View source"
+                    >
+                      <svg className="inline h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                    </a>
+                  )}
                 </p>
               </CardContent>
             </Card>
@@ -89,11 +119,17 @@ export function SkaterDetailPage() {
       <section className="mt-10">
         <h2 className="font-serif text-2xl font-semibold text-gray-900">Signature Elements</h2>
         <div className="mt-4 flex flex-wrap gap-2">
-          {skater.signatureElements.map((el) => (
-            <Badge key={el} variant="ice" className="px-3 py-1 text-sm">
-              {el}
-            </Badge>
-          ))}
+          {skater.signatureElements.map((el) => {
+            const resolved = resolveSignatureElement(el)
+            if (resolved) {
+              return <ObjectLink key={el} entity={resolved} className="px-3 py-1 text-sm" />
+            }
+            return (
+              <Badge key={el} variant="ice" className="px-3 py-1 text-sm">
+                {el}
+              </Badge>
+            )
+          })}
         </div>
       </section>
 

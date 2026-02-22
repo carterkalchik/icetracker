@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import type { CompetitionResultEntry } from '../../types/competitions'
 import { Badge } from '../ui/Badge'
+import { ObjectLink } from '../ui/ObjectLink'
 import { countryFlag, formatScore } from '../../lib/format'
 
 interface ResultsTableProps {
@@ -47,12 +47,13 @@ export function ResultsTable({ entries }: ResultsTableProps) {
                   </div>
                 </td>
                 <td className="py-3 px-2">
-                  <Link
-                    to={`/skaters/${entry.skaterId}`}
-                    className="font-serif font-semibold text-gray-900 hover:text-ice-600"
-                  >
-                    {entry.skaterName}
-                  </Link>
+                  <ObjectLink
+                    entity={{
+                      type: 'skater',
+                      id: entry.skaterId,
+                      label: entry.skaterName,
+                    }}
+                  />
                 </td>
                 <td className="py-3 px-2">
                   <span className="text-gray-600">
