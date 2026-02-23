@@ -356,4 +356,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'fournier-beaudry-cizeron' }, { type: 'skater', id: 'chock-bates' }
     ],
   },
+  {
+    id: '202602-the-scandals-clouding-sinister-french-ice-dancers-who-beat-c',
+    title: 'The scandals clouding ‘sinister’ French ice dancers who beat Chock and Bates for gold',
+    url: 'https://www.theguardian.com/sport/2026/feb/12/french-ice-dancing-controversy',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-12',
+    summary: 'French ice dancers Laurence Fournier Beaudry and Guillaume Cizeron won Olympic gold by a narrow margin over Americans Madison Chock and Evan Bates, despite the Americans delivering a flawless performance. The victory is overshadowed by controversies involving both French skaters\' former partners, including sexual assault allegations against Fournier Beaudry\'s boyfriend and former partner, and accusations of abusive conduct against Cizeron by his former partner Gabriella Papadakis.',
+    entities: [
+      { type: 'skater', id: 'fournier-beaudry-cizeron' }, { type: 'skater', id: 'chock-bates' }, { type: 'skater', id: 'papadakis-cizeron' }, { type: 'competition', id: '2026-olympics' }, { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-fear-and-gibson-suffer-nightmare-on-ice-as-gb-winter-olympic',
+    title: 'Fear and Gibson suffer nightmare on ice as GB Winter Olympic medal drought goes on',
+    url: 'https://www.theguardian.com/sport/2026/feb/11/fear-and-gibson-winter-olympics-team-gb-ice-dancing-figure-skating',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-11',
+    summary: 'British ice dancers Lilah Fear and Lewis Gibson finished seventh at the 2026 Winter Olympics after a costly stumble during their free dance routine that ended their medal hopes. The pair dropped from fourth place after the rhythm dance when Fear lost her balance during a twizzle sequence early in their program. Gold went to the French pair Laurence Fournier Beaudry and Guillaume Cizeron with 225.82 points, extending Great Britain\'s Winter Olympic medal drought since 1994.',
+    entities: [
+      { type: 'skater', id: 'fear-gibson' }, { type: 'skater', id: 'fournier-beaudry-cizeron' }, { type: 'skater', id: 'papadakis-cizeron' }, { type: 'element', id: 'twizzles-l4' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-archive-torvill-and-dean-gb-olympic-figure-skating-medal-win',
+    title: 'Archive: Torvill and Dean, GB Olympic figure skating medal winners, 1984 and 1994 – reports',
+    url: 'https://www.theguardian.com/sport/2026/feb/11/torvill-and-dean-olympic-figure-skating-gold-medal-winners-1984-and-1994',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-11',
+    summary: 'This archive article recounts Jayne Torvill and Christopher Dean\'s legendary gold medal-winning Boléro ice dancing routine at the 1984 Winter Olympics in Sarajevo, where they received twelve perfect 6.0 scores from judges. The article also references their return to Olympic competition in 1994 at Lillehammer, where they failed to match their earlier success and were criticized by foreign press as being past their prime.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-us-figure-skater-amber-glenn-resolves-winter-olympics-music',
+    title: 'US figure skater Amber Glenn resolves Winter Olympics music dispute with Canadian artist',
+    url: 'https://www.theguardian.com/sport/2026/feb/10/us-figure-skater-amber-glenn-resolves-winter-olympics-music-dispute-with-canadian-artist',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-10',
+    summary: 'US figure skater Amber Glenn resolved a copyright dispute with Canadian musician Seb McKinnon after he questioned whether his song \'The Return\' was properly cleared for use in her Olympic free skate program. The issue was described as a misunderstanding, with both parties expressing interest in future collaboration. Glenn won team gold at the Olympics and is scheduled to compete in the women\'s singles event next week.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-winter-olympics-2026-usa-take-gold-in-figure-skating-team-ev',
+    title: 'Winter Olympics 2026: USA take gold in figure skating team event – as it happened',
+    url: 'https://www.theguardian.com/sport/live/2026/feb/08/winter-olympics-2026-figure-skating-team-event-updates',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-08',
+    summary: 'The United States won gold in the figure skating team event at the 2026 Winter Olympics. Ilia Malinin led Team USA to victory, successfully defending their title against a resurgent Japanese team.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-ilia-malinin-holds-off-resurgent-japan-to-seal-repeat-us-tea',
+    title: 'Ilia Malinin holds off resurgent Japan to seal repeat US team figure skating gold',
+    url: 'https://www.theguardian.com/sport/2026/feb/08/malinin-usa-team-figure-skating-gold-olympics-japan-italy',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-08',
+    summary: 'Ilia Malinin led the United States to defend their Olympic team figure skating title, delivering under pressure in the men\'s free skate to secure gold by just one point over Japan. The 21-year-old two-time world champion adjusted his technical strategy, landing five quadruple jumps instead of his usual seven to score 200.03 points and clinch the victory. Japan finished with silver while host nation Italy took bronze in one of the most dramatic team events since the format began in 2014.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'shun-sato' }, { type: 'element', id: 'quad-flip' }, { type: 'element', id: 'quad-toe-loop' }, { type: 'element', id: 'quad-salchow' }, { type: 'element', id: 'quad-lutz' }, { type: 'element', id: 'quad-axel' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-usa-superstar-liu-wins-womens-skating-olympic-gold',
+    title: 'USA superstar Liu wins women\'s skating Olympic gold',
+    url: 'https://www.bbc.com/sport/articles/c33jz026mg3o?at_medium=RSS&at_campaign=rss',
+    source: 'bbc.com',
+    publishedAt: '2026-02-19',
+    summary: 'American figure skater Alysa Liu won Olympic gold in the women\'s event at the 2026 Winter Olympics, scoring 226.79 overall to narrowly beat Japan\'s Kaori Sakamoto who took silver. Liu became the first American Olympic champion in women\'s figure skating since Sarah Hughes in 2002, overcoming a third-place position after the short program with a stunning free skate performance.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'kaori-sakamoto' }, { type: 'skater', id: 'ami-nakai' }, { type: 'skater', id: 'amber-glenn' }, { type: 'skater', id: 'mone-chiba' }, { type: 'skater', id: 'ilia-malinin' }, { type: 'element', id: 'triple-lutz' }, { type: 'competition', id: '2026-olympics' }, { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-gb-25-years-behind-worlds-best-in-short-track',
+    title: 'GB \'25 years\' behind world\'s best in short track',
+    url: 'https://www.bbc.com/sport/articles/czx70wpxkp1o?at_medium=RSS&at_campaign=rss',
+    source: 'bbc.com',
+    publishedAt: '2026-02-20',
+    summary: 'Great Britain\'s short track speed skating program has fallen significantly behind world standards due to outdated facilities and reduced funding. Team GB sent only one athlete, Niall Treacy, to Milan-Cortina 2026, a stark decline from their well-funded five-person team at PyeongChang 2018. The sport\'s funding was slashed after failing to medal in 2018, and Britain now lacks international-standard training facilities.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-olympic-reign-of-ex-valieva-coach-ends-in-milan',
+    title: 'Olympic reign of ex-Valieva coach ends in Milan',
+    url: 'https://www.bbc.com/sport/articles/c98q594z586o?at_medium=RSS&at_campaign=rss',
+    source: 'bbc.com',
+    publishedAt: '2026-02-19',
+    summary: 'Eteri Tutberidze\'s dominance in women\'s Olympic figure skating came to an end at the 2026 Milan-Cortina Olympics. While coaching Georgia\'s pairs team to their first-ever Winter Olympic medal and advising Russian skater Adeliia Petrosian competing as a neutral athlete, Tutberidze did not produce an Olympic champion for the first time since 2014. Alysa Liu of the United States won the women\'s title, breaking Tutberidze\'s streak after her previous students Anna Shcherbakova and Alina Zagitova won in 2022 and 2018 respectively.',
+    entities: [
+      { type: 'skater', id: 'kamila-valieva' }, { type: 'skater', id: 'metelkina-berulava' }, { type: 'skater', id: 'anna-shcherbakova' }, { type: 'skater', id: 'alysa-liu' }, { type: 'element', id: 'quad-toe-loop' }, { type: 'competition', id: '2026-olympics' }, { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-analysis-meet-mikhail-shaidorov-the-guy-who-actually-won-men',
+    title: 'Analysis | Meet Mikhail Shaidorov, the guy who actually won men’s singles figure skating',
+    url: 'https://www.washingtonpost.com',
+    source: 'The Washington Post',
+    publishedAt: '2026-02-23',
+    summary: 'The Washington Post provides analysis highlighting Mikhail Shaidorov as the actual winner of a men\'s singles figure skating competition.',
+    entities: [
+      { type: 'skater', id: 'mikhail-shaidorov' }
+    ],
+  },
 ]
