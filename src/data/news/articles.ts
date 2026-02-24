@@ -466,4 +466,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'mikhail-shaidorov' }
     ],
   },
+  {
+    id: '202602-crampons-crashes-and-creativity-tom-jenkins-best-photos-from',
+    title: 'Crampons, crashes and creativity: Tom Jenkins’ best photos from the Winter Olympics',
+    url: 'https://www.theguardian.com/sport/2026/feb/23/tom-jenkins-best-photos-winter-olympics',
+    source: 'theguardian.com',
+    publishedAt: '2026-02-23',
+    summary: 'Photographer Tom Jenkins shares his favorite images from his first Winter Olympics assignment in northern Italy, covering various winter sports including figure skating. The article features a multiple exposure photograph of Sofia Samodelkina of Kazakhstan performing in the women\'s figure skating free program. Jenkins documented the Games across multiple venues, capturing sports ranging from figure skating to ice hockey, biathlon, and ski jumping.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-from-outsider-to-olympic-champion-the-journey-of-mikhail-sha',
+    title: 'From outsider to Olympic champion: the journey of Mikhail Shaidorov',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-21',
+    summary: 'The article chronicles Mikhail Shaidorov\'s path from being an outsider to becoming an Olympic champion.',
+    entities: [
+      { type: 'skater', id: 'mikhail-shaidorov' }
+    ],
+  },
+  {
+    id: '202602-milan-cortina-olympics-in-pictures-20-captivating-photos-fro',
+    title: 'Milan Cortina Olympics in pictures: 20 captivating photos from the Winter Games',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-23',
+    summary: 'The New York Times presents a photo collection featuring 20 captivating images from the Milan Cortina Winter Olympics.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-the-grand-finale-of-figure-skating-with-the-gala-on-21-febru',
+    title: 'The grand finale of figure skating with the Gala on 21 February 2026',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-21',
+    summary: 'A figure skating gala event will serve as the grand finale and will take place on February 21, 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-alysa-liu-takes-gold-ilia-malinin-tumbles-at-eventful-olympi',
+    title: 'Alysa Liu takes gold, Ilia Malinin tumbles at eventful Olympic figure skating competition in Milan',
+    url: 'https://www.reuters.com',
+    source: 'Reuters',
+    publishedAt: '2026-02-22',
+    summary: 'Alysa Liu won gold while Ilia Malinin had a fall at an Olympic figure skating competition held in Milan.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-how-to-watch-alysa-liu-ilia-malinin-amber-glenn-in-olympics',
+    title: 'How to watch Alysa Liu, Ilia Malinin, Amber Glenn in Olympics figure skating gala',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-21',
+    summary: 'The article provides information on how to watch Alysa Liu, Ilia Malinin, and Amber Glenn perform in the Olympics figure skating gala.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
+  {
+    id: '202602-when-do-alysa-liu-ilia-malinin-amber-glenn-skate-next-in-the',
+    title: 'When do Alysa Liu, Ilia Malinin, Amber Glenn skate next in the United States?',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-02-23',
+    summary: 'The headline asks about the upcoming skating schedules for American figure skaters Alysa Liu, Ilia Malinin, and Amber Glenn in the United States.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
+  {
+    id: '202602-daniel-grassl',
+    title: 'Daniel GRASSL',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-22',
+    summary: 'The headline mentions Daniel Grassl in connection with Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'daniel-grassl' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-laurence-fournier-beaudry',
+    title: 'Laurence FOURNIER BEAUDRY',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-22',
+    summary: 'News about figure skater Laurence Fournier Beaudry related to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'fournier-beaudry-cizeron' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-after-the-olympians-skate-toys-rain-onto-the-ice-where-do-th',
+    title: 'After the Olympians Skate, Toys Rain Onto the Ice. Where Do They All Go?',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-21',
+    summary: 'The headline discusses what happens to the toys that are thrown onto the ice after Olympic figure skaters perform their routines.',
+    entities: [
+      
+    ],
+  },
 ]
