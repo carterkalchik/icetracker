@@ -576,4 +576,114 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202602-everything-that-happened-on-day-13-of-the-2026-winter-olympi',
+    title: 'Everything that happened on Day 13 of the 2026 Winter Olympics',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-20',
+    summary: 'This article covers all the events and results that occurred on the thirteenth day of competition at the 2026 Winter Olympics.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-winter-olympics-american-liu-wins-shock-figure-skating-gold',
+    title: 'Winter Olympics: American Liu wins shock figure skating gold after GB\'s curlers reach final',
+    url: 'https://www.bbc.com',
+    source: 'BBC',
+    publishedAt: '2026-02-19',
+    summary: 'American figure skater Liu won a surprising gold medal at the Winter Olympics, while Great Britain\'s curling team also reached their final.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-figure-skater-saved-from-scrapping-olympic-routine-after-min',
+    title: 'Figure skater saved from scrapping Olympic routine after Minions music copyright dispute',
+    url: 'https://www.theguardian.com',
+    source: 'The Guardian',
+    publishedAt: '2026-02-02',
+    summary: 'A figure skater was able to keep their Olympic routine after resolving a copyright dispute involving Minions music.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-history-of-notable-us-figure-skaters-at-the-olympics',
+    title: 'History of notable U.S. figure skaters at the Olympics',
+    url: 'https://www.espn.com',
+    source: 'ESPN',
+    publishedAt: '2026-02-24',
+    summary: 'This article covers the history of notable U.S. figure skaters who have competed at the Olympics.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-liu-reigns-golden-in-milan',
+    title: 'Liu Reigns Golden in Milan',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-20',
+    summary: 'Liu achieved a golden victory at a competition in Milan.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202602-sato-shun',
+    title: 'SATO Shun',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline references SATO Shun in connection with Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'shun-sato' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-the-masterclass-why-the-2026-exhibition-gala-lineup-represen',
+    title: 'The masterclass: Why the 2026 Exhibition Gala lineup represents the pinnacle of modern figure skating',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-20',
+    summary: 'The 2026 Exhibition Gala lineup is being praised as representing the highest level of modern figure skating excellence.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-alexandra-feigin',
+    title: 'Alexandra FEIGIN',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline mentions Alexandra Feigin in connection with Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-madison-chock',
+    title: 'Madison CHOCK',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline mentions Madison Chock in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'chock-bates' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-guillaume-cizeron',
+    title: 'Guillaume CIZERON',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline mentions Guillaume Cizeron in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
