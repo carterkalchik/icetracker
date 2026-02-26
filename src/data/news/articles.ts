@@ -686,4 +686,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2026-olympics' }
     ],
   },
+  {
+    id: '202602-sakamoto-kaori-japans-figure-skating-star-set-to-launch-coac',
+    title: 'Sakamoto Kaori: Japan\'s figure skating star set to launch coaching career after Olympic gold near-miss',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-25',
+    summary: 'Japanese figure skating star Kaori Sakamoto is preparing to begin a coaching career following her near-miss at Olympic gold.',
+    entities: [
+      { type: 'skater', id: 'kaori-sakamoto' }
+    ],
+  },
+  {
+    id: '202602-figure-skating-olympics-pairs-results-japan-wins-first-gold',
+    title: 'Figure skating Olympics pairs results: Japan wins first gold, USA top 10',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-02-19',
+    summary: 'Japan won their first Olympic gold medal in pairs figure skating, while the USA finished in the top 10.',
+    entities: [
+      { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-winter-olympics-2026-mens-figure-skating-live-updates-ilia-m',
+    title: 'Winter Olympics 2026 men\'s figure skating live updates: Ilia Malinin fails to medal after falling twice in final skate',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-13',
+    summary: 'Ilia Malinin failed to medal in men\'s figure skating at the 2026 Winter Olympics after falling twice during his final skate performance.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-sun-valley-and-the-irvine-family-a-skating-treasure',
+    title: 'Sun Valley and the Irvine Family a Skating Treasure',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-25',
+    summary: 'The headline describes Sun Valley and the Irvine Family as a skating treasure.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-matteo-rizzo',
+    title: 'Matteo RIZZO',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline mentions Matteo Rizzo in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'matteo-rizzo' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-kihara-ryuichi',
+    title: 'KIHARA Ryuichi',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-24',
+    summary: 'The headline mentions KIHARA Ryuichi in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-ellie-kam',
+    title: 'Ellie KAM',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline mentions Ellie KAM in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-kristen-spours',
+    title: 'Kristen SPOURS',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline mentions Kristen SPOURS in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-ive-tried-to-stay-a-kid-mikhail-shairodov-recounts-how-letti',
+    title: '"I’ve tried to stay a kid": Mikhail Shairodov recounts how letting his inner child loose helped him win Olympic figure skating gold',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-24',
+    summary: 'Mikhail Shairodov discusses how embracing his inner child helped him win Olympic figure skating gold.',
+    entities: [
+      { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-backflips-spins-and-kung-fu-panda-highlight-olympics-figure',
+    title: 'Backflips, spins and Kung Fu panda highlight Olympics figure skating exhibition gala',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-02-22',
+    summary: 'The Olympics figure skating exhibition gala featured backflips, spins and a Kung Fu panda-themed performance.',
+    entities: [
+      { type: 'competition', id: '2022-olympics' }
+    ],
+  },
 ]
