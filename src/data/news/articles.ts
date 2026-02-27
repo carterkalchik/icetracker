@@ -796,4 +796,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2022-olympics' }
     ],
   },
+  {
+    id: '202602-figure-skating-women-single-skating',
+    title: 'Figure Skating Women Single Skating',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-27',
+    summary: 'This is about the women\'s single skating discipline in figure skating at Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-ilia-malinin-alysa-liu-on-entry-list-for-2026-isu-figure-ska',
+    title: 'Ilia Malinin, Alysa Liu on entry list for 2026 ISU Figure Skating World Championships, but Olympic champion Mikhail Shaidorov opts out',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-26',
+    summary: 'Ilia Malinin and Alysa Liu are on the entry list for the 2026 ISU Figure Skating World Championships, while Olympic champion Mikhail Shaidorov has decided not to participate.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202602-miura-riku',
+    title: 'MIURA Riku',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-25',
+    summary: 'The headline references MIURA Riku in connection with Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-sara-conti',
+    title: 'Sara CONTI',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-24',
+    summary: 'Sara Conti is mentioned in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'conti-macii' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-marco-fabbri',
+    title: 'Marco FABBRI',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline references Marco Fabbri in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'guignard-fabbri' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-malinin-leads-us-to-repeat-olympic-team-event-title',
+    title: 'Malinin Leads U.S. to Repeat Olympic Team Event Title',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-08',
+    summary: 'Ilia Malinin led the United States figure skating team to successfully defend their Olympic Team Event title.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-luka-berulava',
+    title: 'Luka BERULAVA',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline mentions Luka BERULAVA in connection with Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-womens-figure-skating-at-winter-olympics-2026-schedule-how-t',
+    title: 'Women\'s figure skating at Winter Olympics 2026: Schedule, how to watch live',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-15',
+    summary: 'The headline discusses the schedule and viewing information for women\'s figure skating at the 2026 Winter Olympics.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-olympic-figure-skating-watch-guide-team-usa-tv-schedule-for',
+    title: 'Olympic figure skating watch guide: Team USA, TV schedule for 2026 Winter Games',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-17',
+    summary: 'The New York Times provides a watch guide for Olympic figure skating at the 2026 Winter Games, focusing on Team USA and television scheduling information.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-alysa-liu-carries-us-olympic-figure-skating-medal-hopes-in-h',
+    title: 'Alysa Liu carries U.S. Olympic figure skating medal hopes in her own way',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-18',
+    summary: 'Alysa Liu is carrying U.S. Olympic figure skating medal hopes in her own distinctive approach.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
 ]
