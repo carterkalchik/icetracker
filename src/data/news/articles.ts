@@ -906,4 +906,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }
     ],
   },
+  {
+    id: '202602-figure-skating-stars-dazzle-at-the-winter-olympics-exhibitio',
+    title: 'Figure skating stars dazzle at the Winter Olympics exhibition gala, in photos',
+    url: 'https://apnews.com',
+    source: 'AP News',
+    publishedAt: '2026-02-24',
+    summary: 'Figure skating stars performed at the Winter Olympics exhibition gala in what appears to be a photo gallery coverage.',
+    entities: [
+      { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-olympic-champions-miura-rikukihara-ryuichi-withdraw-from-202',
+    title: 'Olympic champions Miura Riku/Kihara Ryuichi withdraw from 2026 World Figure Skating Championships',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-27',
+    summary: 'Olympic champions Miura Riku and Kihara Ryuichi have withdrawn from the 2026 World Figure Skating Championships.',
+    entities: [
+      { type: 'skater', id: 'miura-kihara' }, { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202602-wang-shiyue-liu-xinyu',
+    title: 'WANG Shiyue / LIU Xinyu',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-23',
+    summary: 'The headline references Chinese ice dance team WANG Shiyue and LIU Xinyu in relation to the Milano Cortina 2026 Olympics.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-anastasiia-gubanova',
+    title: 'Anastasiia GUBANOVA',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-25',
+    summary: 'The headline references Anastasiia Gubanova in connection with Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-kevin-aymoz',
+    title: 'Kevin AYMOZ',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-24',
+    summary: 'The headline mentions Kevin Aymoz in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'kevin-aymoz' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-skyliner-lives-life-at-breakneck-speed-as-she-pursues-her-pa',
+    title: 'Skyliner Lives Life At Breakneck Speed As She Pursues Her Passion On The Ice, In The Classroom',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-26',
+    summary: 'A skater nicknamed \'Skyliner\' is featured for living life at a fast pace while balancing figure skating and academic pursuits.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-charlene-guignard',
+    title: 'Charlene GUIGNARD',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-25',
+    summary: 'The headline mentions Charlene Guignard in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'guignard-fabbri' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-winter-olympics-2026-how-the-figure-skating-gala-is-a-canvas',
+    title: 'Winter Olympics 2026: How the figure skating gala is a canvas of creation for skaters',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-19',
+    summary: 'The figure skating gala at the 2026 Winter Olympics serves as a creative platform for skaters to showcase their artistic expression.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-what-is-an-axel-top-olympic-figure-skating-moves-explained',
+    title: 'What is an axel? Top Olympic figure skating moves explained',
+    url: 'https://www.espn.com',
+    source: 'ESPN',
+    publishedAt: '2026-02-17',
+    summary: 'This article explains what an axel is and provides explanations of top figure skating moves performed at the Olympics.',
+    entities: [
+      { type: 'element', id: 'axel' }
+    ],
+  },
+  {
+    id: '202602-olympic-figure-skating-fashion-behind-the-costume-designs',
+    title: 'Olympic figure skating fashion: Behind the costume designs',
+    url: 'https://www.espn.com',
+    source: 'ESPN',
+    publishedAt: '2026-02-19',
+    summary: 'The article explores the behind-the-scenes process of costume design for Olympic figure skating competitions.',
+    entities: [
+      { type: 'competition', id: '2022-olympics' }
+    ],
+  },
 ]
