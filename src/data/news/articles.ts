@@ -1016,4 +1016,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2022-olympics' }
     ],
   },
+  {
+    id: '202602-from-los-angeles-to-oakland-california-artists-celebrate-aly',
+    title: 'From Los Angeles to Oakland, California artists celebrate Alysa Liu: ‘How could we not?’',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-28',
+    summary: 'Artists across California from Los Angeles to Oakland are celebrating figure skater Alysa Liu.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202602-figure-skating-pair-skating',
+    title: 'Figure Skating Pair Skating',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-27',
+    summary: 'The headline references pair skating as a discipline in figure skating, in connection with the Milano Cortina 2026 Olympics.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-lara-naki-gutmann',
+    title: 'Lara Naki GUTMANN',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-26',
+    summary: 'The headline references Lara Naki Gutmann in connection with Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-piper-gilles',
+    title: 'Piper GILLES',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-26',
+    summary: 'The headline mentions Piper Gilles in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'gilles-poirier' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-olivia-smart',
+    title: 'Olivia SMART',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-26',
+    summary: 'The headline mentions Olivia Smart in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'smart-diaz' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-vadym-kolesnik',
+    title: 'Vadym KOLESNIK',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-26',
+    summary: 'The headline mentions Vadym Kolesnik in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-anastasiia-metelkina',
+    title: 'Anastasiia METELKINA',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-26',
+    summary: 'The headline mentions Anastasiia Metelkina in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'metelkina-berulava' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-exclusive-mikhail-shaidorovs-whirlwind-48-hours-since-winnin',
+    title: 'Exclusive: Mikhail Shaidorov\'s whirlwind 48 hours since winning figure skating gold and message of support for Malinin',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-15',
+    summary: 'Mikhail Shaidorov discusses his busy 48 hours following his figure skating gold medal victory and shares a message of support for fellow skater Ilia Malinin.',
+    entities: [
+      { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202602-ilia-malinin-alysa-liu-sakamoto-kaori-lead-usa-and-japan-int',
+    title: 'Ilia Malinin, Alysa Liu, Sakamoto Kaori lead USA and Japan into figure skating team event at Winter Olympics 2026: All skaters competing',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-06',
+    summary: 'Ilia Malinin, Alysa Liu, and Sakamoto Kaori are leading USA and Japan into the figure skating team event at the 2026 Winter Olympics.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'kaori-sakamoto' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-amber-glenn-proud-of-olympic-fight-as-she-leaves-milano-cort',
+    title: 'Amber Glenn proud of Olympic fight as she leaves Milano Cortina 2026 with team gold and momentum',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-28',
+    summary: 'Amber Glenn expressed pride in her Olympic performance as she concluded the Milano Cortina 2026 Olympics with a team gold medal and positive momentum.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
