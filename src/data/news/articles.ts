@@ -1126,4 +1126,81 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'amber-glenn' }, { type: 'competition', id: '2026-olympics' }
     ],
   },
+  {
+    id: '202603-in-alysa-liu-and-eileen-gu-china-and-america-see-a-mirror-im',
+    title: 'In Alysa Liu and Eileen Gu, China and America See a Mirror Image',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-03-02',
+    summary: 'The article examines how Alysa Liu and Eileen Gu represent mirror images for both China and America.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202602-emilea-zingas',
+    title: 'Emilea ZINGAS',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-26',
+    summary: 'News related to figure skater Emilea Zingas in connection with Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-minerva-fabienne-hase',
+    title: 'Minerva Fabienne HASE',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-27',
+    summary: 'The headline mentions Minerva Fabienne Hase in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'skater', id: 'hase-volodin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-alexei-sviatchenko',
+    title: 'Alexei SVIATCHENKO',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-26',
+    summary: 'The headline mentions Alexei Sviatchenko in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-figure-skating-is-a-young-womans-sport-she-wants-to-change-t',
+    title: 'Figure Skating Is a Young Woman’s Sport. She Wants to Change That.',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-14',
+    summary: 'Figure skating is traditionally dominated by young women, but an unnamed skater is working to change that demographic trend in the sport.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202601-us-ice-dance-makes-it-a-clean-sweep-at-four-continents-champ',
+    title: 'U.S. Ice Dance Makes It a Clean Sweep at Four Continents Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-23',
+    summary: 'U.S. ice dance teams achieved a clean sweep at the Four Continents Championships, winning all available medals in the discipline.',
+    entities: [
+      { type: 'competition', id: '2025-four-continents' }
+    ],
+  },
+  {
+    id: '202602-us-team-event-participant-announced-for-mens-short-program',
+    title: 'U.S. Team Event Participant Announced for Men’s Short Program',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-06',
+    summary: 'U.S. Figure Skating has announced which skater will compete in the men\'s short program for the team event.',
+    entities: [
+      
+    ],
+  },
 ]
