@@ -1203,4 +1203,114 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202603-us-figure-skating-sends-14-of-nations-rising-stars-to-world',
+    title: 'U.S. Figure Skating Sends 14 of Nation’s Rising Stars to World Junior Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-02',
+    summary: 'U.S. Figure Skating has selected 14 rising stars from the nation to compete at the World Junior Championships.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-alysa-liu-reflects-on-olympics-figure-skating-mentality-on-t',
+    title: 'Alysa Liu reflects on Olympics, figure skating mentality on TODAY Show',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-03',
+    summary: 'Alysa Liu appeared on the TODAY Show to discuss her Olympic experience and her perspective on figure skating mentality.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202603-isu-world-junior-figure-skating-championships-2026-in-tallin',
+    title: 'ISU World Junior Figure Skating Championships 2026 in Tallinn: Preview, schedule, and how to watch live',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-03-02',
+    summary: 'This article provides a preview, schedule, and viewing information for the ISU World Junior Figure Skating Championships 2026 taking place in Tallinn.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-us-champion-johnny-johns-passes-away',
+    title: 'U.S. Champion Johnny Johns Passes Away',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-02',
+    summary: 'U.S. Champion Johnny Johns has passed away.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-figure-skating-ice-dance',
+    title: 'Figure Skating Ice Dance',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-03-01',
+    summary: 'This headline references Ice Dance competition at Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-shin-jia',
+    title: 'SHIN Jia',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-28',
+    summary: 'The headline mentions SHIN Jia in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-lorine-schild',
+    title: 'Lorine SCHILD',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-28',
+    summary: 'The headline references Lorine Schild in connection with Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-lukas-britschgi',
+    title: 'Lukas BRITSCHGI',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-28',
+    summary: 'The headline mentions Lukas Britschgi in relation to Milano Cortina 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-deanna-stellato-dudek',
+    title: 'Deanna STELLATO-DUDEK',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-28',
+    summary: 'News about figure skater Deanna Stellato-Dudek related to the Milano Cortina 2026 Olympics.',
+    entities: [
+      { type: 'skater', id: 'stellato-dudek-deschamps' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-winter-olympics-2026-usas-alysa-liu-storms-to-olympic-title',
+    title: 'Winter Olympics 2026: USA’s Alysa Liu storms to Olympic title, first American woman to claim gold in 24 years',
+    url: 'https://www.olympics.com',
+    source: 'Milano Cortina 2026',
+    publishedAt: '2026-02-19',
+    summary: 'Alysa Liu of Team USA won the Olympic gold medal in women\'s figure skating at the 2026 Winter Olympics, becoming the first American woman to claim Olympic gold in the discipline in 24 years.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
