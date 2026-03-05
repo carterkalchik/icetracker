@@ -1313,4 +1313,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }, { type: 'competition', id: '2026-olympics' }
     ],
   },
+  {
+    id: '202603-isu-world-junior-figure-skating-championships-2026-full-sche',
+    title: 'ISU World Junior Figure Skating Championships 2026: Full schedule, all results, scores and medals',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-04',
+    summary: 'The headline refers to comprehensive coverage of the ISU World Junior Figure Skating Championships 2026, including the full schedule, all results, scores and medals.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-teams-elite-junior-looks-to-continue-undefeated-season-after',
+    title: 'Teams Elite Junior Looks to Continue Undefeated Season after Short Program Win at U.S. Synchronized Skating Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-05',
+    summary: 'Teams Elite Junior won the short program at the U.S. Synchronized Skating Championships and is looking to maintain their undefeated season record.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-sanchez-flores-and-wang-finish-short-program-in-medal-conten',
+    title: 'Sanchez, Flores and Wang Finish Short Program in Medal Contention at ISU Figure Skating Junior World Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-05',
+    summary: 'Sanchez, Flores and Wang finished the short program in medal contention at the ISU Figure Skating Junior World Championships.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-nothing-to-lose-skyliners-junior-build-on-success',
+    title: '‘Nothing To Lose,’ Skyliners Junior Build On Success',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-04',
+    summary: 'The Skyliners Junior team is building on their previous success with a \'nothing to lose\' mentality.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-limitless-possibilities-await-latino-skater',
+    title: '‘Limitless Possibilities’ Await Latino Skater',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-03',
+    summary: 'A Latino figure skater is highlighted as having \'limitless possibilities\' ahead of them.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-nations-top-teams-to-vie-for-us-titles-at-the-2026-us-synchr',
+    title: 'Nation’s Top Teams to Vie for U.S. Titles at the 2026 U.S. Synchronized Skating Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-03',
+    summary: 'The nation\'s top synchronized skating teams will compete for U.S. titles at the 2026 U.S. Synchronized Skating Championships.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-lia-pereira',
+    title: 'Lia PEREIRA',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-01',
+    summary: 'The headline mentions Lia Pereira, a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-shimada-mao-chasing-history-with-a-smile-at-isu-world-junior',
+    title: 'Shimada Mao chasing history with a smile at ISU World Junior Figure Skating Championships 2026',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-03',
+    summary: 'Shimada Mao is pursuing a historic achievement with a positive attitude at the ISU World Junior Figure Skating Championships 2026.',
+    entities: [
+      { type: 'skater', id: 'shimada-mao' }
+    ],
+  },
+  {
+    id: '202602-christina-carreira',
+    title: 'Christina CARREIRA',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-27',
+    summary: 'The headline mentions figure skater Christina Carreira.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-malinin-finishes-eighth-in-olympic-debut',
+    title: 'Malinin Finishes Eighth in Olympic Debut',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-13',
+    summary: 'Malinin finished in eighth place in his Olympic debut competition.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
 ]
