@@ -1423,4 +1423,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'ilia-malinin' }
     ],
   },
+  {
+    id: '202603-malinin-wins-fair-play-award-for-his-grace-in-defeat-to-shai',
+    title: 'Malinin wins fair play award for his grace in defeat to Shaidorov at Winter Olympics',
+    url: 'https://www.washingtonpost.com',
+    source: 'The Washington Post',
+    publishedAt: '2026-03-06',
+    summary: 'Ilia Malinin received a fair play award for displaying grace in his defeat to Shaidorov at the Winter Olympics.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202603-figure-skaters-with-disabilities-seek-a-place-in-the-paralym',
+    title: 'Figure skaters with disabilities seek a place in the Paralympic spotlight',
+    url: 'https://apnews.com',
+    source: 'AP News',
+    publishedAt: '2026-03-03',
+    summary: 'Figure skaters with disabilities are seeking recognition and inclusion in the Paralympic spotlight.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-teams-elite-junior-completes-three-peat-in-salt-lake-city',
+    title: 'Teams Elite Junior Completes Three-Peat in Salt Lake City',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-06',
+    summary: 'Teams Elite Junior has completed a three-peat (third consecutive championship) in Salt Lake City.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-ilia-malinin-receives-milan-cortina-2026-olympics-fair-play',
+    title: 'Ilia Malinin receives Milan Cortina 2026 Olympics Fair Play Award',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-05',
+    summary: 'Ilia Malinin has been awarded the Fair Play Award for the Milan Cortina 2026 Olympics.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202603-flores-and-wang-claim-fifth-place-at-junior-worlds',
+    title: 'Flores and Wang Claim Fifth Place at Junior Worlds',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-05',
+    summary: 'Flores and Wang finished in fifth place at Junior Worlds.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-malinin-honored-with-milano-cortina-2026-fair-play-award',
+    title: 'Malinin Honored With Milano Cortina 2026 Fair Play Award',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-05',
+    summary: 'Ilia Malinin has been honored with the Milano Cortina 2026 Fair Play Award.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202603-olga-mikutina',
+    title: 'Olga MIKUTINA',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-03',
+    summary: 'The headline references Olga Mikutina, a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-madeline-schizas',
+    title: 'Madeline SCHIZAS',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-03',
+    summary: 'The headline references Madeline Schizas, a figure skater.',
+    entities: [
+      { type: 'skater', id: 'madeline-schizas' }
+    ],
+  },
+  {
+    id: '202603-tomas-guarino-sabate',
+    title: 'Tomas GUARINO SABATE',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-03',
+    summary: 'The headline mentions Tomas Guarino Sabate, appearing to reference a figure skater by that name.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-nika-egadze',
+    title: 'Nika EGADZE',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-03',
+    summary: 'The headline mentions Nika Egadze, a figure skater featured on olympics.com.',
+    entities: [
+      
+    ],
+  },
 ]
