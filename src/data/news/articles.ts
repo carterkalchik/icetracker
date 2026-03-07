@@ -1533,4 +1533,114 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202603-amber-glenn-says-she-will-not-visit-white-house-to-celebrate',
+    title: 'Amber Glenn says she will not visit White House to celebrate Olympic gold',
+    url: 'https://www.theguardian.com/sport/2026/mar/06/amber-glenn-trump-white-house-olympics-refusal',
+    source: 'theguardian.com',
+    publishedAt: '2026-03-06',
+    summary: 'Team USA figure skater Amber Glenn announced she will not visit the White House to celebrate her Olympic team gold medal from the Milano Cortina Games. Glenn, who identifies as pansexual and bisexual, has been critical of President Trump and believes athletes have the right to choose what they endorse. She finished fifth in the Olympic women\'s singles, while her teammate Alysa Liu won the individual gold medal.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }, { type: 'skater', id: 'alysa-liu' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202603-alysa-liu-on-dancing-her-way-to-olympic-gold-the-music-carri',
+    title: 'Alysa Liu on Dancing Her Way to Olympic Gold: ‘The Music Carries My Body’',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-03-06',
+    summary: 'Alysa Liu discusses her approach to dancing her way to Olympic gold, emphasizing how the music carries her body.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202603-us-figure-skater-ilia-malinin-wins-fair-play-award-for-displ',
+    title: 'U.S. Figure skater Ilia Malinin wins Fair Play Award for display of sportsmanship at Winter Olympics 2026',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-05',
+    summary: 'U.S. figure skater Ilia Malinin has won the Fair Play Award for demonstrating exceptional sportsmanship at the 2026 Winter Olympics.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-2026-winter-olympics-figure-skater-sabate-hopeful-over-minio',
+    title: '2026 Winter Olympics: Figure skater Sabate hopeful over Minions music dispute',
+    url: 'https://www.bbc.com',
+    source: 'BBC',
+    publishedAt: '2026-02-04',
+    summary: 'Figure skater Sabate is hopeful regarding a music dispute involving Minions music in relation to the 2026 Winter Olympics.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202603-haydenettes-rise-to-short-program-lead-at-us-synchronized-sk',
+    title: 'Haydenettes Rise to Short Program Lead at U.S. Synchronized Skating Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-07',
+    summary: 'The Haydenettes team has taken the lead after the short program portion of the U.S. Synchronized Skating Championships.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-aboian-and-veselukhin-claim-rhythm-dance',
+    title: 'Aboian and Veselukhin Claim Rhythm Dance',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-06',
+    summary: 'Aboian and Veselukhin won the rhythm dance segment of a figure skating competition.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-nyquist-brings-championship-standard-to-redhawks',
+    title: 'Nyquist brings ‘Championship Standard’ to RedHawks',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-06',
+    summary: 'Nyquist is bringing a \'Championship Standard\' to the RedHawks program.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-andreas-nordeback',
+    title: 'Andreas NORDEBACK',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-04',
+    summary: 'The headline mentions Andreas Nordeback, a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-kam-and-oshea-chan-and-akira-howe-rise-to-the-occasion',
+    title: 'Kam And O’Shea, Chan and Akira Howe Rise to the Occasion',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-15',
+    summary: 'Skaters Kam and O\'Shea, along with Chan and Akira Howe, delivered strong performances when it mattered most.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-chan-and-akira-howe-kam-and-oshea-secure-top-10-finishes-in',
+    title: 'Chan and Akira Howe, Kam and O’Shea Secure Top-10 Finishes in Olympic Pairs Event',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-16',
+    summary: 'Pairs teams Chan and Akira Howe, and Kam and O\'Shea both achieved top-10 finishes in the Olympic pairs event.',
+    entities: [
+      { type: 'competition', id: '2022-olympics' }
+    ],
+  },
 ]
