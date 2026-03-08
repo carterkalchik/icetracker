@@ -1643,4 +1643,70 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2022-olympics' }
     ],
   },
+  {
+    id: '202603-aboian-and-veselukhin-win-ice-dance-title-cap-season-undefea',
+    title: 'Aboian and Veselukhin Win Ice Dance Title, Cap Season Undefeated',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-07',
+    summary: 'Aboian and Veselukhin won the ice dance title and completed their season undefeated.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-olympic-champ-alysa-liu-withdraws-from-figure-skating-worlds',
+    title: 'Olympic champ Alysa Liu withdraws from figure skating worlds',
+    url: 'https://www.espn.com',
+    source: 'ESPN',
+    publishedAt: '2026-03-07',
+    summary: 'Olympic champion Alysa Liu has withdrawn from the figure skating world championships.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202603-stephen-gogolev',
+    title: 'Stephen GOGOLEV',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-06',
+    summary: 'The headline references Stephen Gogolev, a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-chiba-mone',
+    title: 'CHIBA Mone',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-05',
+    summary: 'The headline references Japanese figure skater Chiba Mone.',
+    entities: [
+      { type: 'skater', id: 'mone-chiba' }
+    ],
+  },
+  {
+    id: '202603-maxime-deschamps',
+    title: 'Maxime DESCHAMPS',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-05',
+    summary: 'The headline mentions figure skater Maxime Deschamps.',
+    entities: [
+      { type: 'skater', id: 'stellato-dudek-deschamps' }
+    ],
+  },
+  {
+    id: '202602-how-to-watch-pairs-figure-skating-medal-events-at-the-2026-w',
+    title: 'How to watch pairs figure skating medal events at the 2026 Winter Olympics',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-15',
+    summary: 'The article provides information on how to watch pairs figure skating medal events at the 2026 Winter Olympics.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
