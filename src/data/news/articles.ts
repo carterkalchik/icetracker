@@ -1709,4 +1709,81 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2026-olympics' }
     ],
   },
+  {
+    id: '202603-haydenettes-skyliners-go-1-2-to-clinch-world-synchronized-sk',
+    title: 'Haydenettes, Skyliners Go 1-2 to Clinch World Synchronized Skating Championships Positions',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-08',
+    summary: 'The Haydenettes and Skyliners finished first and second respectively to secure positions for the World Synchronized Skating Championships.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-isu-world-junior-figure-skating-championships-2026-shimada-m',
+    title: 'ISU World Junior Figure Skating Championships 2026: Shimada Mao wins fourth consecutive title despite illness',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-07',
+    summary: 'Shimada Mao won her fourth consecutive title at the ISU World Junior Figure Skating Championships 2026 despite competing while ill.',
+    entities: [
+      { type: 'skater', id: 'shimada-mao' }
+    ],
+  },
+  {
+    id: '202603-evan-bates',
+    title: 'Evan BATES',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-05',
+    summary: 'The headline mentions Evan Bates, an American ice dancer.',
+    entities: [
+      { type: 'skater', id: 'chock-bates' }
+    ],
+  },
+  {
+    id: '202602-how-to-watch-team-usas-alysa-liu-amber-glenn-isabeau-levito',
+    title: 'How to watch Team USA’s Alysa Liu, Amber Glenn, Isabeau Levito in women’s figure skating',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-17',
+    summary: 'The article provides information on how to watch Team USA\'s figure skaters Alysa Liu, Amber Glenn, and Isabeau Levito compete in women\'s figure skating.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'amber-glenn' }, { type: 'skater', id: 'isabeau-levito' }
+    ],
+  },
+  {
+    id: '202602-a-winding-road-to-italy-for-chan-and-howe',
+    title: 'A Winding Road to Italy for Chan and Howe',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-15',
+    summary: 'Chan and Howe have taken a winding road to reach Italy for competition.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-winter-olympics-2026-mikhail-shaidorov-stuns-for-olympic-fig',
+    title: 'Winter Olympics 2026: Mikhail Shaidorov stuns for Olympic figure skating title',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-13',
+    summary: 'Mikhail Shaidorov delivered a stunning performance to win the Olympic figure skating title at the 2026 Winter Olympics.',
+    entities: [
+      { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-malinin-storms-to-short-program-victory',
+    title: 'Malinin Storms to Short Program Victory',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-10',
+    summary: 'Malinin achieved victory in the short program segment of a figure skating competition.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
 ]
