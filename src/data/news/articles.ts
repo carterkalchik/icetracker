@@ -1786,4 +1786,48 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'ilia-malinin' }
     ],
   },
+  {
+    id: '202603-why-is-figure-skating-not-in-the-paralympics',
+    title: 'Why is figure skating not in the Paralympics?',
+    url: 'https://www.bbc.com/sport/articles/c0k1ygxlvn7o?at_medium=RSS&at_campaign=rss',
+    source: 'bbc.com',
+    publishedAt: '2026-03-09',
+    summary: 'Figure skating is not included in the Winter Paralympics because the International Skating Union (ISU) is not recognized by the International Paralympic Committee (IPC), and the sport lacks sufficient international participation levels. The sport faces challenges including establishing classification categories for different disabilities and adapting competition formats to accommodate various impairments. While there are growing calls from skaters for inclusion, no new sports have been added to the Winter Paralympics since Para-snowboard in 2014.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202603-winter-paralympics-2026-why-is-figure-skating-not-at-milan-c',
+    title: 'Winter Paralympics 2026: Why is figure skating not at Milan-Cortina?',
+    url: 'https://www.bbc.com',
+    source: 'BBC',
+    publishedAt: '2026-03-09',
+    summary: 'The headline questions why figure skating is not included in the 2026 Winter Paralympics in Milan-Cortina.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-alysa-liu-withdraws-from-world-figure-skating-championships',
+    title: 'Alysa Liu withdraws from World Figure Skating Championships: ‘See yall next season!!’',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-08',
+    summary: 'Alysa Liu has withdrawn from the World Figure Skating Championships and indicated she will return next season.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202603-looking-back-the-40th-anniversary-of-tiffany-chins-second-wo',
+    title: 'Looking Back: The 40th Anniversary of Tiffany Chin’s Second World medal',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-09',
+    summary: 'The article commemorates the 40th anniversary of Tiffany Chin earning her second World Championship medal.',
+    entities: [
+      
+    ],
+  },
 ]
