@@ -1830,4 +1830,70 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202602-team-usa-wins-gold-in-figure-skating-at-olympics-reactions-h',
+    title: 'Team USA wins gold in figure skating at Olympics: Reactions, highlights',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-02-08',
+    summary: 'Team USA won gold in figure skating at the Olympics, with reactions and highlights being reported.',
+    entities: [
+      { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-russian-figure-skater-changes-olympic-music-over-copyright',
+    title: 'Russian figure skater changes Olympic music over copyright',
+    url: 'https://www.espn.com',
+    source: 'ESPN',
+    publishedAt: '2026-02-08',
+    summary: 'A Russian figure skater has changed their Olympic music due to copyright issues.',
+    entities: [
+      { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-olympic-figure-skating-music-dispute-between-armenia-and-aze',
+    title: 'Olympic figure skating music dispute between Armenia and Azerbaijan resolved after ISU review',
+    url: 'https://www.theguardian.com',
+    source: 'The Guardian',
+    publishedAt: '2026-02-08',
+    summary: 'A music dispute between Armenia and Azerbaijan in Olympic figure skating has been resolved following a review by the ISU.',
+    entities: [
+      { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202602-nothing-could-stop-the-us-figure-skating-team-not-even-jd-va',
+    title: 'Nothing could stop the U.S. figure skating team. Not even JD Vance’s motorcade.',
+    url: 'https://www.washingtonpost.com',
+    source: 'The Washington Post',
+    publishedAt: '2026-02-06',
+    summary: 'The U.S. figure skating team was not deterred by JD Vance\'s motorcade, suggesting they overcame this logistical obstacle during their activities.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-teams-elite-junior-skyliners-junior-head-to-junior-world-cha',
+    title: 'Teams Elite Junior, Skyliners Junior Head to Junior World Championships with Goals of the Podium',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-10',
+    summary: 'Teams Elite Junior and Skyliners Junior are heading to the Junior World Championships with aspirations of reaching the podium.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-2-time-olympic-champs-chock-and-bates-withdraw-from-ice-danc',
+    title: '2-time Olympic champs Chock and Bates withdraw from ice dance worlds after Milan Cortina Olympics',
+    url: 'https://apnews.com',
+    source: 'AP News',
+    publishedAt: '2026-03-09',
+    summary: 'Two-time Olympic champions Chock and Bates have withdrawn from the ice dance world championships following the Milan Cortina Olympics.',
+    entities: [
+      { type: 'skater', id: 'chock-bates' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
