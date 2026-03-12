@@ -1896,4 +1896,37 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'chock-bates' }, { type: 'competition', id: '2026-olympics' }
     ],
   },
+  {
+    id: '202603-hanyu-yuzuru-commemorates-2011-earthquake-i-want-to-keep-bei',
+    title: 'Hanyu Yuzuru commemorates 2011 earthquake: "I want to keep being the catalyst to avoid the disaster fading"',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-11',
+    summary: 'Yuzuru Hanyu commemorates the 2011 earthquake, expressing his desire to continue serving as a catalyst to prevent the disaster from being forgotten.',
+    entities: [
+      { type: 'skater', id: 'yuzuru-hanyu' }
+    ],
+  },
+  {
+    id: '202603-lee-haein',
+    title: 'LEE Haein',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-09',
+    summary: 'The headline references LEE Haein, a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-sui-wenjing',
+    title: 'SUI Wenjing',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-09',
+    summary: 'The headline references SUI Wenjing, a figure skater.',
+    entities: [
+      { type: 'skater', id: 'sui-han' }
+    ],
+  },
 ]
