@@ -1929,4 +1929,37 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'sui-han' }
     ],
   },
+  {
+    id: '202603-she-is-our-hero-oakland-celebrates-alysa-liu-after-olympics',
+    title: '‘She is our hero’: Oakland celebrates Alysa Liu after Olympics triumph',
+    url: 'https://www.theguardian.com/sport/2026/mar/12/alysa-liu-olympics-oakland',
+    source: 'theguardian.com',
+    publishedAt: '2026-03-13',
+    summary: 'Olympic figure skating champion Alysa Liu was celebrated by nearly 5,000 people at a homecoming rally in Oakland, California, where she received a key to the city. Liu won two Olympic gold medals in Milan after returning to competitive skating following a two-year break. She became the first US woman to win individual figure skating Olympic gold in 24 years and was previously the youngest US women\'s champion at age 13.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'competition', id: '2022-olympics' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-behind-the-scenes-of-alysa-lius-olympic-victory-tour-and-her',
+    title: 'Behind the scenes of Alysa Liu’s Olympic victory tour and her new level of fame',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-03-12',
+    summary: 'The article covers Alysa Liu\'s Olympic victory tour and discusses her increased level of fame following her Olympic success.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202603-alysa-lius-new-reality-is-a-post-olympic-spotlight-for-a-new',
+    title: 'Alysa Liu’s new reality is a post-Olympic spotlight for a new age for figure skating',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-12',
+    summary: 'Alysa Liu is experiencing a new reality in the post-Olympic spotlight, which represents a new age for figure skating.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
 ]
