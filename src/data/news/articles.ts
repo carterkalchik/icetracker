@@ -1962,4 +1962,48 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }
     ],
   },
+  {
+    id: '202603-alysa-liu-caps-olympic-stardom-tour-with-a-big-party-where-i',
+    title: 'Alysa Liu caps Olympic stardom tour with a big party where it all began, in Oakland',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-03-13',
+    summary: 'Alysa Liu concluded her Olympic stardom tour with a large celebration in Oakland, where her skating journey began.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202603-skyliners-junior-posts-seasons-best-for-second-in-short-prog',
+    title: 'Skyliners Junior Posts Season’s Best for Second in Short Program at Junior Worlds',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-13',
+    summary: 'Skyliners Junior achieved a season\'s best performance to place second in the short program at Junior Worlds.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-harris-holly-chan-jason',
+    title: 'HARRIS Holly / CHAN Jason',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-08',
+    summary: 'The headline references figure skaters Holly Harris and Jason Chan.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-olympics-figure-skating-highlights-alysa-liu-in-3rd-after-sh',
+    title: 'Olympics figure skating highlights: Alysa Liu in 3rd after short program',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-02-19',
+    summary: 'Alysa Liu is currently in third place after completing her short program at the Olympics figure skating competition.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'competition', id: '2022-olympics' }
+    ],
+  },
 ]
