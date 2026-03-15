@@ -2006,4 +2006,48 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }, { type: 'competition', id: '2022-olympics' }
     ],
   },
+  {
+    id: '202603-skyliners-junior-clinch-seventh-junior-world-medal-with-bron',
+    title: 'Skyliners Junior Clinch Seventh Junior World Medal with Bronze',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-14',
+    summary: 'The Skyliners Junior team won a bronze medal, marking their seventh medal at the Junior World Championships.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-maxim-naumov',
+    title: 'Maxim NAUMOV',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-13',
+    summary: 'The headline mentions Maxim Naumov, appearing to be about this figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-winter-olympics-2026-ilia-malinin-delivers-under-pressure-se',
+    title: 'Winter Olympics 2026: Ilia Malinin delivers under pressure, securing Team USA second straight figure skating gold',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-08',
+    summary: 'Ilia Malinin performed well under pressure at the 2026 Winter Olympics, helping Team USA win their second consecutive figure skating gold medal.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-winter-olympics-2026-japans-nakai-ami-delivers-in-figure-ska',
+    title: 'Winter Olympics 2026: Japan’s Nakai Ami delivers in figure skating short program for lead',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-17',
+    summary: 'Japan\'s Ami Nakai delivered a strong performance in the figure skating short program at the 2026 Winter Olympics, taking the lead.',
+    entities: [
+      { type: 'skater', id: 'ami-nakai' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
