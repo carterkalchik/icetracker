@@ -2050,4 +2050,59 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'ami-nakai' }, { type: 'competition', id: '2026-olympics' }
     ],
   },
+  {
+    id: '202602-french-ice-dancers-fournier-beaudry-and-cizeron-face-controv',
+    title: 'French ice dancers Fournier Beaudry and Cizeron face controversy',
+    url: 'https://www.reuters.com',
+    source: 'Reuters',
+    publishedAt: '2026-02-05',
+    summary: 'French ice dancers Fournier Beaudry and Cizeron are facing some form of controversy.',
+    entities: [
+      { type: 'skater', id: 'fournier-beaudry-cizeron' }
+    ],
+  },
+  {
+    id: '202603-niccolo-macii',
+    title: 'Niccolo MACII',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-13',
+    summary: 'The headline references Niccolo Macii, a figure skater.',
+    entities: [
+      { type: 'skater', id: 'conti-macii' }
+    ],
+  },
+  {
+    id: '202603-how-jeff-norton-created-netflixs-latest-teen-drama-about-fig',
+    title: 'How Jeff Norton created Netflix’s latest teen drama about figure skating',
+    url: 'https://www.cbc.ca',
+    source: 'CBC',
+    publishedAt: '2026-03-16',
+    summary: 'Jeff Norton created Netflix\'s latest teen drama series that focuses on figure skating.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-us-figure-skating-announces-2026-27-national-qualifying-seri',
+    title: 'U.S. Figure Skating Announces 2026-27 National Qualifying Series Schedule',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-02',
+    summary: 'U.S. Figure Skating has announced the schedule for the 2026-27 National Qualifying Series.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202512-build-a-bear-takes-center-ice-as-the-official-stuffed-animal',
+    title: 'Build-A-Bear Takes Center Ice as the Official Stuffed Animal of the 2026 Prevagen U.S. Figure Skating Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2025-12-22',
+    summary: 'Build-A-Bear has been announced as the official stuffed animal partner of the 2026 Prevagen U.S. Figure Skating Championships.',
+    entities: [
+      
+    ],
+  },
 ]
