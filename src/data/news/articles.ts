@@ -2105,4 +2105,59 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202603-olympic-champion-alysa-lius-new-high-profile-this-is-crazy',
+    title: 'Olympic champion Alysa Liu\'s new high profile: "This is crazy"',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-16',
+    summary: 'Olympic champion Alysa Liu is experiencing a new high profile situation that she describes as \'crazy\'.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202602-japan-pair-knocks-the-king-and-queen-off-their-thrones',
+    title: 'Japan pair knocks the king and queen off their thrones.',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-18',
+    summary: 'A Japanese pairs team has defeated the previously dominant pair, described as the king and queen of their sport.',
+    entities: [
+      { type: 'skater', id: 'miura-kihara' }
+    ],
+  },
+  {
+    id: '202602-winter-olympics-2026-who-is-benoit-richaud-meet-figure-skati',
+    title: 'Winter Olympics 2026: Who is Benoit Richaud? Meet figure skating’s kiss and cry royalty, and artist of the ice',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-11',
+    summary: 'The headline introduces Benoit Richaud, described as figure skating\'s kiss and cry royalty and artist of the ice, in connection with the 2026 Winter Olympics.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202601-glenn-liu-levito-ignite-crowd-in-st-louis',
+    title: 'Glenn, Liu, Levito Ignite Crowd in St. Louis',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-08',
+    summary: 'Glenn, Liu, and Levito delivered exciting performances that energized the crowd at an event in St. Louis.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }, { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'isabeau-levito' }
+    ],
+  },
+  {
+    id: '202601-juniors-novice-set-the-tone-at-2026-us-championships',
+    title: 'Juniors, Novice Set The Tone at 2026 U.S. Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-06',
+    summary: 'Junior and Novice level skaters set the tone at the 2026 U.S. Championships competition.',
+    entities: [
+      
+    ],
+  },
 ]
