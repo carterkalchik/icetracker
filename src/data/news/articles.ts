@@ -2160,4 +2160,48 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202603-never-say-never-oregon-skater-grateful-for-her-skating-journ',
+    title: 'Never Say Never: Oregon Skater Grateful For Her Skating Journey',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-17',
+    summary: 'An Oregon figure skater reflects on being grateful for her skating journey, with the headline suggesting a story of perseverance.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-cha-junhwan',
+    title: 'CHA Junhwan',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-15',
+    summary: 'The headline references CHA Junhwan, a figure skater.',
+    entities: [
+      { type: 'skater', id: 'junhwan-cha' }
+    ],
+  },
+  {
+    id: '202602-ilia-malinin-and-snoop-dogg-figure-skating-masterclass-at-wi',
+    title: 'Ilia Malinin and Snoop Dogg: Figure skating masterclass at Winter Games 2026',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-03',
+    summary: 'Ilia Malinin and Snoop Dogg are involved in a figure skating masterclass at the Winter Games 2026.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202601-glenn-becomes-first-woman-to-win-three-consecutive-us-titles',
+    title: 'Glenn Becomes First Woman to Win Three Consecutive U.S. Titles Since Michelle Kwan',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-10',
+    summary: 'Glenn has become the first woman to win three consecutive U.S. titles since Michelle Kwan accomplished this feat.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
 ]
