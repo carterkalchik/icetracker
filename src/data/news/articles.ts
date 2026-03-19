@@ -2204,4 +2204,103 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'amber-glenn' }
     ],
   },
+  {
+    id: '202603-beaming-after-olympic-bronze-ice-dancers-gilles-and-poirier',
+    title: 'Beaming after Olympic bronze, ice dancers Gilles and Poirier aim to keep good times rolling at worlds',
+    url: 'https://www.cbc.ca',
+    source: 'CBC',
+    publishedAt: '2026-03-18',
+    summary: 'Ice dancers Gilles and Poirier are celebrating their Olympic bronze medal and looking to continue their success at the upcoming world championships.',
+    entities: [
+      { type: 'skater', id: 'gilles-poirier' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-houston-teen-driven-to-make-a-difference-in-the-world',
+    title: 'Houston Teen Driven to Make a Difference in the World',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-18',
+    summary: 'A teenager from Houston is motivated to make a positive impact in the world.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-kimmy-repond',
+    title: 'Kimmy REPOND',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-09',
+    summary: 'The headline mentions Kimmy REPOND, appearing to reference a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202601-us-figure-skating-announces-world-championships-world-junior',
+    title: 'U.S. Figure Skating Announces World Championships, World Junior Championships and Four Continents Teams',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-11',
+    summary: 'U.S. Figure Skating has announced the team selections for World Championships, World Junior Championships and Four Continents Championships.',
+    entities: [
+      { type: 'competition', id: '2025-worlds' }, { type: 'competition', id: '2025-four-continents' }
+    ],
+  },
+  {
+    id: '202601-team-united-states',
+    title: 'Team United States',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-01-31',
+    summary: 'The headline references Team United States in relation to figure skating coverage on olympics.com.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202601-efimova-and-mitrofanov-golden-at-four-continents-championshi',
+    title: 'Efimova and Mitrofanov Golden at Four Continents Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-24',
+    summary: 'Efimova and Mitrofanov won gold at the Four Continents Championships.',
+    entities: [
+      { type: 'competition', id: '2025-four-continents' }
+    ],
+  },
+  {
+    id: '202601-with-hope-efimova-and-mitrofanov-aim-for-second-us-title-and',
+    title: 'With Hope, Efimova and Mitrofanov Aim for Second U.S. Title and Olympic Eligibility',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-02',
+    summary: 'Efimova and Mitrofanov are aiming for their second U.S. title and Olympic eligibility with hope.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202602-highest-scoring-olympic-figure-skating-routines-of-all-time',
+    title: 'Highest-scoring Olympic figure skating routines of all time',
+    url: 'https://www.espn.com',
+    source: 'ESPN',
+    publishedAt: '2026-02-11',
+    summary: 'ESPN presents the highest-scoring Olympic figure skating routines of all time.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202511-spencer-howe-serving-his-country-while-chasing-skating-dream',
+    title: 'Spencer Howe Serving His Country While Chasing Skating Dreams',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2025-11-05',
+    summary: 'Spencer Howe is balancing military service with pursuing his figure skating career and competitive aspirations.',
+    entities: [
+      
+    ],
+  },
 ]
