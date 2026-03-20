@@ -2303,4 +2303,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202603-us-figure-skating-announces-locations-of-2027-us-figure-skat',
+    title: 'U.S. Figure Skating Announces Locations of 2027 U.S. Figure Skating and Synchronized Skating Championships, 2026 Skate America',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-19',
+    summary: 'U.S. Figure Skating has announced the locations for the 2027 U.S. Figure Skating and Synchronized Skating Championships as well as the 2026 Skate America competition.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-controversial-french-team-winning-gold-is-awful-for-figure-s',
+    title: 'Controversial French team winning gold is awful for figure skating, abuse survivors | Opinion',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-02-11',
+    summary: 'An opinion piece argues that a controversial French team winning gold is detrimental to figure skating and abuse survivors.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-us-skater-amber-glenn-faces-fallout-over-politics-and-issues',
+    title: 'US skater Amber Glenn faces fallout over politics and issues with music copyright after Olympic gold',
+    url: 'https://apnews.com',
+    source: 'AP News',
+    publishedAt: '2026-02-09',
+    summary: 'US skater Amber Glenn is dealing with political controversy and music copyright issues following her Olympic gold medal win.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
 ]
