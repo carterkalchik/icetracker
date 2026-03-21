@@ -2336,4 +2336,59 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'amber-glenn' }
     ],
   },
+  {
+    id: '202603-opinion-china-doesnt-want-you-to-know-about-operation-yellow',
+    title: 'Opinion | China doesn’t want you to know about Operation Yellowbird',
+    url: 'https://www.washingtonpost.com',
+    source: 'The Washington Post',
+    publishedAt: '2026-03-20',
+    summary: 'This is an opinion piece about China not wanting people to know about Operation Yellowbird.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-trennt-michaud',
+    title: 'Trennt MICHAUD',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-18',
+    summary: 'The headline mentions Trennt MICHAUD, though the context or nature of the news is not specified in the headline alone.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-janse-van-rensburg-jennifer-steffan-benjamin',
+    title: 'JANSE van RENSBURG Jennifer / STEFFAN Benjamin',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-10',
+    summary: 'The headline references figure skaters Jennifer Janse van Rensburg and Benjamin Steffan.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202512-us-figure-skating-partners-with-oofskate-to-bring-ai-powered',
+    title: 'U.S. Figure Skating Partners with OOFSkate to Bring AI Powered Jump Metrics to Athletes Nationwide',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2025-12-02',
+    summary: 'U.S. Figure Skating has announced a partnership with OOFSkate to provide AI-powered jump metrics technology to athletes across the country.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202601-us-captures-four-medals-at-us-synchronized-skating-internati',
+    title: 'U.S. Captures Four Medals at U.S. Synchronized Skating International Classic',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-31',
+    summary: 'The United States won four medals at the U.S. Synchronized Skating International Classic competition.',
+    entities: [
+      
+    ],
+  },
 ]
