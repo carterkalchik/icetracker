@@ -2391,4 +2391,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202603-yoshida-utana',
+    title: 'YOSHIDA Utana',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-18',
+    summary: 'The headline mentions YOSHIDA Utana, appearing to reference a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-paul-poirier',
+    title: 'Paul POIRIER',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-18',
+    summary: 'The headline mentions Paul Poirier, a figure skater.',
+    entities: [
+      { type: 'skater', id: 'gilles-poirier' }
+    ],
+  },
 ]
