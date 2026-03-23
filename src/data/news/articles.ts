@@ -2413,4 +2413,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'gilles-poirier' }
     ],
   },
+  {
+    id: '202602-my-olympic-dream-learning-to-figure-skate-in-middle-age',
+    title: 'My Olympic Dream: Learning to Figure Skate in Middle Age',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-02-11',
+    summary: 'An article about someone learning to figure skate in middle age while pursuing an Olympic dream.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
