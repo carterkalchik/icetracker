@@ -2424,4 +2424,48 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2026-olympics' }
     ],
   },
+  {
+    id: '202603-mcbeath-and-parkman-embrace-first-worlds-together',
+    title: 'McBeath and Parkman Embrace First Worlds Together',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-23',
+    summary: 'McBeath and Parkman are preparing for their first World Championships competition together as a team.',
+    entities: [
+      { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-malinin-seeks-post-olympics-redemption-at-world-championship',
+    title: 'Malinin seeks post-Olympics redemption at world championships in Prague',
+    url: 'https://www.japantimes.co.jp',
+    source: 'The Japan Times',
+    publishedAt: '2026-03-24',
+    summary: 'Malinin is looking for redemption at the world championships in Prague following the Olympics.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202512-nathan-chen-enters-us-figure-skating-hall-of-fame',
+    title: 'Nathan Chen Enters U.S. Figure Skating Hall of Fame',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2025-12-02',
+    summary: 'Nathan Chen has been inducted into the U.S. Figure Skating Hall of Fame.',
+    entities: [
+      { type: 'skater', id: 'nathan-chen' }
+    ],
+  },
+  {
+    id: '202601-full-us-lineup-to-compete-at-four-continents-championships',
+    title: 'Full U.S. Lineup to Compete at Four Continents Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-20',
+    summary: 'The full U.S. lineup has been announced to compete at the Four Continents Championships.',
+    entities: [
+      { type: 'competition', id: '2025-four-continents' }
+    ],
+  },
 ]
