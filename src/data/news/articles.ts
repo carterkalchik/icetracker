@@ -2468,4 +2468,48 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2025-four-continents' }
     ],
   },
+  {
+    id: '202603-us-sends-full-slate-of-skaters-to-world-championships',
+    title: 'U.S. Sends Full Slate of Skaters to World Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-24',
+    summary: 'The United States is sending a complete team of figure skaters to the World Championships.',
+    entities: [
+      { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-isu-world-figure-skating-championships-2026-alisa-efimova-an',
+    title: 'ISU World Figure Skating Championships 2026: Alisa Efimova and Misha Mitrofanov eager to "create new destinies" after missing out on Olympics',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-24',
+    summary: 'Figure skaters Alisa Efimova and Misha Mitrofanov are looking forward to the 2026 World Championships with hopes to \'create new destinies\' after missing out on the Olympics.',
+    entities: [
+      { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-ilia-malinin-and-amber-glenn-chase-figure-skating-world-titl',
+    title: 'Ilia Malinin and Amber Glenn chase figure skating world titles after Olympic disappointment',
+    url: 'https://apnews.com',
+    source: 'AP News',
+    publishedAt: '2026-03-24',
+    summary: 'Ilia Malinin and Amber Glenn are pursuing figure skating world titles following disappointment at the Olympics.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
+  {
+    id: '202603-the-new-slate-of-the-all-time-best-winter-olympics-figure-sk',
+    title: 'The new slate of the all-time best Winter Olympics figure-skating fashion',
+    url: 'https://www.cbc.ca',
+    source: 'CBC',
+    publishedAt: '2026-03-24',
+    summary: 'CBC presents a new compilation featuring the best fashion moments in figure skating history at the Winter Olympics.',
+    entities: [
+      
+    ],
+  },
 ]
