@@ -2512,4 +2512,114 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202603-olympics-stars-amber-glenn-isabeau-levito-competing-again-af',
+    title: 'Olympics stars Amber Glenn, Isabeau Levito competing again after whirlwind month',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-03-26',
+    summary: 'Olympic figure skating stars Amber Glenn and Isabeau Levito are competing again following a busy month of competition.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }, { type: 'skater', id: 'isabeau-levito' }
+    ],
+  },
+  {
+    id: '202603-isu-figure-skating-world-championships-2026-prague-womens-sh',
+    title: 'ISU Figure Skating World Championships 2026 Prague: Women\'s short program',
+    url: 'https://www.cbc.ca',
+    source: 'CBC',
+    publishedAt: '2026-03-25',
+    summary: 'The headline refers to the women\'s short program at the ISU Figure Skating World Championships 2026 taking place in Prague.',
+    entities: [
+      { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-all-session-tickets-for-2027-us-figure-skating-championships',
+    title: 'All-Session Tickets for 2027 U.S. Figure Skating Championships Go on Sale Thursday',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-25',
+    summary: 'All-session tickets for the 2027 U.S. Figure Skating Championships will go on sale Thursday.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-kaori-sakamoto-leads-figure-skating-worlds-after-short-progr',
+    title: 'Kaori Sakamoto leads figure skating worlds after short program; Americans in medal contention',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-25',
+    summary: 'Kaori Sakamoto is leading after the short program at the World Figure Skating Championships, with American skaters positioned well for potential medals.',
+    entities: [
+      { type: 'skater', id: 'kaori-sakamoto' }
+    ],
+  },
+  {
+    id: '202603-glenn-levito-in-prime-medal-position-at-world-championships',
+    title: 'Glenn, Levito in Prime Medal Position at World Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-25',
+    summary: 'Glenn and Levito are in prime medal position at the World Championships.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }, { type: 'skater', id: 'isabeau-levito' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-top-five-stories-to-read-in-the-spring-2026-issue-of-skating',
+    title: 'Top Five Stories to Read in the Spring 2026 Issue of SKATING Magazine',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-25',
+    summary: 'SKATING Magazine\'s Spring 2026 issue features five top stories for readers.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-hasevolodin-and-metelkinaberulava-less-than-point-apart-afte',
+    title: 'Hase/Volodin and Metelkina/Berulava less than point apart after short in battle for maiden world title',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-25',
+    summary: 'Hase/Volodin and Metelkina/Berulava are separated by less than a point after the short program in their competition for a first world championship title.',
+    entities: [
+      { type: 'skater', id: 'hase-volodin' }, { type: 'skater', id: 'metelkina-berulava' }
+    ],
+  },
+  {
+    id: '202603-isu-world-figure-skating-championships-2026-overcoming-post',
+    title: 'ISU World Figure Skating Championships 2026: Overcoming post-Milan travel nightmare, Isabeau Levito improves on Olympic short program score with new jump combo at Worlds',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-25',
+    summary: 'At the ISU World Figure Skating Championships 2026, Isabeau Levito overcame travel issues following Milan and improved her Olympic short program score by performing a new jump combination.',
+    entities: [
+      { type: 'skater', id: 'isabeau-levito' }, { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-after-double-silver-at-milano-cortina-2026-kagiyama-yuma-loo',
+    title: 'After double silver at Milano Cortina 2026, Kagiyama Yuma looks back: "I was set on showing everything I had in my skill set"',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-25',
+    summary: 'Yuma Kagiyama reflects on winning double silver medals at the Milano Cortina 2026 Olympics, stating he was determined to showcase his complete skill set during the competition.',
+    entities: [
+      { type: 'skater', id: 'yuma-kagiyama' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202603-amber-glenn-has-shown-grace-on-and-off-the-ice-is-this-her-m',
+    title: 'Amber Glenn has shown grace on and off the ice. Is this her medal moment at World Champs?',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-25',
+    summary: 'The headline highlights Amber Glenn\'s graceful conduct both on and off the ice, questioning whether the upcoming World Championships could be her moment to win a medal.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
 ]
