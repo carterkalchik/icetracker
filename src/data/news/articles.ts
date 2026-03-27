@@ -2622,4 +2622,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'amber-glenn' }
     ],
   },
+  {
+    id: '202603-the-quad-god-reborn-ilia-malinin-leads-world-championships-a',
+    title: 'The Quad God reborn: Ilia Malinin leads world championships after Olympic shock',
+    url: 'https://www.theguardian.com/sport/2026/mar/26/the-quad-god-reborn-ilia-malinin-leads-world-championships-after-olympic-shock',
+    source: 'theguardian.com',
+    publishedAt: '2026-03-26',
+    summary: 'Ilia Malinin bounced back from his disappointing Olympic performance to lead the men\'s short program at the world figure skating championships in Prague with a personal-best score of 111.29. The defending two-time world champion, known as the Quad God, performed a quad flip and quad lutz combination, holding a commanding nine-point lead heading into Saturday\'s free skate. His Olympic failure, where he fell from first to eighth place due to nerves and pressure, appears to be behind him.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'adam-siao-him-fa' }, { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'skater', id: 'yuma-kagiyama' }, { type: 'element', id: 'quad-flip' }, { type: 'element', id: 'quad-lutz' }, { type: 'element', id: 'triple-axel' }, { type: 'element', id: 'quad-toe-loop' }, { type: 'element', id: 'quad-salchow' }, { type: 'element', id: 'quad-axel' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202603-malinin-stomps-personal-best-short-at-worlds',
+    title: 'Malinin stomps personal best short at worlds',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-26',
+    summary: 'Ilia Malinin achieved a personal best score in the short program at the World Championships.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2024-worlds' }
+    ],
+  },
+  {
+    id: '202603-minerva-hase-nikita-volodin-win-world-figure-skating-champio',
+    title: 'Minerva Hase, Nikita Volodin win World Figure Skating Championships pairs\' title for Germany',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-27',
+    summary: 'Minerva Hase and Nikita Volodin won the pairs title for Germany at the World Figure Skating Championships.',
+    entities: [
+      { type: 'skater', id: 'hase-volodin' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-malinin-delivers-statement-short-program-at-world-championsh',
+    title: 'Malinin Delivers Statement Short Program at World Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-26',
+    summary: 'Ilia Malinin delivered a statement short program performance at the World Championships.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-quad-god-malinin-posts-personal-best-at-figure-skating-world',
+    title: '\'Quad God\' Malinin posts personal best at figure skating worlds',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-03-26',
+    summary: 'Ilia Malinin, known as the \'Quad God\', achieved a personal best score at the World Figure Skating Championships.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2024-worlds' }
+    ],
+  },
+  {
+    id: '202603-for-ilia-malinin-and-amber-glenn-figure-skating-worlds-bring',
+    title: 'For Ilia Malinin and Amber Glenn, figure skating worlds bring a fresh start',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-03-25',
+    summary: 'Ilia Malinin and Amber Glenn are approaching the figure skating world championships as an opportunity for a fresh start.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'amber-glenn' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-isu-world-figure-skating-championships-2026-hase-and-volodin',
+    title: 'ISU World Figure Skating Championships 2026: Hase and Volodin win pairs gold, ending eight-year German wait',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-26',
+    summary: 'Hase and Volodin won the pairs gold medal at the 2026 ISU World Figure Skating Championships, marking Germany\'s first pairs world title in eight years.',
+    entities: [
+      { type: 'skater', id: 'hase-volodin' }, { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-ilia-malinin-leads-world-championships-with-personal-best-sh',
+    title: 'Ilia Malinin leads World Championships with personal best short program',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-26',
+    summary: 'Ilia Malinin is leading the World Championships after setting a personal best score in the short program.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202603-skater-ilia-malinin-takes-big-lead-after-worlds-short-progra',
+    title: 'Skater Ilia Malinin takes big lead after Worlds short program',
+    url: 'https://www.reuters.com',
+    source: 'Reuters',
+    publishedAt: '2026-03-26',
+    summary: 'Ilia Malinin has taken a big lead after the short program at the World Championships.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2024-worlds' }
+    ],
+  },
+  {
+    id: '202603-germanys-hase-volodin-win-pairs-title-at-figure-skating-worl',
+    title: 'Germany\'s Hase, Volodin win pairs title at figure skating worlds',
+    url: 'https://www.cbc.ca',
+    source: 'CBC',
+    publishedAt: '2026-03-27',
+    summary: 'German pairs team Hase and Volodin won the pairs title at the figure skating world championships.',
+    entities: [
+      { type: 'skater', id: 'hase-volodin' }, { type: 'competition', id: '2024-worlds' }
+    ],
+  },
 ]
