@@ -2732,4 +2732,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'hase-volodin' }, { type: 'competition', id: '2024-worlds' }
     ],
   },
+  {
+    id: '202603-kaori-sakamoto-ends-career-with-fourth-world-title-as-glenn',
+    title: 'Kaori Sakamoto ends career with fourth world title as Glenn falls out of medals',
+    url: 'https://www.theguardian.com/sport/2026/mar/27/kaori-sakamoto-figure-skating-world-championships-prague-career-finale',
+    source: 'theguardian.com',
+    publishedAt: '2026-03-27',
+    summary: 'Japan\'s Kaori Sakamoto concluded her competitive figure skating career by winning her fourth world championship title at the 2025 World Championships in Prague with a personal-best score of 238.28. Her compatriot Mone Chiba took silver while Belgium\'s Nina Pinzarrone won bronze, as American Amber Glenn dropped from third to sixth after jumping errors in the free skate. In ice dance, French Olympic champions Laurence Fournier Beaudry and Guillaume Cizeron lead after the rhythm dance.',
+    entities: [
+      { type: 'skater', id: 'kaori-sakamoto' }, { type: 'skater', id: 'mone-chiba' }, { type: 'skater', id: 'amber-glenn' }, { type: 'skater', id: 'isabeau-levito' }, { type: 'skater', id: 'alysa-liu' }, { type: 'skater', id: 'fournier-beaudry-cizeron' }, { type: 'skater', id: 'gilles-poirier' }, { type: 'skater', id: 'fear-gibson' }, { type: 'skater', id: 'chock-bates' }
+    ],
+  },
+  {
+    id: '202603-ilia-malinin-rebounds-from-olympics-leads-at-skating-worlds',
+    title: 'Ilia Malinin rebounds from Olympics, leads at skating worlds',
+    url: 'https://www.espn.com',
+    source: 'ESPN',
+    publishedAt: '2026-03-26',
+    summary: 'Ilia Malinin has bounced back from his Olympic performance and is currently leading at the World Figure Skating Championships.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2024-worlds' }
+    ],
+  },
+  {
+    id: '202603-levito-glenn-secure-three-spots-for-us-women-at-2027-worlds',
+    title: 'Levito, Glenn Secure Three Spots for U.S. Women at 2027 Worlds',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-27',
+    summary: 'Levito and Glenn secured three spots for the U.S. women\'s team at the 2027 World Championships.',
+    entities: [
+      { type: 'skater', id: 'isabeau-levito' }, { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
+  {
+    id: '202603-isu-figure-skating-world-championships-2026-in-last-skate-of',
+    title: 'ISU Figure Skating World Championships 2026: In last skate of glittering career, Sakamoto Kaori delivers personal bests and fourth world title',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-27',
+    summary: 'Sakamoto Kaori won her fourth world title at the 2026 ISU Figure Skating World Championships, achieving personal bests in what was announced as the final skate of her career.',
+    entities: [
+      { type: 'skater', id: 'kaori-sakamoto' }, { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-isu-world-figure-skating-championships-2026-nina-pinzarrone',
+    title: 'ISU World Figure Skating Championships 2026: Nina Pinzarrone triumphs over injury with maiden bronze and personal best',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-27',
+    summary: 'Nina Pinzarrone won her first bronze medal at the 2026 ISU World Figure Skating Championships, overcoming injury to achieve a personal best performance.',
+    entities: [
+      { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-kaori-sakamoto-wins-4th-figure-skating-world-title-in-last-c',
+    title: 'Kaori Sakamoto wins 4th figure skating world title in last competition before retiring',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-27',
+    summary: 'Kaori Sakamoto won her 4th figure skating world title in what was announced as her final competition before retiring.',
+    entities: [
+      { type: 'skater', id: 'kaori-sakamoto' }
+    ],
+  },
+  {
+    id: '202603-kaori-sakamoto-saves-best-for-last-in-world-championships-fa',
+    title: 'Kaori Sakamoto saves best for last in World Championships farewell',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-28',
+    summary: 'Kaori Sakamoto delivered her best performance at the World Championships, which appears to be her final appearance at this competition.',
+    entities: [
+      { type: 'skater', id: 'kaori-sakamoto' }
+    ],
+  },
+  {
+    id: '202603-isu-world-figure-skating-championships-2026-piper-gillespaul',
+    title: 'ISU World Figure Skating Championships 2026: Piper Gilles/Paul Poirier swap van Gogh for Brontë to create new magic in Prague',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-27',
+    summary: 'Canadian ice dance team Piper Gilles and Paul Poirier are creating a new program inspired by Brontë literature (replacing their previous van Gogh theme) for the 2026 World Figure Skating Championships in Prague.',
+    entities: [
+      { type: 'skater', id: 'gilles-poirier' }, { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-amber-glenn-experiences-heartbreak-again-falls-short-of-meda',
+    title: 'Amber Glenn experiences heartbreak again, falls short of medal at World Championships',
+    url: 'https://www.nytimes.com',
+    source: 'The New York Times',
+    publishedAt: '2026-03-27',
+    summary: 'Amber Glenn failed to win a medal at the World Championships, experiencing another disappointing result.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
+  {
+    id: '202603-ilia-malinin-soars-into-figure-skating-worlds-unburdened-by',
+    title: 'Ilia Malinin soars into figure skating worlds unburdened by expectation',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-03-27',
+    summary: 'Ilia Malinin is heading into the figure skating world championships without the pressure of high expectations.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
 ]
