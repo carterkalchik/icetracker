@@ -2842,4 +2842,114 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2025-worlds' }
     ],
   },
+  {
+    id: '202603-ilia-malinin-completes-redemption-arc-with-third-straight-wo',
+    title: 'Ilia Malinin completes redemption arc with third straight world figure skating championship',
+    url: 'https://www.theguardian.com/sport/2026/mar/28/ilia-malinin-third-world-title-redemption-olympic-collapse',
+    source: 'theguardian.com',
+    publishedAt: '2026-03-28',
+    summary: 'Ilia Malinin won his third consecutive world figure skating championship in Prague, delivering a commanding free skate performance that scored 329.40 points total. The 21-year-old American redeemed himself after his shocking eighth-place finish at the Olympics a month prior, where he had fallen twice under pressure. Japanese skaters Yuma Kagiyama and Shun Sato completed the podium in second and third place respectively.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'yuma-kagiyama' }, { type: 'skater', id: 'shun-sato' }, { type: 'element', id: 'quad-flip' }, { type: 'element', id: 'quad-lutz' }, { type: 'element', id: 'toe-loop' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-fear-and-gibson-miss-out-after-incorrect-penalty',
+    title: 'Fear and Gibson miss out after \'incorrect\' penalty',
+    url: 'https://www.bbc.com/sport/articles/ckgeylzvzp3o?at_medium=RSS&at_campaign=rss',
+    source: 'bbc.com',
+    publishedAt: '2026-03-29',
+    summary: 'British ice dancers Lilah Fear and Lewis Gibson missed out on a bronze medal at the 2026 World Championships after being penalized two points for an allegedly illegal element, finishing fourth by just 0.22 points. British Ice Skating has formally appealed the decision, calling the deduction incorrect and challenging it with the International Skating Union. French pair Guillaume Cizeron and Laurence Fournier-Beaudry won gold with a record margin, while American Ilia Malinin claimed his third consecutive men\'s title.',
+    entities: [
+      { type: 'skater', id: 'fear-gibson' }, { type: 'skater', id: 'fournier-beaudry-cizeron' }, { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-worlds' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202603-ilia-malinin-wins-third-straight-world-figure-skating-title',
+    title: 'Ilia Malinin wins third straight world figure skating title',
+    url: 'https://www.espn.com',
+    source: 'ESPN',
+    publishedAt: '2026-03-28',
+    summary: 'Ilia Malinin has won his third consecutive world figure skating title.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202603-fournier-beaudry-cizeron-win-ice-dance-world-title-zingas-ko',
+    title: 'Fournier Beaudry, Cizeron win ice dance world title; Zingas, Kolesnik extend U.S. medal streak',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-29',
+    summary: 'Fournier Beaudry and Cizeron won the ice dance world title, while Zingas and Kolesnik extended the U.S. medal streak.',
+    entities: [
+      { type: 'skater', id: 'fournier-beaudry-cizeron' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-kaori-sakamoto-signs-off-with-a-4th-world-figure-skating-tit',
+    title: 'Kaori Sakamoto signs off with a 4th world figure skating title before retirement',
+    url: 'https://apnews.com',
+    source: 'AP News',
+    publishedAt: '2026-03-27',
+    summary: 'Kaori Sakamoto has won her 4th world figure skating title and is retiring from the sport.',
+    entities: [
+      { type: 'skater', id: 'kaori-sakamoto' }
+    ],
+  },
+  {
+    id: '202603-isu-world-figure-skating-championships-2026-laurence-fournie',
+    title: 'ISU World Figure Skating Championships 2026: Laurence Fournier Beaudry/Guillaume Cizeron cap off monumental first season with title for historic treble',
+    url: 'https://www.olympics.com',
+    source: 'Winter Olympics',
+    publishedAt: '2026-03-28',
+    summary: 'Laurence Fournier Beaudry and Guillaume Cizeron won the 2026 ISU World Figure Skating Championships, completing a historic treble in their first season together.',
+    entities: [
+      { type: 'skater', id: 'fournier-beaudry-cizeron' }, { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-ilia-malinin-three-peats-at-figure-skating-world-championshi',
+    title: 'Ilia Malinin three-peats at figure skating world championships in dominating Olympic rebound',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-28',
+    summary: 'Ilia Malinin won his third consecutive world championship title in figure skating, marking a dominant comeback after the Olympics.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202603-isu-world-figure-skating-championships-2026-ilia-malinin-tak',
+    title: 'ISU World Figure Skating Championships 2026: Ilia Malinin takes third straight title at redemption Worlds',
+    url: 'https://www.olympics.com',
+    source: 'Winter Olympics',
+    publishedAt: '2026-03-28',
+    summary: 'Ilia Malinin won his third consecutive title at the 2026 ISU World Figure Skating Championships, which is being described as a redemption Worlds.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-isu-figure-skating-world-championships-2026-after-disappoint',
+    title: 'ISU Figure Skating World Championships 2026: After disappointing end to big season, Adam Siao Him Fa looks to shut off: "It will do me good"',
+    url: 'https://www.olympics.com',
+    source: 'Winter Olympics',
+    publishedAt: '2026-03-28',
+    summary: 'Adam Siao Him Fa plans to take a break after experiencing a disappointing end to what was described as a big season, believing it will be beneficial for him.',
+    entities: [
+      { type: 'skater', id: 'adam-siao-him-fa' }, { type: 'competition', id: '2026-worlds' }
+    ],
+  },
+  {
+    id: '202603-canadian-ice-dancers-gilles-poirier-claim-silver-at-worlds-f',
+    title: 'Canadian ice dancers Gilles, Poirier claim silver at worlds for 3rd straight year in potential swan song',
+    url: 'https://www.cbc.ca',
+    source: 'CBC',
+    publishedAt: '2026-03-28',
+    summary: 'Canadian ice dancers Gilles and Poirier won silver at the World Championships for the third consecutive year, in what may be their final competition.',
+    entities: [
+      { type: 'skater', id: 'gilles-poirier' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
 ]
