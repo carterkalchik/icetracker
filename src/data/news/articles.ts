@@ -2952,4 +2952,103 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'gilles-poirier' }, { type: 'competition', id: '2025-worlds' }
     ],
   },
+  {
+    id: '202603-isu-say-fear-and-gibsons-world-score-stands-after-british-ch',
+    title: 'ISU say Fear and Gibson\'s world score stands after British challenge',
+    url: 'https://www.reuters.com',
+    source: 'Reuters',
+    publishedAt: '2026-03-29',
+    summary: 'The ISU has upheld Fear and Gibson\'s world championship score following a challenge from British skating officials.',
+    entities: [
+      { type: 'skater', id: 'fear-gibson' }
+    ],
+  },
+  {
+    id: '202603-amber-glenn-on-new-opportunities-and-increased-interest-in-s',
+    title: 'Amber Glenn on new opportunities and increased interest in skating: "It\'s a double-edged sword for sure"',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-29',
+    summary: 'Amber Glenn discusses new opportunities and increased interest in figure skating, describing the situation as having both positive and negative aspects.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
+  {
+    id: '202603-chiba-second-to-sakamoto-at-figure-skating-worlds',
+    title: 'Chiba second to Sakamoto at figure skating worlds',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-27',
+    summary: 'Chiba finished second to Sakamoto at the figure skating world championships.',
+    entities: [
+      { type: 'skater', id: 'mone-chiba' }, { type: 'skater', id: 'kaori-sakamoto' }, { type: 'competition', id: '2025-worlds' }
+    ],
+  },
+  {
+    id: '202603-laurence-fournier-beaudryguillaume-cizeron-named-skaters-of',
+    title: 'Laurence Fournier Beaudry/Guillaume Cizeron named "Skaters of the Year" at ISU Figure Skating Awards 2026',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-29',
+    summary: 'Laurence Fournier Beaudry and Guillaume Cizeron were named \'Skaters of the Year\' at the ISU Figure Skating Awards 2026.',
+    entities: [
+      { type: 'skater', id: 'fournier-beaudry-cizeron' }
+    ],
+  },
+  {
+    id: '202603-malinin-earns-redemption-with-third-consecutive-world-title',
+    title: 'Malinin Earns Redemption with Third Consecutive World Title, Zingas and Kolesnik Clinch Bronze in Worlds Debut',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-03-29',
+    summary: 'Malinin wins his third consecutive World Championship title in what is described as a redemptive performance, while Zingas and Kolesnik earn bronze medals in their World Championships debut.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202603-jin-boyang',
+    title: 'JIN Boyang',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-25',
+    summary: 'The headline references JIN Boyang, a figure skater.',
+    entities: [
+      { type: 'skater', id: 'boyang-jin' }
+    ],
+  },
+  {
+    id: '202603-ilia-malinins-third-world-championship-a-relief-redemption-t',
+    title: 'Ilia Malinin\'s third world championship a relief. Redemption? Think 2030 | Opinion',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-03-29',
+    summary: 'Ilia Malinin\'s third world championship victory is described as a relief, with the opinion piece suggesting that redemption may come in 2030.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202603-american-malinin-captures-his-3rd-consecutive-figure-skating',
+    title: 'American Malinin captures his 3rd consecutive figure skating world championship title',
+    url: 'https://www.cbc.ca',
+    source: 'CBC',
+    publishedAt: '2026-03-28',
+    summary: 'American figure skater Malinin has won his third consecutive world championship title.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202603-sato-swipes-bronze-at-figure-skating-worlds',
+    title: 'Sato swipes bronze at figure skating worlds',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-28',
+    summary: 'Sato won the bronze medal at the figure skating world championships.',
+    entities: [
+      { type: 'skater', id: 'shun-sato' }, { type: 'competition', id: '2024-worlds' }
+    ],
+  },
 ]
