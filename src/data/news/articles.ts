@@ -3051,4 +3051,37 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'shun-sato' }, { type: 'competition', id: '2024-worlds' }
     ],
   },
+  {
+    id: '202603-beach-getaways-army-camp-and-guilty-pleasures',
+    title: 'Beach getaways, army camp and guilty pleasures',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-30',
+    summary: 'The headline mentions beach getaways, army camp and guilty pleasures but does not provide specific details about what these refer to in the context of figure skating.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-gleb-smolkin',
+    title: 'Gleb SMOLKIN',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-26',
+    summary: 'The headline mentions Gleb Smolkin, a figure skater, from olympics.com.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-ioulia-chtchetinina',
+    title: 'Ioulia CHTCHETININA',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-25',
+    summary: 'The headline mentions Ioulia Chtchetinina, though no additional context or details are provided.',
+    entities: [
+      
+    ],
+  },
 ]
