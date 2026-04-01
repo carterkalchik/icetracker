@@ -3084,4 +3084,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202603-just-peachy',
+    title: 'Just Peachy!',
+    url: 'https://usfigureskating.org',
+    source: 'usfigureskating.org',
+    publishedAt: '2026-03-31',
+    summary: 'A positive or celebratory announcement is being made, as indicated by the enthusiastic \'Just Peachy!\' headline.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-zhang-ruiyang',
+    title: 'ZHANG Ruiyang',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-28',
+    summary: 'The headline mentions figure skater Zhang Ruiyang.',
+    entities: [
+      
+    ],
+  },
 ]
