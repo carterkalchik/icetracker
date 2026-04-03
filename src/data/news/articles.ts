@@ -3106,4 +3106,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-how-to-know-the-difference-between-good-and-bad-muscle-soren',
+    title: 'How to Know the Difference between “Good” and “Bad” Muscle Soreness',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-02',
+    summary: 'The article provides guidance on how to distinguish between beneficial muscle soreness and potentially harmful muscle pain.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-julia-sauter',
+    title: 'Julia SAUTER',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-31',
+    summary: 'The headline mentions Julia Sauter, a figure skater.',
+    entities: [
+      
+    ],
+  },
 ]
