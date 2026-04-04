@@ -3128,4 +3128,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-alysa-liu-won-gold-and-everyone-googled-figure-skating-lesso',
+    title: 'Alysa Liu won gold and everyone Googled \'figure skating lessons\' See the data.',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-04-03',
+    summary: 'Alysa Liu won a gold medal, which led to a surge in people searching for \'figure skating lessons\' online.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202603-figure-skating-tv-live-stream-schedule-for-2025-26-season',
+    title: 'Figure skating TV, live stream schedule for 2025-26 season',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-03-23',
+    summary: 'NBC Sports has announced the television and live streaming schedule for the 2025-26 figure skating season.',
+    entities: [
+      
+    ],
+  },
 ]
