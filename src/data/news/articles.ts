@@ -3150,4 +3150,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202603-mariia-seniuk',
+    title: 'Mariia SENIUK',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-28',
+    summary: 'The headline mentions Mariia SENIUK, a figure skater.',
+    entities: [
+      
+    ],
+  },
 ]
