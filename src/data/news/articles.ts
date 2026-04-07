@@ -3161,4 +3161,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-adult-skaters-have-georgia-on-their-minds',
+    title: 'Adult Skaters Have Georgia on Their Minds',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-06',
+    summary: 'Adult skaters are focused on or traveling to Georgia for figure skating activities.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-bekker-phebe-hernandez-james',
+    title: 'BEKKER Phebe / HERNANDEZ James',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-26',
+    summary: 'The headline mentions figure skaters Phebe Bekker and James Hernandez.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-mrazkova-katerina-mrazek-daniel',
+    title: 'MRAZKOVA Katerina / MRAZEK Daniel',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-26',
+    summary: 'The headline references figure skaters Katerina Mrazkova and Daniel Mrazek.',
+    entities: [
+      
+    ],
+  },
 ]
