@@ -3194,4 +3194,48 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-us-figure-skating-announces-2026-skate-america-date-change-a',
+    title: 'U.S. Figure Skating Announces 2026 Skate America Date Change and Event Schedule',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-07',
+    summary: 'U.S. Figure Skating has announced a date change and event schedule for the 2026 Skate America competition.',
+    entities: [
+      { type: 'competition', id: '2025-gp-skate-america' }
+    ],
+  },
+  {
+    id: '202604-haydenettes-skyliners-ready-to-shine-in-salzburg',
+    title: 'Haydenettes, Skyliners Ready to Shine in Salzburg',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-07',
+    summary: 'The Haydenettes and Skyliners teams are preparing to compete in Salzburg.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-ekaterina-kurakova',
+    title: 'Ekaterina KURAKOVA',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-31',
+    summary: 'The headline mentions Ekaterina Kurakova, a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-liu-rejects-conventional-wisdom-while-embracing-artistry',
+    title: 'Liu Rejects Conventional Wisdom While Embracing Artistry',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-17',
+    summary: 'Liu is taking an unconventional approach to figure skating while focusing on artistic expression.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
 ]
