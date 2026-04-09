@@ -3238,4 +3238,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }
     ],
   },
+  {
+    id: '202603-saulius-ambrulevicius',
+    title: 'Saulius AMBRULEVICIUS',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-29',
+    summary: 'The headline mentions Saulius Ambrulevicius, appearing to be related to figure skating content from Olympics.com.',
+    entities: [
+      
+    ],
+  },
 ]
