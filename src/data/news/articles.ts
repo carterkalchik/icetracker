@@ -3249,4 +3249,48 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-a-new-era-for-stanford-figure-skating',
+    title: 'A New Era For Stanford Figure Skating',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-08',
+    summary: 'Stanford Figure Skating is entering a new era, suggesting significant changes or developments for the program.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202604-top-collegiate-skating-teams-set-for-national-intercollegiat',
+    title: 'Top Collegiate Skating Teams Set for National Intercollegiate Final in Utah',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-09',
+    summary: 'Top collegiate figure skating teams are preparing to compete in the National Intercollegiate Final taking place in Utah.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202604-haydenettes-focused-to-finish-season-on-a-strong-note',
+    title: 'Haydenettes Focused to Finish Season on a Strong Note',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-09',
+    summary: 'The Haydenettes are focused on finishing their season on a strong note.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202604-free-big-wild-viral-sensation-benot-richaud-on-his-olympic-w',
+    title: '“Free, big, wild”: Viral sensation Benoît Richaud on his Olympic whirlwind and "crazy" choreography plans for next Games',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-10',
+    summary: 'Viral sensation Benoît Richaud discusses his Olympic experience and reveals plans for "crazy" choreography for the next Games.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
