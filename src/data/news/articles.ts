@@ -3293,4 +3293,26 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2026-olympics' }
     ],
   },
+  {
+    id: '202602-us-team-event-participants-announced-for-pairs-womens-and-me',
+    title: 'U.S. Team Event Participants Announced for Pairs, Women’s and Men’s Free Skates',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-07',
+    summary: 'U.S. Figure Skating has announced the participants who will compete for Team USA in the pairs, women\'s and men\'s free skate events.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202511-pathway-to-the-national-team',
+    title: 'Pathway to the National Team',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2025-11-05',
+    summary: 'U.S. Figure Skating discusses the pathway to making the National Team.',
+    entities: [
+      
+    ],
+  },
 ]
