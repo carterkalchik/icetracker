@@ -3315,4 +3315,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-haydenettes-claim-silver-medal-at-world-synchronized-skating',
+    title: 'Haydenettes Claim Silver Medal at World Synchronized Skating Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-11',
+    summary: 'The Haydenettes won the silver medal at the World Synchronized Skating Championships.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-livia-kaiser',
+    title: 'Livia KAISER',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-31',
+    summary: 'The headline mentions Livia Kaiser, a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-fear-lilah-gibson-lewis',
+    title: 'FEAR Lilah / GIBSON Lewis',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-26',
+    summary: 'A headline mentioning figure skaters Lilah Fear and Lewis Gibson.',
+    entities: [
+      { type: 'skater', id: 'fear-gibson' }
+    ],
+  },
 ]
