@@ -3348,4 +3348,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'fear-gibson' }
     ],
   },
+  {
+    id: '202601-50-years-later-hamills-sterling-olympic-performance-endures',
+    title: '50 Years Later, Hamill’s Sterling Olympic Performance Endures',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-25',
+    summary: 'Fifty years after Hamill\'s Olympic performance, their achievement continues to be remembered and celebrated for its lasting impact on figure skating.',
+    entities: [
+      
+    ],
+  },
 ]
