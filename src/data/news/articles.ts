@@ -3359,4 +3359,48 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-yuma-kagiyama-announces-break-from-figure-skating-competitio',
+    title: 'Yuma Kagiyama announces break from figure skating competition',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-04-13',
+    summary: 'Yuma Kagiyama has announced that he is taking a break from figure skating competition.',
+    entities: [
+      { type: 'skater', id: 'yuma-kagiyama' }
+    ],
+  },
+  {
+    id: '202604-georgia-delivers-a-peach-of-a-us-adult-figure-skating-champi',
+    title: 'Georgia Delivers a Peach of a U.S. Adult Figure Skating Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-13',
+    summary: 'Georgia hosted the U.S. Adult Figure Skating Championships, which appears to have been a successful event based on the positive headline.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202604-boston-university-extends-record-streak-with-ninth-national',
+    title: 'Boston University Extends Record Streak with Ninth National Intercollegiate Final Title',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-13',
+    summary: 'Boston University has won their ninth National Intercollegiate Final title, extending their record streak in the competition.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202604-kagiyama-yuma-to-sit-out-2026-27-figure-skating-season-wants',
+    title: 'Kagiyama Yuma to sit out 2026-27 figure skating season, wants "new challenges"',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-14',
+    summary: 'Yuma Kagiyama has announced he will take a break from competitive figure skating during the 2026-27 season, citing a desire to pursue new challenges.',
+    entities: [
+      { type: 'skater', id: 'yuma-kagiyama' }
+    ],
+  },
 ]
