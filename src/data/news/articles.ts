@@ -3403,4 +3403,26 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'yuma-kagiyama' }
     ],
   },
+  {
+    id: '202604-alysa-liu-appears-in-laufey-madwoman-music-video',
+    title: 'Alysa Liu appears in Laufey ‘Madwoman’ music video',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-04-13',
+    summary: 'Figure skater Alysa Liu appears in a music video for Laufey\'s song \'Madwoman\'.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202602-chock-and-bates-step-into-new-river',
+    title: 'Chock and Bates Step Into New River',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-09',
+    summary: 'Chock and Bates are stepping into a new river, though the specific context or meaning is unclear from the headline alone.',
+    entities: [
+      { type: 'skater', id: 'chock-bates' }
+    ],
+  },
 ]
