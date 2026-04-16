@@ -3425,4 +3425,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'chock-bates' }
     ],
   },
+  {
+    id: '202604-mens-best-theatrical-figure-skating-costumes-of-202526',
+    title: 'Men’s best “theatrical” figure skating costumes of 2025–26',
+    url: 'https://www.goldenskate.com',
+    source: 'Golden Skate',
+    publishedAt: '2026-04-15',
+    summary: 'An article highlights the best theatrical figure skating costumes worn by men\'s skaters during the 2025-26 season.',
+    entities: [
+      
+    ],
+  },
 ]
