@@ -3436,4 +3436,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-olympic-gold-medallists-mikaela-shiffrin-and-ilia-malinin-be',
+    title: 'Olympic gold medallists Mikaela Shiffrin and Ilia Malinin become "besties"',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-15',
+    summary: 'Olympic gold medallists Mikaela Shiffrin and Ilia Malinin have become close friends or \'besties\'.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202604-for-the-family-gabriele-frangipani-embodies-the-godfather-to',
+    title: 'For the family: Gabriele Frangipani embodies The Godfather to pay tribute to late grandmother',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-16',
+    summary: 'Gabriele Frangipani performed a figure skating routine themed around The Godfather movie as a tribute to his late grandmother.',
+    entities: [
+      
+    ],
+  },
 ]
