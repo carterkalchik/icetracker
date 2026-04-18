@@ -3458,4 +3458,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-sc-of-boston-members-to-run-big-race-in-honor-of-those-lost',
+    title: 'SC of Boston Members to Run Big Race In Honor of Those Lost In Crash',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-17',
+    summary: 'Members of the Skating Club of Boston are planning to participate in a major race as a tribute to individuals who died in a crash.',
+    entities: [
+      
+    ],
+  },
 ]
