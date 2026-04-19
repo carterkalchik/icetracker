@@ -3469,4 +3469,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-no-one-else-will-do-what-a-pair-of-figure-skaters-can-teach',
+    title: 'No one else will do: What a pair of figure skaters can teach us about familiarity in Japanese',
+    url: 'https://www.japantimes.co.jp',
+    source: 'The Japan Times',
+    publishedAt: '2026-04-18',
+    summary: 'The article discusses what a pair of figure skaters can teach about familiarity in the Japanese language.',
+    entities: [
+      
+    ],
+  },
 ]
