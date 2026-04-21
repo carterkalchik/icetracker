@@ -3480,4 +3480,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-anger-over-plan-to-convert-time-capsule-ice-rink-into-play-a',
+    title: 'Anger over plan to convert Time Capsule ice-rink into play area',
+    url: 'https://www.bbc.com',
+    source: 'BBC',
+    publishedAt: '2026-04-20',
+    summary: 'There is controversy over a plan to convert the Time Capsule ice-rink into a play area.',
+    entities: [
+      
+    ],
+  },
 ]
