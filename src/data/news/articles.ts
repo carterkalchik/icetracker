@@ -3491,4 +3491,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202602-liu-floats-into-third-place-after-womens-short-program-at-ol',
+    title: 'Liu Floats into Third Place After Women’s Short Program at Olympic Winter Games',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-17',
+    summary: 'Liu placed third after the women\'s short program at the Olympic Winter Games.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }, { type: 'competition', id: '2022-olympics' }
+    ],
+  },
 ]
