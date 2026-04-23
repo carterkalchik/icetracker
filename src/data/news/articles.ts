@@ -3502,4 +3502,26 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }, { type: 'competition', id: '2022-olympics' }
     ],
   },
+  {
+    id: '202604-at-stars-on-ice-us-figure-skaters-reflect-on-olympics-look-a',
+    title: 'At Stars on Ice, U.S. figure skaters reflect on Olympics, look ahead',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-04-22',
+    summary: 'U.S. figure skaters participated in the Stars on Ice show, where they reflected on their Olympic experiences and discussed their future plans.',
+    entities: [
+      { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202604-teens-initiative-promotes-sustainability-education',
+    title: 'Teens’ Initiative Promotes Sustainability, Education',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-22',
+    summary: 'A group of teenagers has launched an initiative focused on promoting sustainability and education.',
+    entities: [
+      
+    ],
+  },
 ]
