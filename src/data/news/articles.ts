@@ -3524,4 +3524,48 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-all-session-tickets-for-2026-skate-america-go-on-sale-april',
+    title: 'All-Session Tickets for 2026 Skate America Go on Sale April 23',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-22',
+    summary: 'All-session tickets for the 2026 Skate America figure skating competition will go on sale on April 23.',
+    entities: [
+      { type: 'competition', id: '2025-gp-skate-america' }
+    ],
+  },
+  {
+    id: '202604-decision-delayed-on-closure-of-time-capsule-ice-rink',
+    title: 'Decision delayed on closure of Time Capsule ice rink',
+    url: 'https://www.bbc.com',
+    source: 'BBC',
+    publishedAt: '2026-04-22',
+    summary: 'A decision regarding the potential closure of Time Capsule ice rink has been postponed.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202604-us-olympic-champion-amber-glenn-doesnt-plan-to-cease-figure',
+    title: 'U.S. Olympic champion Amber Glenn doesn’t plan to cease figure skating: “I don\'t want to stop”',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-23',
+    summary: 'U.S. Olympic champion Amber Glenn has stated she doesn\'t plan to stop figure skating, expressing her desire to continue in the sport.',
+    entities: [
+      { type: 'skater', id: 'amber-glenn' }
+    ],
+  },
+  {
+    id: '202602-figure-skating-team-event-at-winter-olympics-2026-when-does',
+    title: 'Figure skating team event at Winter Olympics 2026: When does it start, top athletes and how to watch',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-04',
+    summary: 'This article covers information about the figure skating team event at the 2026 Winter Olympics, including when it starts, top athletes to watch, and viewing details.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
