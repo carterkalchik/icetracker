@@ -3568,4 +3568,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2026-olympics' }
     ],
   },
+  {
+    id: '202604-alysa-liu-sparks-a-figure-skating-resurgence-in-the-us',
+    title: 'Alysa Liu Sparks a Figure Skating Resurgence in the U.S.',
+    url: 'https://www.goldenskate.com',
+    source: 'Golden Skate',
+    publishedAt: '2026-04-24',
+    summary: 'Alysa Liu is credited with sparking a resurgence in figure skating within the United States.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
 ]
