@@ -3579,4 +3579,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }
     ],
   },
+  {
+    id: '202604-deniss-vasiljevs',
+    title: 'Deniss VASILJEVS',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-03',
+    summary: 'The headline mentions Deniss Vasiljevs, a figure skater.',
+    entities: [
+      { type: 'skater', id: 'deniss-vasiljevs' }
+    ],
+  },
 ]
