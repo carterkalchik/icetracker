@@ -3590,4 +3590,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'deniss-vasiljevs' }
     ],
   },
+  {
+    id: '202604-marjorie-lajoie',
+    title: 'Marjorie LAJOIE',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-14',
+    summary: 'The headline references Marjorie Lajoie, a figure skater.',
+    entities: [
+      { type: 'skater', id: 'lajoie-lagha' }
+    ],
+  },
 ]
