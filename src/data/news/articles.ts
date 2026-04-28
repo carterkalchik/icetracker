@@ -3601,4 +3601,70 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'lajoie-lagha' }
     ],
   },
+  {
+    id: '202604-us-theatre-on-ice-teams-win-three-golds-at-nations-cup',
+    title: 'U.S. Theatre on Ice Teams Win Three Golds at Nations Cup',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-27',
+    summary: 'U.S. Theatre on Ice teams achieved success at the Nations Cup competition, winning three gold medals.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202604-retired-olympic-figure-skating-pairs-champions-miurakihara-e',
+    title: 'Retired Olympic figure skating pairs champions Miura/Kihara eye coaching at their own future academy',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-28',
+    summary: 'Retired Olympic figure skating pairs champions Miura/Kihara are considering a future in coaching and plan to establish their own skating academy.',
+    entities: [
+      { type: 'skater', id: 'miura-kihara' }
+    ],
+  },
+  {
+    id: '202604-eight-ways-to-encourage-resilience-through-optimized-and-str',
+    title: 'Eight Ways to Encourage Resilience Through Optimized and Strategic Stress',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-27',
+    summary: 'U.S. Figure Skating provides guidance on eight methods for building resilience through optimized and strategic stress management.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202604-isu-announces-202627-figure-skating-calendar-ahead-of-octobe',
+    title: 'ISU announces 2026/27 figure skating calendar ahead of October start to Grand Prix season in Angers',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-27',
+    summary: 'The ISU has announced the 2026/27 figure skating calendar, with the Grand Prix season set to begin in October in Angers.',
+    entities: [
+      { type: 'competition', id: '2025-gp-france' }
+    ],
+  },
+  {
+    id: '202604-rikuryu-signs-off-in-emotional-farewell',
+    title: '\'RikuRyu\' signs off in emotional farewell',
+    url: 'https://www.japantimes.co.jp',
+    source: 'The Japan Times',
+    publishedAt: '2026-04-28',
+    summary: 'The figure skating pair known as \'RikuRyu\' has concluded their career with an emotional farewell.',
+    entities: [
+      { type: 'skater', id: 'miura-kihara' }
+    ],
+  },
+  {
+    id: '202604-chan-emily-howe-spencer-akira',
+    title: 'CHAN Emily / HOWE Spencer Akira',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-02',
+    summary: 'The headline references figure skaters Emily Chan and Spencer Akira Howe.',
+    entities: [
+      
+    ],
+  },
 ]
