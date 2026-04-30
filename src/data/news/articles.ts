@@ -3667,4 +3667,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-the-power-of-packaging',
+    title: 'The Power of Packaging',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-04-29',
+    summary: 'An article discussing the power of packaging in figure skating.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202603-iida-karhunen',
+    title: 'Iida KARHUNEN',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-03-31',
+    summary: 'The headline mentions Iida Karhunen, appearing to be a reference to a figure skater.',
+    entities: [
+      
+    ],
+  },
 ]
