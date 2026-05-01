@@ -3689,4 +3689,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202604-former-us-ice-dancer-comes-forward-in-nikolaj-srensen-sexual',
+    title: 'Former U.S. ice dancer comes forward in Nikolaj Sørensen sexual assault case',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-04-30',
+    summary: 'A former U.S. ice dancer has come forward in a sexual assault case involving Nikolaj Sørensen.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202605-complainant-in-canadian-figure-skater-nikolaj-srensens-sexua',
+    title: 'Complainant in Canadian figure skater Nikolaj Sørensen\'s sexual assault case reveals identity',
+    url: 'https://www.cbc.ca',
+    source: 'CBC',
+    publishedAt: '2026-05-01',
+    summary: 'The complainant in the sexual assault case involving Canadian figure skater Nikolaj Sørensen has revealed their identity.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202601-repeat-champions-crowned-in-junior-pairs-ice-dance',
+    title: 'Repeat Champions Crowned in Junior Pairs, Ice Dance',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-07',
+    summary: 'Repeat champions were crowned in the Junior Pairs and Ice Dance disciplines at a U.S. Figure Skating competition.',
+    entities: [
+      
+    ],
+  },
 ]
