@@ -3722,4 +3722,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-denis-krouglov-aims-to-continue-belgiums-rise-in-figure-skat',
+    title: 'Denis Krouglov aims to continue Belgium’s rise in figure skating',
+    url: 'https://www.goldenskate.com',
+    source: 'Golden Skate',
+    publishedAt: '2026-05-03',
+    summary: 'Denis Krouglov aims to continue Belgium\'s rise in figure skating.',
+    entities: [
+      
+    ],
+  },
 ]
