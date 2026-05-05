@@ -3733,4 +3733,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-olympian-alysa-liu-makes-met-gala-debut-in-louis-vuitton-gow',
+    title: 'Olympian Alysa Liu makes Met Gala debut in Louis Vuitton gown',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-05-05',
+    summary: 'Olympic figure skater Alysa Liu attended the Met Gala for the first time, wearing a Louis Vuitton gown.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202605-ice-denettes-tenacity-finds-redemption-in-2026',
+    title: 'Ice Denettes Tenacity Finds Redemption in 2026',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-04',
+    summary: 'Ice Denettes Tenacity finds redemption in 2026.',
+    entities: [
+      { type: 'competition', id: '2026-olympics' }
+    ],
+  },
+  {
+    id: '202604-li-yu-hsiang',
+    title: 'LI Yu-Hsiang',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-07',
+    summary: 'The headline references LI Yu-Hsiang, appearing to be about a figure skater.',
+    entities: [
+      
+    ],
+  },
 ]
