@@ -3766,4 +3766,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-isu-2026-27-scale-of-values-in-figure-skating',
+    title: 'ISU 2026-27 Scale of Values in Figure Skating',
+    url: 'https://www.goldenskate.com',
+    source: 'Golden Skate',
+    publishedAt: '2026-05-05',
+    summary: 'The ISU has released the Scale of Values for figure skating for the 2026-27 season.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202605-met-gala-2026-venus-williams-alysa-liu-and-lindsey-vonn-amon',
+    title: 'Met Gala 2026: Venus Williams, Alysa Liu and Lindsey Vonn among Olympians to hit the red carpet',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-05-05',
+    summary: 'Venus Williams, Alysa Liu and Lindsey Vonn are among the Olympians who will attend the Met Gala 2026 red carpet event.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
 ]
