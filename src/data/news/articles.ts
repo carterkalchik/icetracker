@@ -3788,4 +3788,37 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }
     ],
   },
+  {
+    id: '202605-will-you-marry-me',
+    title: 'Will You Marry Me?',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-06',
+    summary: 'A figure skating-related article with the headline \'Will You Marry Me?\' suggesting a proposal story.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202605-donovan-carrillo',
+    title: 'Donovan CARRILLO',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-05-04',
+    summary: 'The headline mentions Donovan Carrillo, a figure skater.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202605-danny-oshea',
+    title: 'Danny O\'SHEA',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-05-04',
+    summary: 'The headline mentions Danny O\'Shea.',
+    entities: [
+      
+    ],
+  },
 ]
