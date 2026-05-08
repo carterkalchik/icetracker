@@ -3821,4 +3821,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-alysa-liu-exclusive-the-olympic-champion-on-her-skyrocketing',
+    title: 'Alysa Liu exclusive: The Olympic champion on her skyrocketing celebrity, plans for next year and reflections on winning gold',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-05-07',
+    summary: 'Olympic champion Alysa Liu discusses her rising celebrity status, upcoming plans for next year, and reflects on her gold medal victory in an exclusive interview.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202602-us-team-event-participant-announced-for-free-dance',
+    title: 'U.S. Team Event Participant Announced for Free Dance',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-07',
+    summary: 'U.S. Figure Skating has announced the participant for the free dance portion of the team event.',
+    entities: [
+      
+    ],
+  },
 ]
