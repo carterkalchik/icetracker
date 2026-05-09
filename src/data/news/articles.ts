@@ -3843,4 +3843,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-katie-mcbeath-daniil-parkman-end-pairs-figure-skating-partne',
+    title: 'Katie McBeath, Daniil Parkman end pairs’ figure skating partnership',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-05-08',
+    summary: 'Katie McBeath and Daniil Parkman have ended their pairs figure skating partnership.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202605-a-love-beyond-the-ice-alexa-knierim-embraces-motherhood',
+    title: 'A Love Beyond The Ice: Alexa Knierim Embraces Motherhood',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-08',
+    summary: 'Figure skater Alexa Knierim has embraced motherhood, marking a significant personal milestone in her life beyond competitive skating.',
+    entities: [
+      { type: 'skater', id: 'knierim-frazier' }
+    ],
+  },
+  {
+    id: '202602-alysa-liu-and-team-usas-blade-angels-the-story-behind-the-fi',
+    title: 'Alysa Liu and Team USA’s ‘Blade Angels’: the story behind the figure skating nickname',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-03',
+    summary: 'The article explores the story behind the \'Blade Angels\' nickname associated with Alysa Liu and Team USA figure skating.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
 ]
