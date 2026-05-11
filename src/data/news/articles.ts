@@ -3876,4 +3876,59 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }
     ],
   },
+  {
+    id: '202604-lim-hannah-quan-ye',
+    title: 'LIM Hannah / QUAN Ye',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-04-25',
+    summary: 'The headline references figure skaters LIM Hannah and QUAN Ye.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-glitter-and-gold-new-netflix-figure-skating-docu-series-laun',
+    title: 'Glitter and Gold: new Netflix figure skating docu-series launches 1 February',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-01',
+    summary: 'A new Netflix figure skating documentary series called \'Glitter and Gold\' is set to launch on February 1st.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202601-remembering-skating-family-three-athletes-skate-in-tribute',
+    title: 'Remembering Skating Family, Three Athletes Skate in Tribute',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-05',
+    summary: 'Three athletes performed skating routines as a tribute to remember a skating family.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-figure-skating-shines-at-milano-ice-skating-arena-with-elect',
+    title: 'Figure skating shines at Milano Ice Skating Arena with electric atmosphere and strong public engagement',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-02-09',
+    summary: 'Figure skating took place at Milano Ice Skating Arena with an electric atmosphere and strong public engagement.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202601-in-remembrance-of-those-we-lost',
+    title: 'In Remembrance Of Those We Lost',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-29',
+    summary: 'U.S. Figure Skating is honoring and remembering individuals who have passed away.',
+    entities: [
+      
+    ],
+  },
 ]
