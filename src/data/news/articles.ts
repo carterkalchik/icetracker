@@ -3931,4 +3931,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-it-was-so-much-pressure-ilia-malinin-reflects-on-his-olympic',
+    title: '"It was so much pressure": Ilia Malinin reflects on his Olympic experience, revels in a "completely different vibe" post-season',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-05-11',
+    summary: 'Ilia Malinin reflects on the pressure he felt during his Olympic experience and discusses enjoying a different atmosphere in the post-season period.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202602-us-team-event-participants-announced-for-rhythm-dance-pairs',
+    title: 'U.S. Team Event Participants Announced for Rhythm Dance, Pairs and Women’s Short Programs',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-05',
+    summary: 'U.S. Figure Skating has announced the participants who will compete for Team USA in the rhythm dance, pairs, and women\'s short program events.',
+    entities: [
+      
+    ],
+  },
 ]
