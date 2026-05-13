@@ -3953,4 +3953,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-stop-the-press-sakamoto-kaori-is-not-only-retired',
+    title: 'Stop the press: Sakamoto Kaori is not only retired',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-05-13',
+    summary: 'Sakamoto Kaori is not only retired, suggesting there may be more to her current status than just retirement.',
+    entities: [
+      { type: 'skater', id: 'kaori-sakamoto' }
+    ],
+  },
+  {
+    id: '202605-legendary-figure-skater-kaori-sakamoto-announces-marriage',
+    title: 'Legendary figure skater Kaori Sakamoto announces marriage',
+    url: 'https://www.japantimes.co.jp',
+    source: 'The Japan Times',
+    publishedAt: '2026-05-13',
+    summary: 'Legendary figure skater Kaori Sakamoto has announced her marriage.',
+    entities: [
+      { type: 'skater', id: 'kaori-sakamoto' }
+    ],
+  },
 ]
