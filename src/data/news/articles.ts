@@ -3975,4 +3975,48 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'kaori-sakamoto' }
     ],
   },
+  {
+    id: '202605-truck-driver-in-crash-that-killed-former-olympic-figure-skat',
+    title: 'Truck driver in crash that killed former Olympic figure skater sentenced to prison time',
+    url: 'https://www.cbc.ca',
+    source: 'CBC',
+    publishedAt: '2026-05-13',
+    summary: 'A truck driver involved in a crash that resulted in the death of a former Olympic figure skater has been sentenced to prison time.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202605-asian-american-skater-rises-above-systemic-and-cultural-chal',
+    title: 'Asian American Skater Rises Above Systemic and Cultural Challenges',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-12',
+    summary: 'An Asian American figure skater has overcome systemic and cultural challenges to achieve success in the sport.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202512-us-dominates-final-day-of-grand-prix-final-with-four-gold-me',
+    title: 'U.S. Dominates Final Day of Grand Prix Final with Four Gold Medals',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2025-12-06',
+    summary: 'The United States achieved a dominant performance on the final day of the Grand Prix Final, winning four gold medals.',
+    entities: [
+      { type: 'competition', id: '2025-gp-final' }
+    ],
+  },
+  {
+    id: '202601-chock-and-bates-skate-to-historic-seventh-us-ice-dance-title',
+    title: 'Chock and Bates Skate to Historic Seventh U.S. Ice Dance Title, Malinin Wins Fourth Straight Gold to Conclude 2026 U.S. Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-11',
+    summary: 'Chock and Bates won their seventh U.S. ice dance title, while Malinin captured his fourth consecutive gold medal to conclude the 2026 U.S. Championships.',
+    entities: [
+      { type: 'skater', id: 'chock-bates' }, { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
 ]
