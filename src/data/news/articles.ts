@@ -4019,4 +4019,26 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'chock-bates' }, { type: 'skater', id: 'ilia-malinin' }
     ],
   },
+  {
+    id: '202605-i-loved-every-minute-of-it',
+    title: '‘I Loved Every Minute Of It’',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-14',
+    summary: 'Someone expressed their positive experience, stating they loved every minute of it.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202511-ten-us-synchronized-skating-teams-awarded-challenger-series',
+    title: 'Ten U.S. Synchronized Skating Teams Awarded Challenger Series Assignments',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2025-11-25',
+    summary: 'Ten U.S. synchronized skating teams have been awarded assignments to compete in Challenger Series events.',
+    entities: [
+      
+    ],
+  },
 ]
