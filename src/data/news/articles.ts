@@ -4041,4 +4041,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202601-seven-us-teams-to-compete-on-home-soil-at-third-challenger-s',
+    title: 'Seven U.S. Teams to Compete on Home Soil at Third Challenger Series Event',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-27',
+    summary: 'Seven U.S. teams will compete at home in the third Challenger Series event.',
+    entities: [
+      
+    ],
+  },
 ]
