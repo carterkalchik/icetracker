@@ -4052,4 +4052,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-diguglielmo-overwhelmed-with-support-congratulations',
+    title: 'DiGuglielmo ‘Overwhelmed’ With Support, Congratulations',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-18',
+    summary: 'DiGuglielmo has expressed feeling overwhelmed by the support and congratulations they have received.',
+    entities: [
+      
+    ],
+  },
 ]
