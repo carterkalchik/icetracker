@@ -4063,4 +4063,48 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-ilia-malinin-skating-with-freedom-unsure-of-whats-next-exclu',
+    title: 'Ilia Malinin skating with freedom, unsure of what\'s next | Exclusive',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-05-22',
+    summary: 'Ilia Malinin is currently skating with a sense of freedom but remains uncertain about his future plans.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }
+    ],
+  },
+  {
+    id: '202605-gold-olympic-stardom-hasnt-changed-alysa-liu-exclusive',
+    title: 'Gold, Olympic stardom hasn’t changed Alysa Liu | Exclusive',
+    url: 'https://www.usatoday.com',
+    source: 'USA Today',
+    publishedAt: '2026-05-22',
+    summary: 'USA Today reports that despite achieving gold medal success and Olympic stardom, figure skater Alysa Liu remains unchanged according to an exclusive feature.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
+  {
+    id: '202605-uno-shoma-on-comeback-to-competitive-figure-skating-as-ice-d',
+    title: 'Uno Shoma on comeback to competitive figure skating as ice dancer: "We\'re out to win"',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-05-22',
+    summary: 'Shoma Uno discusses his comeback to competitive figure skating as an ice dancer, expressing confidence about winning.',
+    entities: [
+      { type: 'skater', id: 'shoma-uno' }
+    ],
+  },
+  {
+    id: '202605-impact-summit-off-to-grand-start',
+    title: 'Impact Summit off to Grand Start',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-21',
+    summary: 'The Impact Summit has begun successfully with what appears to be a positive start.',
+    entities: [
+      
+    ],
+  },
 ]
