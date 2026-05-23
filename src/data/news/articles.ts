@@ -4107,4 +4107,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-key-updates-to-levels-of-difficulty-and-goe-guidelines-for-2',
+    title: 'Key updates to levels of difficulty and GOE guidelines for 2026-27 figure skating season',
+    url: 'https://www.goldenskate.com',
+    source: 'Golden Skate',
+    publishedAt: '2026-05-23',
+    summary: 'The International Skating Union has announced key updates to levels of difficulty and Grade of Execution (GOE) guidelines that will take effect for the 2026-27 figure skating season.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202605-us-figure-skating-announces-2025-26-coach-ice-award-recipien',
+    title: 'U.S. Figure Skating Announces 2025-26 Coach I.C.E. Award Recipients',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-22',
+    summary: 'U.S. Figure Skating has announced the recipients of the 2025-26 Coach I.C.E. Award.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202605-german-pair-skating-stars-hasevolodin-decide-to-continue-unt',
+    title: 'German pair skating stars Hase/Volodin “decide to continue” until French Alps 2030 Olympics',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-05-22',
+    summary: 'German pair skating stars Hase/Volodin have decided to continue competing until the French Alps 2030 Olympics.',
+    entities: [
+      { type: 'skater', id: 'hase-volodin' }
+    ],
+  },
 ]
