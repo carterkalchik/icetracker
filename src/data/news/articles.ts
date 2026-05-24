@@ -4140,4 +4140,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'hase-volodin' }
     ],
   },
+  {
+    id: '202605-us-figure-skating-announces-dates-location-of-2027-impact-su',
+    title: 'U.S. Figure Skating Announces Dates, Location of 2027 Impact Summit',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-23',
+    summary: 'U.S. Figure Skating has announced the dates and location for its 2027 Impact Summit.',
+    entities: [
+      
+    ],
+  },
 ]
