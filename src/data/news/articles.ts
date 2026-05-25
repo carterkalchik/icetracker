@@ -4151,4 +4151,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-rosenstein-elected-us-figure-skating-president',
+    title: 'Rosenstein Elected U.S. Figure Skating President',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-25',
+    summary: 'Rosenstein has been elected as the new president of U.S. Figure Skating.',
+    entities: [
+      
+    ],
+  },
 ]
