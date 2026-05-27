@@ -4162,4 +4162,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-alysa-liu-presents-best-rockalternative-artist-trophy-at-ame',
+    title: 'Alysa Liu presents "Best Rock/Alternative Artist" trophy at American Music Awards',
+    url: 'https://www.olympics.com',
+    source: 'olympics.com',
+    publishedAt: '2026-05-26',
+    summary: 'Alysa Liu presented the Best Rock/Alternative Artist trophy at the American Music Awards.',
+    entities: [
+      { type: 'skater', id: 'alysa-liu' }
+    ],
+  },
 ]
