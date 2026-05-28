@@ -4173,4 +4173,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'skater', id: 'alysa-liu' }
     ],
   },
+  {
+    id: '202602-expect-the-unexpected',
+    title: '‘Expect the Unexpected\'',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-10',
+    summary: 'U.S. Figure Skating advises to \'Expect the Unexpected\' in what appears to be a general announcement or preview statement.',
+    entities: [
+      
+    ],
+  },
 ]
