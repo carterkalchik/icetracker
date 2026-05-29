@@ -4184,4 +4184,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-state-of-the-sport-address-from-us-figure-skating-ceo-matt-f',
+    title: '‘State of the Sport’ Address from U.S. Figure Skating CEO Matt Farrell',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-28',
+    summary: 'U.S. Figure Skating CEO Matt Farrell delivered a \'State of the Sport\' address.',
+    entities: [
+      
+    ],
+  },
 ]
