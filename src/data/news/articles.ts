@@ -4195,4 +4195,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202605-impact-2030-us-figure-skating-announces-new-strategic-plan',
+    title: 'Impact 2030: U.S. Figure Skating Announces New Strategic Plan',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-05-29',
+    summary: 'U.S. Figure Skating has announced a new strategic plan called Impact 2030.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202602-chock-and-bates-secure-first-individual-olympic-medal-with-s',
+    title: 'Chock and Bates Secure First Individual Olympic Medal with Silver in Ice Dance',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-11',
+    summary: 'Chock and Bates won their first individual Olympic medal, earning silver in ice dance.',
+    entities: [
+      { type: 'skater', id: 'chock-bates' }, { type: 'competition', id: '2022-olympics' }
+    ],
+  },
+  {
+    id: '202512-twelve-us-skaters-cap-off-2025-at-grand-prix-final',
+    title: 'Twelve U.S. Skaters Cap off 2025 at Grand Prix Final',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2025-12-02',
+    summary: 'Twelve U.S. figure skaters concluded their 2025 season by competing at the Grand Prix Final.',
+    entities: [
+      { type: 'competition', id: '2025-gp-final' }
+    ],
+  },
 ]
