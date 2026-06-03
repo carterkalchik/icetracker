@@ -4228,4 +4228,15 @@ export const newsArticles: NewsArticleSeed[] = [
       { type: 'competition', id: '2025-gp-final' }
     ],
   },
+  {
+    id: '202601-what-simple-snacks-would-a-sport-dietitian-pack',
+    title: 'What Simple Snacks Would a Sport Dietitian Pack?',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-01-23',
+    summary: 'The article discusses what simple snacks a sport dietitian would recommend packing.',
+    entities: [
+      
+    ],
+  },
 ]
