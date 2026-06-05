@@ -4239,4 +4239,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202606-heidi-thibert-honored-with-2025-coach-educator-of-the-year-a',
+    title: 'Heidi Thibert Honored with 2025 Coach Educator of the Year Award',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-06-05',
+    summary: 'Heidi Thibert has been honored with the 2025 Coach Educator of the Year Award by U.S. Figure Skating.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202606-olympic-winter-sports-leader-upbeat-about-replacing-nice-wit',
+    title: 'Olympic winter sports leader upbeat about replacing Nice with Lyon for 2030 Games',
+    url: 'https://www.washingtonpost.com',
+    source: 'The Washington Post',
+    publishedAt: '2026-06-05',
+    summary: 'An Olympic winter sports leader has expressed optimism about replacing Nice with Lyon as the host city for the 2030 Games.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202606-ann-fauver-an-icon-in-our-sport',
+    title: 'Ann Fauver ‘an icon in our sport’',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-06-04',
+    summary: 'Ann Fauver is being described as \'an icon in our sport\' according to U.S. Figure Skating.',
+    entities: [
+      
+    ],
+  },
 ]
