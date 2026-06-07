@@ -4272,4 +4272,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202602-teams-elite-junior-and-skyliners-junior-selected-to-represen',
+    title: 'Teams Elite Junior and Skyliners Junior Selected to Represent U.S. Figure Skating at World Junior Synchronized Skating Championships',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-02-17',
+    summary: 'Teams Elite Junior and Skyliners Junior have been selected to represent U.S. Figure Skating at the World Junior Synchronized Skating Championships.',
+    entities: [
+      
+    ],
+  },
 ]
