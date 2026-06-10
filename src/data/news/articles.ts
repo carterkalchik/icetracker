@@ -4283,4 +4283,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202606-international-skating-union-to-hold-combined-world-champions',
+    title: 'International Skating Union to hold combined World Championships in 2028',
+    url: 'https://www.nbcsports.com',
+    source: 'NBC Sports',
+    publishedAt: '2026-06-10',
+    summary: 'The International Skating Union has announced plans to hold combined World Championships in 2028.',
+    entities: [
+      
+    ],
+  },
 ]
