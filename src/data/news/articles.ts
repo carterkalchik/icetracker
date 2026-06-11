@@ -4294,4 +4294,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202606-isu-congress-2026-day-1-new-grand-prix-format-judge-rankings',
+    title: 'ISU Congress 2026 Day 1: New Grand Prix Format, Judge Rankings and Prize Money Increase Among Key Updates',
+    url: 'https://www.goldenskate.com',
+    source: 'Golden Skate',
+    publishedAt: '2026-06-10',
+    summary: 'The ISU Congress 2026 concluded its first day with announcements of key updates including a new Grand Prix format, changes to judge rankings, and an increase in prize money.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202606-all-in-mentality',
+    title: '‘All-In Mentality’',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-06-10',
+    summary: 'The headline \'All-In Mentality\' suggests a story about someone\'s committed approach or mindset in figure skating.',
+    entities: [
+      
+    ],
+  },
 ]
