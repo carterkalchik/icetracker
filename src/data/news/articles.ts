@@ -4316,4 +4316,26 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202606-ice-skating-brings-all-world-championships-to-beijing-in-202',
+    title: 'Ice skating brings all world championships to Beijing in 2028',
+    url: 'https://www.espn.com',
+    source: 'ESPN',
+    publishedAt: '2026-06-10',
+    summary: 'All world championships in ice skating will be held in Beijing in 2028.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202606-st-peter-to-cap-outstanding-career-on-isu-council',
+    title: 'St. Peter to Cap Outstanding Career on ISU Council',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-06-11',
+    summary: 'St. Peter is ending an outstanding career on the ISU Council.',
+    entities: [
+      
+    ],
+  },
 ]
