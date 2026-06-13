@@ -4338,4 +4338,37 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202606-love-of-skating-inclusivity-drives-adult-skater-stan-kimer',
+    title: 'Love of Skating, Inclusivity Drives Adult Skater Stan Kimer',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-06-12',
+    summary: 'Adult skater Stan Kimer is driven by his love of skating and commitment to inclusivity in the sport.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202606-isu-congress-2026-new-singles-and-pairs-requirements-highlig',
+    title: 'ISU Congress 2026: New Singles and Pairs Requirements Highlight Figure Skating Discussions',
+    url: 'https://www.goldenskate.com',
+    source: 'Golden Skate',
+    publishedAt: '2026-06-11',
+    summary: 'The ISU Congress 2026 featured discussions about new requirements for singles and pairs figure skating disciplines.',
+    entities: [
+      
+    ],
+  },
+  {
+    id: '202606-lundgren-bates-sherr-named-to-top-isu-posts',
+    title: 'Lundgren, Bates, Sherr Named To Top ISU Posts',
+    url: 'https://usfigureskating.org',
+    source: 'U.S. Figure Skating',
+    publishedAt: '2026-06-13',
+    summary: 'Lundgren, Bates, and Sherr have been appointed to top positions within the International Skating Union (ISU).',
+    entities: [
+      
+    ],
+  },
 ]
