@@ -4371,4 +4371,15 @@ export const newsArticles: NewsArticleSeed[] = [
       
     ],
   },
+  {
+    id: '202602-quad-god-ilia-malinin-falls-twice-in-olympic-disaster-allowi',
+    title: '\'Quad God\' Ilia Malinin falls twice in Olympic disaster, allowing Mikhail Shaidorov to claim gold',
+    url: 'https://apnews.com',
+    source: 'AP News',
+    publishedAt: '2026-02-13',
+    summary: 'Ilia Malinin, known as the \'Quad God\', fell twice during an Olympic competition, allowing Mikhail Shaidorov to win the gold medal.',
+    entities: [
+      { type: 'skater', id: 'ilia-malinin' }, { type: 'skater', id: 'mikhail-shaidorov' }, { type: 'competition', id: '2026-olympics' }
+    ],
+  },
 ]
